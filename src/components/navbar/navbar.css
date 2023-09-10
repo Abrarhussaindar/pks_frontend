@@ -1,0 +1,80 @@
+:root {
+  --main-color: #27374D;
+  --hover-color: #526D82;
+  --box-color: #9DB2BF;
+  --un-color: #DDE6ED;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 30px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: var(--main-color);
+  color: white;
+}
+.nav_container .leftSide h1 {
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav_container .leftSide h1 span {
+  color: var(--box-color);
+}
+.nav_container .center {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+}
+.nav_container .center .searchbarIcon {
+  margin-left: 15px;
+  margin-top: 5px;
+  width: 25px;
+}
+.nav_container .center .navSearchInput {
+  border: none;
+  width: 70%;
+  margin-left: 10px;
+  color: black;
+}
+.nav_container .center .navSearchInput:focus {
+  outline: none;
+}
+.nav_container .rightSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.nav_container .rightSide .navLinks ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.nav_container .rightSide .navLinks ul li {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.nav_container .rightSide .navLinks ul li:hover {
+  color: var(--box-color);
+  transition: color 0.3s ease-in-out;
+}
+.nav_container .rightSide .navLinks ul .active {
+  color: var(--box-color);
+}
+.nav_container .rightSide .navUserImg img {
+  width: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}/*# sourceMappingURL=navbar.css.map */

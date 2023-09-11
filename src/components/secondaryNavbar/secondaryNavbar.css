@@ -2,14 +2,22 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 60px;
+  height: 75px;
   background-color: var(--hover-color);
 }
-.secondaryNavbarContainer img {
+.secondaryNavbarContainer .container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+}
+.secondaryNavbarContainer .container img {
   width: 30px;
   cursor: pointer;
 }
-.secondaryNavbarContainer img:hover {
+.secondaryNavbarContainer .container img:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }/*# sourceMappingURL=secondaryNavbar.css.map */

@@ -1,0 +1,30 @@
+.categoryTopBarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 30px;
+
+    .left{
+        h3{
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+
+    .center{
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            li{
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 1px solid var(--hover-color);
+                }
+            }
+        }
+    }
+}

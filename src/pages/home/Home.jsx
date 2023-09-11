@@ -4,20 +4,25 @@ import HomeSuggetsProducts from "../../components/homeSuggestProducts/HomeSugget
 import Navbar from "../../components/navbar/Navbar";
 import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
 import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
+import CategoryPage from "../categoryPage/CategoryPage";
 
 export default function Home() {
     return (
-        <>
+        <div className="mainContainer">
             <Navbar />
             <SecondaryNavabar />
-            <div className="mainContent">
+            
+            
+            {/* <div className="mainContent">
                 <HomeBanner />
                 <RecentProductsContainer />
                 <HomeSuggetsProducts />
                 <HomeSuggetsProducts />
                 <HomeSuggetsProducts />
-            </div>
+            </div> */}
+            
+            <CategoryPage />
             <Footer />
-        </>
+        </div>
     )
 }

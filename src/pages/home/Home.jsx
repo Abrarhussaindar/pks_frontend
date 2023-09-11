@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import Navbar from "../../components/navbar/Navbar";
 // import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
 import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
-import CategoryPage from "../categoryPage/CategoryPage";
+// import CategoryPage from "../categoryPage/CategoryPage";
 import ProductPage from "../productPage/ProductPage";
 
 export default function Home() {

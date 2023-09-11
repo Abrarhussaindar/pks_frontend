@@ -1,0 +1,271 @@
+.productContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+
+    .mainSection{
+        display: flex;
+        margin-top: 5px;
+        .left{
+            flex: 6;
+            display: flex;
+            justify-content: space-around;
+            height: 700px;
+            .otherImageContainer{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                gap: 20px;
+                
+                .active{
+                    border: 2px solid var(--hover-color);
+                }
+                img{
+                    border: 1px solid black;
+                    width: 40px;
+                    object-fit: contain;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+            .productImageContainer{
+                background-color: var(--un-color);
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 90%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right{
+            flex: 6;
+            
+            .productDetialContainer{
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: 1.3px;
+                // width: 650px;
+            }
+            .productRating{
+                list-style: none;
+                padding: 10px;
+                li{
+                    img{
+                        width: 15px;
+                    }
+
+                    span{
+                        margin-left: 5px;
+                        color: var(--hover-color);
+                    }
+                }
+            }
+
+            .priceContainer{
+                display: flex;
+                align-items: baseline;
+                gap: 5px;
+
+                .prices{
+                    margin-left: 20px;
+                    font-size: 28px;
+                    font-weight: 500;
+                    // padding-top: 20px;
+                    // position: absolute;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        font-size: 14px;
+                        left: -15%;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                    color: var(--hover-color);
+                    
+                    span{
+                        
+                        text-decoration: line-through;
+                    }
+                }
+                .discounts{
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: red;
+                }
+            
+            }
+            .stockContainer{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h4{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: var(--main-color);
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    span{
+                        font-weight: 600;
+                        color: var(--main-color);
+                    }
+                    .quantityCount{
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            
+            .btnsContainer{
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                justify-content: start;
+                margin-bottom: 10px;
+                .addToCart{
+                    background-color: var(--hover-color);
+                    color: white;
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    width: 20%;
+                    &:hover{
+                        background-color: var(--main-color);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                .buyNow{
+                    background-color: var(--main-color);
+                    color: white;
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    width: 20%;
+                    &:hover{
+                        // background-color: var(--hover-color);
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+            .pincodeContainer{
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                cursor: pointer;
+                img{
+                    width: 25px;
+                }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-left: 10px;
+
+                    span{
+                        font-weight: 700;
+                        color: var(--main-color);
+                    }
+                }
+            }
+
+            .offerContainer{
+                display: flex;
+                flex-direction: column;
+                margin: 10px 0;
+                h4{
+                    font-size: 18px;
+                    font-weight:600;
+                }
+                .container{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 5px;
+                    // overflow-x: scroll;
+                    width: 90%;
+                    .innerContainer{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 10px;
+                        gap: 5px;
+                        width: 200px;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                        border: 1px solid var(--un-color);
+                        p{
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .serviceContainer{
+                ul{
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 5px;
+                        padding: 15px;
+                        img{
+                            width: 30px;
+                        }
+
+                        span{
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: var(--hover-color);
+                        }
+                    }
+                }
+            }
+
+            .aboutItemContainer{
+                .productColor{
+                    margin: 20px 0;
+                }
+                
+                .productSize{
+                    margin: 15px 0;
+                    width: 40%;
+                }
+            }
+
+            
+        }
+    }
+
+    .similarProductsSection{
+        .heading{
+            h4{
+                font-size: 18px;
+                font-weight: 600;
+                margin: 10px;
+            }
+        }
+        .container{
+            display: flex;
+            overflow-x: scroll;
+            gap: 15px;
+            // width: 80%;
+        }
+    }
+}

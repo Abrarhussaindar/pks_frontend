@@ -5,6 +5,7 @@ import Navbar from "../../components/navbar/Navbar";
 // import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
 import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
 import CategoryPage from "../categoryPage/CategoryPage";
+import ProductPage from "../productPage/ProductPage";
 
 export default function Home() {
     return (
@@ -21,7 +22,8 @@ export default function Home() {
                 <HomeSuggetsProducts />
             </div> */}
             
-            <CategoryPage />
+            {/* <CategoryPage /> */}
+            <ProductPage />
             <Footer />
         </div>
     )

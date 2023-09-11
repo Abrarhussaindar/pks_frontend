@@ -1,0 +1,234 @@
+.productContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.productContainer .mainSection {
+  display: flex;
+  margin-top: 5px;
+}
+.productContainer .mainSection .left {
+  flex: 6;
+  display: flex;
+  justify-content: space-around;
+  height: 700px;
+}
+.productContainer .mainSection .left .otherImageContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+.productContainer .mainSection .left .otherImageContainer .active {
+  border: 2px solid var(--hover-color);
+}
+.productContainer .mainSection .left .otherImageContainer img {
+  border: 1px solid black;
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.productContainer .mainSection .left .productImageContainer {
+  background-color: var(--un-color);
+  display: flex;
+  justify-content: center;
+}
+.productContainer .mainSection .left .productImageContainer img {
+  width: 90%;
+  cursor: pointer;
+}
+.productContainer .mainSection .right {
+  flex: 6;
+}
+.productContainer .mainSection .right .productDetialContainer {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+}
+.productContainer .mainSection .right .productRating {
+  list-style: none;
+  padding: 10px;
+}
+.productContainer .mainSection .right .productRating li img {
+  width: 15px;
+}
+.productContainer .mainSection .right .productRating li span {
+  margin-left: 5px;
+  color: var(--hover-color);
+}
+.productContainer .mainSection .right .priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.productContainer .mainSection .right .priceContainer .prices {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  position: relative;
+}
+.productContainer .mainSection .right .priceContainer .prices span {
+  position: absolute;
+  font-size: 14px;
+  left: -15%;
+}
+.productContainer .mainSection .right .priceContainer p {
+  font-size: 14px;
+  color: var(--hover-color);
+}
+.productContainer .mainSection .right .priceContainer p span {
+  text-decoration: line-through;
+}
+.productContainer .mainSection .right .priceContainer .discounts {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+}
+.productContainer .mainSection .right .stockContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.productContainer .mainSection .right .stockContainer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.productContainer .mainSection .right .stockContainer p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.productContainer .mainSection .right .stockContainer p span {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.productContainer .mainSection .right .stockContainer p .quantityCount {
+  font-size: 20px;
+  font-weight: 700;
+}
+.productContainer .mainSection .right .btnsContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+.productContainer .mainSection .right .btnsContainer .addToCart {
+  background-color: var(--hover-color);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 20%;
+}
+.productContainer .mainSection .right .btnsContainer .addToCart:hover {
+  background-color: var(--main-color);
+  transition: all 0.3s ease-in-out;
+}
+.productContainer .mainSection .right .btnsContainer .buyNow {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 20%;
+}
+.productContainer .mainSection .right .btnsContainer .buyNow:hover {
+  transition: all 0.3s ease-in-out;
+}
+.productContainer .mainSection .right .pincodeContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.productContainer .mainSection .right .pincodeContainer img {
+  width: 25px;
+}
+.productContainer .mainSection .right .pincodeContainer p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.productContainer .mainSection .right .pincodeContainer p span {
+  font-weight: 700;
+  color: var(--main-color);
+}
+.productContainer .mainSection .right .offerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.productContainer .mainSection .right .offerContainer h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.productContainer .mainSection .right .offerContainer .container {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+  width: 90%;
+}
+.productContainer .mainSection .right .offerContainer .container .innerContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+  width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 1px solid var(--un-color);
+}
+.productContainer .mainSection .right .offerContainer .container .innerContainer p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.productContainer .mainSection .right .serviceContainer ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.productContainer .mainSection .right .serviceContainer ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.productContainer .mainSection .right .serviceContainer ul li img {
+  width: 30px;
+}
+.productContainer .mainSection .right .serviceContainer ul li span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+.productContainer .mainSection .right .aboutItemContainer .productColor {
+  margin: 20px 0;
+}
+.productContainer .mainSection .right .aboutItemContainer .productSize {
+  margin: 15px 0;
+  width: 40%;
+}
+.productContainer .similarProductsSection .heading h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+}
+.productContainer .similarProductsSection .container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}/*# sourceMappingURL=product.css.map */

@@ -96,7 +96,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="bottom">
-                <p>© 2021 PanunKeshurStore. All rights reserved.</p>
+                <p>© 2021 <span>PanunKeshurStore</span>. All rights reserved.</p>
             </div>
         </div>
     )

@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 30px;
   gap: 20px;
+  width: 100%;
 }
 .recentProductsContainer .innerContainer {
   background-color: var(--box-color);

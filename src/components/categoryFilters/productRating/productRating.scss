@@ -1,0 +1,25 @@
+.customerRatings {
+    margin: 10px 0;
+
+    .ratingsContent {
+        padding: 0 10px;
+
+        ul {
+            list-style: none;
+
+            li {
+                img{
+                    width: 20px;
+                }
+                span{
+                    margin-left: 5px;
+                }
+                cursor: pointer;
+                &:hover {
+                    font-weight: 500;
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,22 @@
-/*# sourceMappingURL=productRating.css.map */
+.customerRatings {
+  margin: 10px 0;
+}
+.customerRatings .ratingsContent {
+  padding: 0 10px;
+}
+.customerRatings .ratingsContent ul {
+  list-style: none;
+}
+.customerRatings .ratingsContent ul li {
+  cursor: pointer;
+}
+.customerRatings .ratingsContent ul li img {
+  width: 20px;
+}
+.customerRatings .ratingsContent ul li span {
+  margin-left: 5px;
+}
+.customerRatings .ratingsContent ul li:hover {
+  font-weight: 500;
+  color: var(--main-color);
+}/*# sourceMappingURL=productRating.css.map */

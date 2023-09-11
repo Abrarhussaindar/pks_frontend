@@ -1,1 +1,22 @@
-/*# sourceMappingURL=productMaterial.css.map */
+.material {
+  margin-top: 10px;
+}
+.material .materialContent {
+  padding: 0 10px;
+}
+.material .materialContent ul {
+  list-style: none;
+}
+.material .materialContent ul li .radiobtnContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.material .materialContent ul li .radiobtnContainer input {
+  cursor: pointer;
+}
+.material .materialContent ul li .radiobtnContainer:hover {
+  font-weight: 500;
+  color: var(--main-color);
+}/*# sourceMappingURL=productMaterial.css.map */

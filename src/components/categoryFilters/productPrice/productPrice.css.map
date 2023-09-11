@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"productPrice.css"}
+{"version":3,"sources":["productPrice.scss","productPrice.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;ACCJ;ADCI;EACI,eAAA;ACCR;ADCQ;EACI,gBAAA;ACCZ;ADCY;EACI,eAAA;ACChB;ADAgB;EACI,gBAAA;EACA,wBAAA;ACEpB","file":"productPrice.css"}

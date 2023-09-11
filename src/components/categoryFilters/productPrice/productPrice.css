@@ -1,1 +1,16 @@
-/*# sourceMappingURL=productPrice.css.map */
+.price {
+  margin-top: 10px;
+}
+.price .brandContent {
+  padding: 0 10px;
+}
+.price .brandContent ul {
+  list-style: none;
+}
+.price .brandContent ul li {
+  cursor: pointer;
+}
+.price .brandContent ul li:hover {
+  font-weight: 500;
+  color: var(--main-color);
+}/*# sourceMappingURL=productPrice.css.map */

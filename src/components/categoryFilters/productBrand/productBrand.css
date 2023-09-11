@@ -1,1 +1,22 @@
-/*# sourceMappingURL=productBrand.css.map */
+.brands {
+  margin-top: 10px;
+}
+.brands .brandContent {
+  padding: 0 10px;
+}
+.brands .brandContent ul {
+  list-style: none;
+}
+.brands .brandContent ul li .radiobtnContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.brands .brandContent ul li .radiobtnContainer input {
+  cursor: pointer;
+}
+.brands .brandContent ul li .radiobtnContainer:hover {
+  font-weight: 500;
+  color: var(--main-color);
+}/*# sourceMappingURL=productBrand.css.map */

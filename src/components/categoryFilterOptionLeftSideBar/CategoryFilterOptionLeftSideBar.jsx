@@ -15,8 +15,8 @@ export default function CategoryFilterOptionLeftSideBar() {
             <ProductSize />
             <ProductColor />
             <ProductPattern />
-            <ProductBrand />
             <ProductMaterial />
+            <ProductBrand />
             <ProductPrice />
             <ProductRating />
             <ProductDiscount />

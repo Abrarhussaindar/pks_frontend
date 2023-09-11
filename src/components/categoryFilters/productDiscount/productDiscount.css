@@ -1,1 +1,16 @@
-/*# sourceMappingURL=productDiscount.css.map */
+.discount {
+  margin: 10px 0;
+}
+.discount .discountContent {
+  padding: 0 10px;
+}
+.discount .discountContent ul {
+  list-style: none;
+}
+.discount .discountContent ul li {
+  cursor: pointer;
+}
+.discount .discountContent ul li:hover {
+  font-weight: 500;
+  color: var(--main-color);
+}/*# sourceMappingURL=productDiscount.css.map */

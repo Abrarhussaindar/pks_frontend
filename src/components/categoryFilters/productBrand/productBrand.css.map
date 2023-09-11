@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"productBrand.css"}
+{"version":3,"sources":["productBrand.scss","productBrand.css"],"names":[],"mappings":"AAAA;EACI,gBAAA;ACCJ;ADCI;EACI,eAAA;ACCR;ADCQ;EACI,gBAAA;ACCZ;ADCgB;EACI,aAAA;EACA,mBAAA;EACA,QAAA;EACA,eAAA;ACCpB;ADAoB;EACI,eAAA;ACExB;ADCoB;EACI,gBAAA;EACA,wBAAA;ACCxB","file":"productBrand.css"}

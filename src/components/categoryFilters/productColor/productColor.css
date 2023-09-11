@@ -1,0 +1,52 @@
+.colour {
+  margin-top: 10px;
+}
+.colour .colourContent {
+  padding: 0 10px;
+}
+.colour .colourContent ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  list-style: none;
+}
+.colour .colourContent ul li {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+}
+.colour .colourContent ul li img {
+  display: none;
+  position: absolute;
+  width: 13px;
+  bottom: 0;
+  right: 5%;
+}
+.colour .colourContent ul li:hover img {
+  display: block;
+}
+.colour .colourContent ul .red {
+  background-color: red;
+  border: 1px solid var(--un-color);
+}
+.colour .colourContent ul .black {
+  background-color: black;
+  border: 1px solid var(--un-color);
+}
+.colour .colourContent ul .white {
+  background-color: white;
+  border: 1px solid var(--un-color);
+}
+.colour .colourContent ul .green {
+  background-color: green;
+  border: 1px solid var(--un-color);
+}
+.colour .colourContent ul .yellow {
+  background-color: yellow;
+  border: 1px solid var(--un-color);
+}
+.colour .colourContent ul .blue {
+  background-color: blue;
+  border: 1px solid var(--un-color);
+}/*# sourceMappingURL=productColor.css.map */

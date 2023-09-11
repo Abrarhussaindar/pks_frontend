@@ -1,6 +1,3 @@
-.categoryContainer {
-  height: calc(100vh - 140px);
-}
 .categoryContainer .mainContent {
   display: flex;
   gap: 10px;

@@ -1,0 +1,20 @@
+.size{
+    .sizeContent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        padding: 0 10px;
+        button{
+            padding: 5px 10px;
+            background: none;
+            outline: none;
+            border: 1px solid var(--un-color);
+            cursor: pointer;
+
+            &:hover{
+                background: var(--un-color);
+                
+            }
+        }
+    }
+}

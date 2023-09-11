@@ -1,0 +1,27 @@
+.pattern{
+    margin-top: 10px;
+
+    .patternContent{
+        padding: 0 10px;
+
+        ul{
+            list-style: none;
+            li{
+                .radiobtnContainer{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+                    input{
+                        cursor: pointer;
+                    }
+                    
+                    &:hover{
+                        font-weight: 500;
+                        color: var(--main-color);
+                    }
+                }
+            }
+        }
+    }
+}

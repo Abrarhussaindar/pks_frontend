@@ -2,23 +2,7 @@
   flex: 2;
   border-right: 2px solid var(--un-color);
 }
-.leftSideBarContainer .size .heading h4 {
+.leftSideBarContainer .size .heading h4, .leftSideBarContainer .colour .heading h4, .leftSideBarContainer .pattern .heading h4, .leftSideBarContainer .material .heading h4, .leftSideBarContainer .brands .heading h4, .leftSideBarContainer .price .heading h4, .leftSideBarContainer .customerRatings .heading h4, .leftSideBarContainer .discount .heading h4 {
   padding: 5px 10px;
   font-weight: 600;
-}
-.leftSideBarContainer .size .sizeContent {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
-  padding: 0 10px;
-}
-.leftSideBarContainer .size .sizeContent button {
-  padding: 5px 10px;
-  background: none;
-  outline: none;
-  border: 1px solid var(--un-color);
-  cursor: pointer;
-}
-.leftSideBarContainer .size .sizeContent button:hover {
-  background: var(--un-color);
 }/*# sourceMappingURL=categoryFilterOptionLeftSideBar.css.map */

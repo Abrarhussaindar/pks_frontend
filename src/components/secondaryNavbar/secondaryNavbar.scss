@@ -1,0 +1,17 @@
+.secondaryNavbarContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: var(--hover-color);
+
+    img{
+        width: 30px;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+    }
+}

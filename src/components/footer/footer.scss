@@ -8,34 +8,91 @@
     .top{
         display: flex;
         justify-content: space-between;
-        align-items: center;
 
         .left{
-            width: 500px;
             h1{
                 font-weight: 500;
-
+                font-size: 30px;
                 span{
                     color: var(--box-color);
                 }
             }
             p{
-                margin-top: 15px;
+                width: 350px;
+                margin-top: 10px;
             }
         }
 
         .center{
+            h3{
+                font-size: 18px;
+                font-weight: 600;
+            }
             ul{
                 list-style: none;
-                font-weight: 500;
-
+                margin-top: 20px;
                 li{
                     margin-bottom: 10px;
                     cursor: pointer;
-
+                    
+                    font-weight: 600;
+                    
+                    color: var(--box-color);
                     &:hover{
-                        color: var(--box-color);
+                        color: white;
                         transition: color 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+
+        .right{
+            .rightTop{
+                h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+                .socialContainer{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    img{
+                        width: 30px;
+                        cursor: pointer;
+
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: transform 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            .rightBottom{
+                h3{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                ul{
+                    list-style: none;
+                    width: 252px;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            font-weight: 600;
+                            span{
+                                margin-right: 8px;
+
+                                img{
+                                    width: 20px;
+                                }
+                            }
+                        
+                        }
                     }
                 }
             }

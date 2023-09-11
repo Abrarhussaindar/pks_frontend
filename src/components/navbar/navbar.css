@@ -17,17 +17,21 @@
   background-color: var(--main-color);
   color: white;
 }
-.nav_container .leftSide h1 {
+.nav_container .leftSide .logoLink {
+  text-decoration: none;
+  color: white;
+}
+.nav_container .leftSide .logoLink h1 {
   font-weight: 500;
   cursor: pointer;
 }
-.nav_container .leftSide h1 span {
+.nav_container .leftSide .logoLink h1 span {
   color: var(--box-color);
 }
 .nav_container .center {
   display: flex;
   align-items: center;
-  width: 30%;
+  width: 50%;
   height: 40px;
   border-radius: 30px;
   background-color: white;
@@ -39,7 +43,7 @@
 }
 .nav_container .center .navSearchInput {
   border: none;
-  width: 70%;
+  width: 90%;
   margin-left: 10px;
   color: black;
 }
@@ -71,6 +75,18 @@
 }
 .nav_container .rightSide .navLinks ul .active {
   color: var(--box-color);
+}
+.nav_container .rightSide .navUserImg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav_container .rightSide .navUserImg .cart {
+  position: relative;
+}
+.nav_container .rightSide .navUserImg .cart .cartCount {
+  position: absolute;
+  top: -20%;
 }
 .nav_container .rightSide .navUserImg img {
   width: 32px;

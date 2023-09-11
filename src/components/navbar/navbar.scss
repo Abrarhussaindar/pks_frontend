@@ -18,11 +18,15 @@
     background-color: var(--main-color);
     color: white;
     .leftSide{
-        h1{
-            font-weight: 500;
-            cursor: pointer;
-            span{
-                color: var(--box-color);
+        .logoLink{
+            text-decoration: none;
+            color: white;
+            h1{
+                font-weight: 500;
+                cursor: pointer;
+                span{
+                    color: var(--box-color);
+                }
             }
         }
     }
@@ -30,7 +34,7 @@
     .center{
         display: flex;
         align-items: center;
-        width: 30%;
+        width: 50%;
         height: 40px;
         border-radius: 30px;
         background-color: white;
@@ -43,7 +47,7 @@
 
         .navSearchInput{
             border: none;
-            width: 70%;
+            width: 90%;
             margin-left: 10px;
             color: black;
         }
@@ -84,6 +88,17 @@
         }
 
         .navUserImg{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .cart{
+                
+                position: relative;
+                .cartCount{
+                    position: absolute;
+                    top: -20%;
+                }
+            }
             img{
                 width: 32px;
                 object-fit: cover;

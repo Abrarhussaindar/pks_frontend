@@ -83,6 +83,10 @@
 .footerContainer .top .right .rightBottom ul li a span img {
   width: 20px;
 }
+.footerContainer hr {
+  border: 1px solid var(--box-color);
+  margin-top: 20px;
+}
 .footerContainer .bottom {
   display: flex;
   justify-content: center;

@@ -103,6 +103,10 @@
             }
         }
     }
+    hr{
+        border: 1px solid var(--box-color);
+        margin-top: 20px;
+    }
     .bottom{
         display: flex;
         justify-content: center;

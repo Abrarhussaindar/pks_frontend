@@ -95,6 +95,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+            <hr />
             <div className="bottom">
                 <p>© 2021 <span>PanunKeshurStore</span>. All rights reserved.</p>
             </div>

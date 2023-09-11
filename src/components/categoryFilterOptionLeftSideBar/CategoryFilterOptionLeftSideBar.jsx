@@ -19,37 +19,37 @@ export default function CategoryFilterOptionLeftSideBar() {
             </div>
             <div className="colour">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>colour</h4>
                 </div>
             </div>
             <div className="pattern">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>pattern</h4>
                 </div>
             </div>
             <div className="material">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>material</h4>
                 </div>
             </div>
             <div className="brands">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>brands</h4>
                 </div>
             </div>
             <div className="price">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>price</h4>
                 </div>
             </div>
             <div className="customerRatings">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>Customer Ratings</h4>
                 </div>
             </div>
             <div className="discount">
                 <div className="heading">
-                    <h4>heading</h4>
+                    <h4>discount</h4>
                 </div>
             </div>
         </div>

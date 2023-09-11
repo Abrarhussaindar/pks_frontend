@@ -1,3 +1,6 @@
+.size .ss {
+  margin-top: 10px;
+}
 .size .sizeContent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

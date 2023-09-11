@@ -8,7 +8,7 @@ export default function CategoryTopBar() {
             </div>
             <div className="center">
                 <ul>
-                    <li>Shirts</li>
+                    <li className="active">Shirts</li>
                     <li>Jeans</li>
                     <li>Inner Wear</li>
                     <li>Sports Wear</li>

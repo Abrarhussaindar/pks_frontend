@@ -14,9 +14,13 @@
   display: flex;
   gap: 20px;
 }
+.categoryTopBarContainer .center ul .active {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--hover-color);
+  font-weight: 600;
+}
 .categoryTopBarContainer .center ul li {
   font-size: 16px;
-  font-weight: 500;
   cursor: pointer;
 }
 .categoryTopBarContainer .center ul li:hover {

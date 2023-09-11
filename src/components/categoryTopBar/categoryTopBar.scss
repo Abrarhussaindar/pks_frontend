@@ -17,9 +17,13 @@
             list-style: none;
             display: flex;
             gap: 20px;
+            .active{
+                color: var(--main-color);
+                border-bottom: 1px solid var(--hover-color);
+                font-weight: 600;
+            }
             li{
                 font-size: 16px;
-                font-weight: 500;
                 cursor: pointer;
                 &:hover{
                     border-bottom: 1px solid var(--hover-color);

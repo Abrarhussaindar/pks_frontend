@@ -1,4 +1,8 @@
 .categoryContentContainer {
   flex: 10;
-  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
 }/*# sourceMappingURL=categoryContent.css.map */

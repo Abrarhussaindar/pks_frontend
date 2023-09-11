@@ -1,7 +1,25 @@
+import ProductCard from "../productCard/ProductCard"
 import "./categoryContent.css"
 
 export default function CategoryContent() {
     return (
-        <div className="categoryContentContainer">CategoryContent</div>
+        <div className="categoryContentContainer">
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+            <ProductCard />
+        </div>
     )
 }

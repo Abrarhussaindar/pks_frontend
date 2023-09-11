@@ -13,7 +13,11 @@
   background-color: var(--un-color);
   padding: 10px;
 }
-.productCard .productImgContainer img {
+.productCard .productImgContainer a {
+  display: flex;
+  justify-content: center;
+}
+.productCard .productImgContainer a img {
   width: 50%;
 }
 .productCard .productImgContainer .shirtColors {
@@ -25,16 +29,13 @@
   margin-top: 10px;
 }
 .productCard .productImgContainer .shirtColors .active {
-  border: 2px solid black;
+  border: 2px solid var(--hover-color);
   padding: 9px;
 }
 .productCard .productImgContainer .shirtColors li {
   width: 18px;
   height: 18px;
   border-radius: 50px;
-}
-.productCard .productImgContainer .shirtColors .red {
-  background-color: red;
 }
 .productCard .productImgContainer .shirtColors .black {
   background-color: black;

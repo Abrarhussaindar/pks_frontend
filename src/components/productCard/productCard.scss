@@ -12,8 +12,12 @@
         align-items: center;
         background-color: var(--un-color);
         padding: 10px;
-        img{
-            width: 50%;
+        a{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
         }
         
         .shirtColors{
@@ -24,7 +28,7 @@
             list-style: none;
             margin-top: 10px;
             .active{
-                border: 2px solid black;
+                border: 2px solid var(--hover-color);
                 padding: 9px;
             }
             li{
@@ -33,9 +37,6 @@
                 border-radius: 50px;
             }
 
-            .red{
-                background-color: red;
-            }
             .black{
                 background-color: black;
             }

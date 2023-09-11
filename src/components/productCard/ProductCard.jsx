@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom"
 import "./productCard.css"
 
 export default function ProductCard() {
     return (
         <div className="productCard">
             <div className="productImgContainer">
-                <img src="/assets/images/products/shirt.jpg" alt="" />
+                <Link to=".">
+                    <img src="/assets/images/products/shirt.jpg" alt="" />
+                </Link>
                 <ul className="shirtColors">
-                    <li className="red active"></li>
-                    <li className="blue"></li>
+                    <li className="blue active"></li>
                     <li className="green"></li>
                     <li className="yellow"></li>
                     <li className="white"></li>

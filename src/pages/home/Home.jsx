@@ -1,8 +1,8 @@
-import HomeBanner from "../../components/banner/HomeBanner";
+// import HomeBanner from "../../components/banner/HomeBanner";
 import Footer from "../../components/footer/Footer";
-import HomeSuggetsProducts from "../../components/homeSuggestProducts/HomeSuggetsProducts";
+// import HomeSuggetsProducts from "../../components/homeSuggestProducts/HomeSuggetsProducts";
 import Navbar from "../../components/navbar/Navbar";
-import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
+// import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
 import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
 import CategoryPage from "../categoryPage/CategoryPage";
 

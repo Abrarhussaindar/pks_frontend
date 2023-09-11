@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 75px;
+    height: 70px;
     background-color: var(--hover-color);
     // position: sticky;
     // top: 9.3%;
@@ -17,14 +17,18 @@
             text-decoration: none;
             color: white;
 
-        }
-        img{
-            width: 30px;
-            cursor: pointer;
-    
-            &:hover{
-                transform: scale(1.1);
-                transition: transform 0.3s ease-in-out;
+            img{
+                width: 25px;
+                cursor: pointer;
+        
+                &:hover{
+                    transform: scale(1.1);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
+            span{
+                font-size: 14px;
             }
         }
     }

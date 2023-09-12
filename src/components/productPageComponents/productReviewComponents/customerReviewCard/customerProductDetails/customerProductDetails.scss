@@ -1,0 +1,15 @@
+.productDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    .size,.color{
+        border-right: 1px solid var(--hover-color);
+        padding-right: 50px;
+    }
+    .proSpan{
+        margin-left: 5px;
+        color: var(--hover-color);
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,33 @@
+.cardInner{
+    border: 1px solid var(--hover-color);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 48%;
+
+    .ratHr{
+        margin: 10px 0;
+        color: var(--hover-color);
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: 10px;
+        .customer{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-right: 1px solid var(--hover-color);
+            padding-right: 50px;
+            
+        }
+
+    }
+
+
+
+
+
+    
+}

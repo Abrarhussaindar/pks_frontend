@@ -1,0 +1,24 @@
+.rating .customerProductRating {
+  list-style: none;
+}
+.rating .customerProductRating li {
+  display: flex;
+  align-items: center;
+}
+.rating .customerProductRating li img {
+  width: 18px;
+}
+.rating .customerProductRating li span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: var(--hover-color);
+}
+.rating .ratingDate p {
+  text-align: end;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.rating .ratingDate .dateSpan {
+  color: var(--hover-color);
+}/*# sourceMappingURL=customerRating.css.map */

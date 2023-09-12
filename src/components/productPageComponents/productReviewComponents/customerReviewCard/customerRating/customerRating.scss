@@ -1,0 +1,29 @@
+.rating{
+    .customerProductRating{
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            img{
+                width: 18px;
+            }
+            span{
+                font-size: 16px;
+                font-weight: 600;
+                margin-left: 10px;
+                color: var(--hover-color);
+            }
+        }
+    }
+
+    .ratingDate{
+        p{
+            text-align: end;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .dateSpan{
+            color: var(--hover-color);
+        }
+    }
+}

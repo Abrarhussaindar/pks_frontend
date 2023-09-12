@@ -8,6 +8,7 @@ import Buttons from "../productPageComponents/buttons/Buttons"
 import ProductAbout from "../productPageComponents/productAboutContainer/ProductAbout"
 import ProductDescription from "../productPageComponents/productDescripton/ProductDescription"
 import ProductDetails from "../productPageComponents/productDetailsSection/ProductDetails"
+import ProductImage from "../productPageComponents/productImageContainer/ProductImage"
 // import ProductManufacturer from "../productPageComponents/productManufacturer/ProductManufacturer"
 import ProductNameDescription from "../productPageComponents/productNameDescriptionContainer/ProductNameDescription"
 import ProductPrice from "../productPageComponents/productPriceContainer/ProductPrice"
@@ -25,15 +26,7 @@ export default function Product() {
         <div className="productContainer">
             <div className="mainSection">
                 <div className="left">
-                    <div className="otherImageContainer">
-                        <img src="/assets/images/products/shirt.jpg" className="active" alt="" />
-                        <img src="/assets/images/products/shirt.jpg" alt="" />
-                        <img src="/assets/images/products/shirt.jpg" alt="" />
-                        <img src="/assets/images/products/shirt.jpg" alt="" />
-                    </div>
-                    <div className="productImageContainer">
-                        <img src="/assets/images/products/shirt2.jpg" alt="" />
-                    </div>
+                    <ProductImage />
                 </div>
                 <div className="right">
                     <ProductNameDescription />

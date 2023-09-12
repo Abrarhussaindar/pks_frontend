@@ -1,0 +1,23 @@
+.cardInner {
+  border: 1px solid var(--hover-color);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 48%;
+}
+.cardInner .ratHr {
+  margin: 10px 0;
+  color: var(--hover-color);
+}
+.cardInner .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardInner .head .customer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-right: 1px solid var(--hover-color);
+  padding-right: 50px;
+}/*# sourceMappingURL=customerReviewCard.css.map */

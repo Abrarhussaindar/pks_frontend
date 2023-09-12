@@ -21,7 +21,7 @@ export default function ProductCard() {
                 <h4>product name</h4>
                 <p>Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeve</p>
             
-                <ul className="productRating">
+                <ul className="productCardRating">
                     <li>
                         <img src="/assets/images/star.svg" alt="" />
                         <img src="/assets/images/star.svg" alt="" />

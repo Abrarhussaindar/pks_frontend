@@ -1,0 +1,9 @@
+.featureInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+.featureInner .innerLeft p {
+  font-size: 14px;
+}/*# sourceMappingURL=featureReviews.css.map */

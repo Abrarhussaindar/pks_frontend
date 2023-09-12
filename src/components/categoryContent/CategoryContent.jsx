@@ -1,4 +1,4 @@
-import ProductCard from "../productCard/ProductCard"
+import ProductCard from "../productPageComponents/productCard/ProductCard"
 import "./categoryContent.css"
 
 export default function CategoryContent() {

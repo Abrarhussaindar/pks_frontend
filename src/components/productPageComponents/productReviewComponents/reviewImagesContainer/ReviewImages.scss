@@ -1,0 +1,11 @@
+.imgContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 10px 0;
+    gap: 10px;
+    img{
+        width: 100px;
+        border-radius: 10px;
+    }
+}

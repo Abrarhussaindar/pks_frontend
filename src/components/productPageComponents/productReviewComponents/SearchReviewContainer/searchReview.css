@@ -1,0 +1,21 @@
+.searchContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid var(--un-color);
+  padding: 0 10px;
+}
+.searchContainer img {
+  width: 15px;
+}
+.searchContainer input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+}/*# sourceMappingURL=searchReview.css.map */

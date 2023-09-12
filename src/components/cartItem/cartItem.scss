@@ -81,10 +81,10 @@
         }
         .delBtn{
             padding: 10px 40px;
-            border: none;
+            border: 1px solid red;
             border-radius: 5px;
-            background-color: red;
-            color: white;
+            background-color: white;
+            color: black;
             font-size: 16px;
             font-weight: 500;
             cursor: pointer;
@@ -96,10 +96,10 @@
         }
         .saveBtn{
             padding: 10px 40px;
-            border: none;
+            border: 1px solid green;
             border-radius: 5px;
-            background-color: green;
-            color: white;
+            background-color: white;
+            color: black;
             font-size: 16px;
             font-weight: 500;
             cursor: pointer;

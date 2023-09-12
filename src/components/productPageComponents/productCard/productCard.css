@@ -67,14 +67,14 @@
 .productCard .productDetailsContainer p {
   font-size: 16px;
 }
-.productCard .productDetailsContainer .productRating {
+.productCard .productDetailsContainer .productCardRating {
   list-style: none;
   margin-top: 5px;
 }
-.productCard .productDetailsContainer .productRating li img {
+.productCard .productDetailsContainer .productCardRating li img {
   width: 15px;
 }
-.productCard .productDetailsContainer .productRating li span {
+.productCard .productDetailsContainer .productCardRating li span {
   margin-left: 10px;
   color: var(--hover-color);
 }

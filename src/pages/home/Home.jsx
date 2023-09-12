@@ -21,7 +21,7 @@ export default function Home() {
                 <HomeSuggetsProducts />
                 <HomeSuggetsProducts />
                 <HomeSuggetsProducts />
-            </div> */}
+            </div>  */}
             {/* <Cart /> */}
             {/* <CategoryPage /> */}
             <ProductPage />

@@ -398,25 +398,7 @@
         text-align: center;
         padding: 20px 0;
     }
-    .productReviewsSection{
-        .top{}
-        .bottom{
-            display: flex;
-
-            .left{
-                flex: 3;
-            }
-            .right{
-                flex: 9;
-                .top{}
-                .center{}
-                .bottom{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-        }
-    }
+    
     
     .productDetailsSection{
         h4{
@@ -477,6 +459,194 @@
         p{
             font-size: 14px;
             margin: 10px 20px;
+        }
+    }
+
+    .productReviewsSection{
+        .top{
+            margin: 10px 0;
+            .heading{
+                h3{
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+            .searchContainer{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                width: 50%;
+                border-radius: 10px;
+                img{
+                    width: 15px;
+                }
+                border: 1px solid var(--un-color);
+                padding: 0 10px;
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    border: none;
+                    // border: 1px solid var(--un-color);
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+
+            .left{
+                flex: 3;
+
+                .customerReviwes{
+                    .heading{
+                        h4{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .productRating{
+                        list-style: none;
+                        margin-top: 5px;
+                        li{
+                            img{
+                                width: 15px;
+                            }
+                            .numStars{
+                                margin-left: 10px;
+                                font-weight: 500;
+                                font-size: 16px;
+                            }
+
+                        }
+                    }
+                    .numRatings{
+                        font-size: 14px;
+                        color: var(--hover-color);
+                        cursor: pointer;
+                        margin-bottom: 20px;
+                    }
+
+                    .ratingProgressBar{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        margin: 10px 0;
+                        .bar{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 5px;
+                            margin-right: 30px;
+                            .css-eglki6-MuiLinearProgress-root{
+                                height: 20px !important;
+                                width: 50%;
+                                background-color: var(--un-color);
+                                border-radius: 10px;
+                            }
+                            .css-5xe99f-MuiLinearProgress-bar1{
+                                background-color: var(--hover-color);
+                                border-radius: 10px;
+                            }
+                            span{
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: var(--hover-color);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .byFeature{
+                    .heading{
+                        h4{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .container{
+                        padding: 10px 0;
+                        .inner{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            // margin: 10px 0;
+                            margin-right: 30px;
+                            .innerLeft{                               
+                                p{
+                                    font-size: 14px;
+                                    // font-weight: 500;
+                                }
+                            }
+                            .productRating{
+                                list-style: none;
+                                li{
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 5px;
+                                    img{
+                                        width: 15px;
+                                    }
+                                    .numStars{
+                                        font-size: 14px;
+                                        color: var(--hover-color);
+                                        margin-left: 10px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .reviewThisProduct{
+                    .heading{
+                        h4{
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+                    .container{
+                        display: flex;
+                        flex-direction: column;
+                        // align-items: center;
+                        p{
+                            font-size: 14px;
+                            // font-weight: 500;
+                            margin: 10px 0;
+                        }
+                        button{
+                            background-color: var(--un-color);
+                            color: black;
+                            outline: none;
+                            border: none;
+                            padding: 10px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            font-size: 16px;
+                            margin-top: 10px;
+                            &:hover{
+                                background-color: var(--hover-color);
+                                color: white;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+            .right{
+                flex: 9;
+                .top{}
+                .center{}
+                .bottom{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 import ProductColor from "../categoryFilters/productColor/ProductColor"
 import ProductSize from "../categoryFilters/productSize/ProductSize"
 import ProductCard from "../productCard/ProductCard"
+import ProgressBar from "../progressBar/ProgressBar"
 import "./product.css"
 
 export default function Product() {
@@ -22,7 +23,7 @@ export default function Product() {
                     <div className="productDetialContainer">
                         Dennis Lingo Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeves (Also Available in Plus Size)
                     </div>
-                    
+
                     <ul className="productRating">
                         <li>
                             <img src="/assets/images/star.svg" alt="" />
@@ -45,17 +46,17 @@ export default function Product() {
                         </div>
                         <p>M.R.P: <span>&#x20B9;1000</span> </p>
                     </div>
-                    
+
                     <div className="stockContainer">
                         <h4>In Stock</h4>
-                        <p>Quantity: <span className="quantityCount">1</span></p> 
+                        <p>Quantity: <span className="quantityCount">1</span></p>
                         <p>Sold by <span>seller name</span>  and <span>Fulfilled by PKS.</span> </p>
                     </div>
                     <div className="pincodeContainer">
                         <img src="assets/images/pin.png" alt="" />
                         <p>Deliver to <span>name</span> - <span>address</span></p>
                     </div>
-                    
+
                     <div className="btnsContainer">
                         <button className="addToCart">Add to Cart</button>
                         <button className="buyNow">Buy Now</button>
@@ -177,7 +178,7 @@ export default function Product() {
                     </div>
                 </div>
             </div>
-        <hr className="simiHr" />
+            <hr className="simiHr" />
             <div className="similarProductsSection">
                 <div className="heading">
                     <h4>Similar Products</h4>
@@ -192,13 +193,13 @@ export default function Product() {
                     <ProductCard />
                 </div>
             </div>
-            <hr className="simiHr"/>
+            <hr className="simiHr" />
             <div className="productDetailsSection">
                 <h4>Product details</h4>
                 <table>
                     <tbody>
 
-                    
+
                         <tr>
                             <th>Product Dimensions<span className="tspan">:</span></th>
                             <td>25 x 20 x 4.5 cm; 500 Grams</td>
@@ -261,32 +262,32 @@ export default function Product() {
                         <tr>
                             <th>Customer Reviews<span className="tspan">:</span></th>
                             <td>
-                            <ul className="productRating">
-                                <li>
-                                    <span className="numStars">3.8</span>
-                                    <img src="/assets/images/star.svg" alt="" />
-                                    <img src="/assets/images/star.svg" alt="" />
-                                    <img src="/assets/images/star.svg" alt="" />
-                                    <img src="/assets/images/star.svg" alt="" />
-                                    <img src="/assets/images/starOutline.png" alt="" />
-                                    <span className="numRatings">
-                                        - 2,000 Ratings
-                                    </span>
-                                </li>
-                            </ul>
+                                <ul className="productRating">
+                                    <li>
+                                        <span className="numStars">3.8</span>
+                                        <img src="/assets/images/star.svg" alt="" />
+                                        <img src="/assets/images/star.svg" alt="" />
+                                        <img src="/assets/images/star.svg" alt="" />
+                                        <img src="/assets/images/star.svg" alt="" />
+                                        <img src="/assets/images/starOutline.png" alt="" />
+                                        <span className="numRatings">
+                                            - 2,000 Ratings
+                                        </span>
+                                    </li>
+                                </ul>
                             </td>
                         </tr>
-                        </tbody>
+                    </tbody>
                 </table>
             </div>
-            <hr className="simiHr"/>
+            <hr className="simiHr" />
             <div className="productDescriptionSection">
                 <h4>Product description</h4>
                 <p>This Casual Solid shirt has a Slim fit, Spread collar, full button Placket, Full Sleeves, and a curved hemline Size and Fit Slim Fit The Model (height 6 foot and shoulders 18 inches is wearing size 40/M Please check the size chart for more details before ordering Material & Care 100% Premium Cotton (Machine Wash Regular) Style Tip Enhance your look by wearing this Casual Stylish Men's shirt, Team it with a pair of Chinos or Tapered Denim and Sneakers for a fun Smart Casual look About the Brand DENNIS LINGO Finding Basic Menswear for daily use can be hard among todays Fast fashion world, where trends change daily. That’s why we started Dennis Lingo, to create a one stop shop for premium essential clothing for everyday use at lowest prices</p>
             </div>
-            <hr className="simiHr"/>
+            <hr className="simiHr" />
             <div className="fromManufaturerSection">pending</div>
-            <hr className="simiHr"/>
+            <hr className="simiHr" />
             <div className="productReviewsSection">
                 <div className="top">
                     <div className="heading">
@@ -297,62 +298,121 @@ export default function Product() {
                         <input type="text" placeholder="Search in reviews, Q&A..." />
                     </div>
                 </div>
-                <hr />
+                <hr className="simiHr" />
                 <div className="bottom">
                     <div className="left">
-                        <div className="customerRevies">
+                        <div className="customerReviwes">
                             <div className="heading">
                                 <h4>Customer reviews</h4>
                             </div>
-                            stars 3.8 out of 5 <span>(3000 ratings)</span>
+
+                            <ul className="productRating">
+                                <li>
+
+                                    <img src="/assets/images/star.svg" alt="" />
+                                    <img src="/assets/images/star.svg" alt="" />
+                                    <img src="/assets/images/star.svg" alt="" />
+                                    <img src="/assets/images/star.svg" alt="" />
+                                    <img src="/assets/images/starOutline.png" alt="" />
+                                    <span className="numStars">
+                                        3.8 out of 5
+                                    </span>
+                                </li>
+                            </ul>
+                            <span className="numRatings">30,000 ratings</span>
                             <div className="ratingProgressBar">
-                                <div className="bar"><span>1 Star </span>progrees bar <span> 20% </span></div>
-                                <div className="bar"><span>1 Star </span>progrees bar <span> 20% </span></div>
-                                <div className="bar"><span>1 Star </span>progrees bar <span> 20% </span></div>
-                                <div className="bar"><span>1 Star </span>progrees bar <span> 20% </span></div>
-                                <div className="bar"><span>1 Star </span>progrees bar <span> 20% </span></div>
+                                <div className="bar">
+                                    <span>5 Star </span>
+                                    <ProgressBar progress={60} />
+                                    <span> 60% </span>
+                                </div>
+                                <div className="bar"><span>4 Star </span><ProgressBar progress={40} /> <span> 40% </span></div>
+                                <div className="bar"><span>3 Star </span><ProgressBar progress={30} /> <span> 30% </span></div>
+                                <div className="bar"><span>2 Star </span><ProgressBar progress={20} /> <span> 20% </span></div>
+                                <div className="bar"><span>1 Star </span><ProgressBar progress={10} /> <span> 10% </span></div>
                             </div>
                         </div>
-                        <hr />
+                        <hr className="simiHr" />
                         <div className="byFeature">
                             <div className="heading">
                                 <h4>By feature</h4>
                             </div>
                             <div className="container">
                                 <div className="inner">
-                                    <div className="left">
+                                    <div className="innerLeft">
                                         <p>Comfort</p>
                                     </div>
-                                    <div className="right">
-                                        stars 3.5
-                                    </div>
+                                    <ul className="productRating">
+                                        <li>
+
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/starOutline.png" alt="" />
+                                            <span className="numStars">
+                                                3.8
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className="inner">
-                                    <div className="left">
+                                    <div className="innerLeft">
                                         <p>Value for money</p>
                                     </div>
-                                    <div className="right">
-                                        stars 3.5
-                                    </div>
+                                    <ul className="productRating">
+                                        <li>
+
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/starOutline.png" alt="" />
+                                            <span className="numStars">
+                                                3.8
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className="inner">
-                                    <div className="left">
+                                    <div className="innerLeft">
                                         <p>Quality of material</p>
                                     </div>
-                                    <div className="right">
-                                        stars 3.5
-                                    </div>
+                                    <ul className="productRating">
+                                        <li>
+
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/starOutline.png" alt="" />
+                                            <span className="numStars">
+                                                3.8
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div className="inner">
-                                    <div className="left">
+                                    <div className="innerLeft">
                                         <p>Sheerness</p>
                                     </div>
-                                    <div className="right">
-                                        stars 3.5
-                                    </div>
+                                    <ul className="productRating">
+                                        <li>
+
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/star.svg" alt="" />
+                                            <img src="/assets/images/starOutline.png" alt="" />
+                                            <span className="numStars">
+                                                3.8
+                                            </span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+                        <hr className="simiHr"/>
                         <div className="reviewThisProduct">
                             <div className="heading">
                                 <h4>Review this product</h4>
@@ -362,6 +422,7 @@ export default function Product() {
                                 <button>Write a product review</button>
                             </div>
                         </div>
+                        <hr className="simiHr"/>
                     </div>
                     <div className="right">
                         <div className="top">
@@ -408,7 +469,7 @@ export default function Product() {
                             </div>
                             <div className="container">
                                 <div className="head">
-                                    <img src="assets/images/me.jpg "width="20px" alt="" />
+                                    <img src="assets/images/me.jpg " width="20px" alt="" />
                                     <span>Abrar Hussain</span>
                                 </div>
                                 <div className="rating">
@@ -422,10 +483,10 @@ export default function Product() {
                                 </div>
                                 <div className="productDetails">
                                     <div className="size">
-                                        Size: L 
+                                        Size: L
                                     </div>
                                     <div className="color">
-                                        Colour: Black 
+                                        Colour: Black
                                     </div>
                                     <div className="verified">
                                         Verified Purchase

@@ -553,7 +553,161 @@
 .productContainer .productReviewsSection .bottom .right {
   flex: 9;
 }
-.productContainer .productReviewsSection .bottom .right .bottom {
+.productContainer .productReviewsSection .bottom .right .hrBtm {
+  margin: 20px 0;
+}
+.productContainer .productReviewsSection .bottom .right .rigthTop .heading h4, .productContainer .productReviewsSection .bottom .right .rightCenter .heading h4, .productContainer .productReviewsSection .bottom .right .rightBottom .heading h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.productContainer .productReviewsSection .bottom .right .rigHr {
+  margin: 15px 0;
+}
+.productContainer .productReviewsSection .bottom .right .rigthTop .imgContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin: 10px 0;
+  gap: 10px;
+}
+.productContainer .productReviewsSection .bottom .right .rigthTop .imgContainer img {
+  width: 100px;
+  border-radius: 10px;
+}
+.productContainer .productReviewsSection .bottom .right .rightCenter .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 45%;
+  margin: 10px 0;
+}
+.productContainer .productReviewsSection .bottom .right .rightCenter .container .inner {
+  padding: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 14px;
+  background-color: var(--un-color);
+  border-bottom: 1px solid var(--hover-color);
+  cursor: pointer;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom {
   display: flex;
   flex-direction: column;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner {
+  border: 1px solid var(--hover-color);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  width: 48%;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .ratHr {
+  margin: 10px 0;
+  color: var(--hover-color);
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .customer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-right: 1px solid var(--hover-color);
+  padding-right: 50px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .customer img {
+  width: 40px;
+  border-radius: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .customer .nameSpan {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .rating .productRating {
+  list-style: none;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .rating .productRating li {
+  display: flex;
+  align-items: center;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .rating .productRating li img {
+  width: 18px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .rating .productRating li span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: var(--hover-color);
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .rating .ratingDate p {
+  text-align: end;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .head .rating .ratingDate .dateSpan {
+  color: var(--hover-color);
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .productDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .productDetails .size, .productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .productDetails .color {
+  border-right: 1px solid var(--hover-color);
+  padding-right: 50px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .productDetails .proSpan {
+  margin-left: 5px;
+  color: var(--hover-color);
+  font-weight: 500;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .reviewDescription p {
+  font-size: 14px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .btns {
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .btns .helpBtn {
+  background-color: var(--un-color);
+  color: black;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .btns .helpBtn:hover {
+  background-color: var(--hover-color);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .btns .repBtn {
+  background-color: white;
+  color: black;
+  outline: none;
+  border: 1px solid var(--un-color);
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.productContainer .productReviewsSection .bottom .right .rightBottom .container .inner .btns .repBtn:hover {
+  background-color: var(--hover-color);
+  color: white;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=product.css.map */

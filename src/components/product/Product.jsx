@@ -412,7 +412,7 @@ export default function Product() {
                                 </div>
                             </div>
                         </div>
-                        <hr className="revHr"/>
+                        <hr className="revHr" />
                         <div className="reviewThisProduct">
                             <div className="heading">
                                 <h4>Review this product</h4>
@@ -422,10 +422,10 @@ export default function Product() {
                                 <button>Write a product review</button>
                             </div>
                         </div>
-                        <hr className="revHr"/>
+                        <hr className="revHr" />
                     </div>
                     <div className="right">
-                        <div className="top">
+                        <div className="rigthTop">
                             <div className="heading">
                                 <h4>
                                     Reviews with images
@@ -438,8 +438,8 @@ export default function Product() {
                                 <img src="assets/images/me.jpg" width="20px" alt="" />
                             </div>
                         </div>
-                        <hr />
-                        <div className="center">
+                        <hr className="rigHr" />
+                        <div className="rightCenter">
                             <div className="heading">
                                 <h4>
                                     Read reviews that mention
@@ -458,49 +458,200 @@ export default function Product() {
                                 <div className="inner">
                                     <p>pure cotton</p>
                                 </div>
+                                <div className="inner">
+                                    <p>price range</p>
+                                </div>
+                                <div className="inner">
+                                    <p>pure cotton</p>
+                                </div>
                             </div>
                         </div>
-                        <hr />
-                        <div className="bottom">
+                        <hr className="rigHr" />
+                        <div className="rightBottom">
                             <div className="heading">
                                 <h4>
                                     Top reviews from India
                                 </h4>
                             </div>
                             <div className="container">
-                                <div className="head">
-                                    <img src="assets/images/me.jpg " width="20px" alt="" />
-                                    <span>Abrar Hussain</span>
-                                </div>
-                                <div className="rating">
-                                    <div className="stars">
 
-                                        4 stars - worth buying
+                                <div className="inner">
+                                    <div className="head">
+                                        <div className="customer">
+
+                                            <img src="assets/images/me.jpg " width="20px" alt="" />
+                                            <span className="nameSpan">Abrar Hussain</span>
+                                        </div>
+                                        <div className="rating">
+                                            <ul className="productRating">
+                                                <li>
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/starOutline.png" alt="" />
+                                                    <span className="numStars"> - Worth Buying</span>
+                                                </li>
+                                            </ul>
+                                            <div className="ratingDate">
+                                                <p>Reviewed in India on <span className="dateSpan">6 September 2023</span> </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="ratingDate">
-                                        <p>Reviewed in India on 6 September 2023</p>
+                                    <hr className="ratHr" />
+                                    <div className="productDetails">
+                                        <div className="size">
+                                            Size: <span className="proSpan">L</span>
+                                        </div>
+                                        <div className="color">
+                                            Colour: <span className="proSpan">Black</span>
+                                        </div>
+                                        <div className="verified">
+                                            <span className="proSpan">Verified Purchase</span>
+                                        </div>
+                                    </div>
+                                    <div className="reviewDescription">
+                                        <p>Overall good product but the thickness of the cloth is questionable....It doesn't last longer but yup for this price range Not bad...It will Last For 4-5 months definitely...</p>
+                                    </div>
+                                    <div className="btns">
+                                        <button className="helpBtn">Helpful</button>
+                                        <button className="repBtn">Report</button>
                                     </div>
                                 </div>
-                                <div className="productDetails">
-                                    <div className="size">
-                                        Size: L
+                                <div className="inner">
+                                    <div className="head">
+                                        <div className="customer">
+
+                                            <img src="assets/images/me.jpg " width="20px" alt="" />
+                                            <span className="nameSpan">Abrar Hussain</span>
+                                        </div>
+                                        <div className="rating">
+                                            <ul className="productRating">
+                                                <li>
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/starOutline.png" alt="" />
+                                                    <span className="numStars"> - Worth Buying</span>
+                                                </li>
+                                            </ul>
+                                            <div className="ratingDate">
+                                                <p>Reviewed in India on <span className="dateSpan">6 September 2023</span> </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="color">
-                                        Colour: Black
+                                    <hr className="ratHr" />
+                                    <div className="productDetails">
+                                        <div className="size">
+                                            Size: <span className="proSpan">L</span>
+                                        </div>
+                                        <div className="color">
+                                            Colour: <span className="proSpan">Black</span>
+                                        </div>
+                                        <div className="verified">
+                                            <span className="proSpan">Verified Purchase</span>
+                                        </div>
                                     </div>
-                                    <div className="verified">
-                                        Verified Purchase
+                                    <div className="reviewDescription">
+                                        <p>Overall good product but the thickness of the cloth is questionable....It doesn't last longer but yup for this price range Not bad...It will Last For 4-5 months definitely...</p>
+                                    </div>
+                                    <div className="btns">
+                                        <button className="helpBtn">Helpful</button>
+                                        <button className="repBtn">Report</button>
                                     </div>
                                 </div>
-                                <div className="reviewDescription">
-                                    <p>Overall good product but the thickness of the cloth is questionable....It doesn't last longer but yup for this price range Not bad...It will Last For 4-5 months definitely...</p>
+                                <div className="inner">
+                                    <div className="head">
+                                        <div className="customer">
+
+                                            <img src="assets/images/me.jpg " width="20px" alt="" />
+                                            <span className="nameSpan">Abrar Hussain</span>
+                                        </div>
+                                        <div className="rating">
+                                            <ul className="productRating">
+                                                <li>
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/starOutline.png" alt="" />
+                                                    <span className="numStars"> - Worth Buying</span>
+                                                </li>
+                                            </ul>
+                                            <div className="ratingDate">
+                                                <p>Reviewed in India on <span className="dateSpan">6 September 2023</span> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr className="ratHr" />
+                                    <div className="productDetails">
+                                        <div className="size">
+                                            Size: <span className="proSpan">L</span>
+                                        </div>
+                                        <div className="color">
+                                            Colour: <span className="proSpan">Black</span>
+                                        </div>
+                                        <div className="verified">
+                                            <span className="proSpan">Verified Purchase</span>
+                                        </div>
+                                    </div>
+                                    <div className="reviewDescription">
+                                        <p>Overall good product but the thickness of the cloth is questionable....It doesn't last longer but yup for this price range Not bad...It will Last For 4-5 months definitely...</p>
+                                    </div>
+                                    <div className="btns">
+                                        <button className="helpBtn">Helpful</button>
+                                        <button className="repBtn">Report</button>
+                                    </div>
                                 </div>
-                                <div className="btn">
-                                    <button>Helpful</button>
-                                    <button>Report</button>
+                                <div className="inner">
+                                    <div className="head">
+                                        <div className="customer">
+
+                                            <img src="assets/images/me.jpg " width="20px" alt="" />
+                                            <span className="nameSpan">Abrar Hussain</span>
+                                        </div>
+                                        <div className="rating">
+                                            <ul className="productRating">
+                                                <li>
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/star.svg" alt="" />
+                                                    <img src="/assets/images/starOutline.png" alt="" />
+                                                    <span className="numStars"> - Worth Buying</span>
+                                                </li>
+                                            </ul>
+                                            <div className="ratingDate">
+                                                <p>Reviewed in India on <span className="dateSpan">6 September 2023</span> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr className="ratHr" />
+                                    <div className="productDetails">
+                                        <div className="size">
+                                            Size: <span className="proSpan">L</span>
+                                        </div>
+                                        <div className="color">
+                                            Colour: <span className="proSpan">Black</span>
+                                        </div>
+                                        <div className="verified">
+                                            <span className="proSpan">Verified Purchase</span>
+                                        </div>
+                                    </div>
+                                    <div className="reviewDescription">
+                                        <p>Overall good product but the thickness of the cloth is questionable....It doesn't last longer but yup for this price range Not bad...It will Last For 4-5 months definitely...</p>
+                                    </div>
+                                    <div className="btns">
+                                        <button className="helpBtn">Helpful</button>
+                                        <button className="repBtn">Report</button>
+                                    </div>
                                 </div>
+
                             </div>
+
                         </div>
+                        <hr className="hrBtm"/>
                     </div>
                 </div>
             </div>

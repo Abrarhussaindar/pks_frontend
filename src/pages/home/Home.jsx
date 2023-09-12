@@ -1,17 +1,19 @@
-// import Footer from "../../components/footer/Footer";
-// import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
+import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
 // import HomeBanner from "../../components/banner/HomeBanner";
 // import HomeSuggetsProducts from "../../components/homeSuggestProducts/HomeSuggetsProducts";
 // import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
-// import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
 // import CategoryPage from "../categoryPage/CategoryPage";
-import ProductPage from "../productPage/ProductPage";
+// import ProductPage from "../productPage/ProductPage";
+
+import Cart from "../cart/Cart";
 
 export default function Home() {
     return (
         <div className="mainContainer">
-            {/* <Navbar /> */}
-            {/* <SecondaryNavabar /> */}
+            <Navbar />
+            <SecondaryNavabar />
             
             {/* <div className="mainContent">
                 <HomeBanner />
@@ -20,10 +22,10 @@ export default function Home() {
                 <HomeSuggetsProducts />
                 <HomeSuggetsProducts />
             </div> */}
-            
+            <Cart />
             {/* <CategoryPage /> */}
-            <ProductPage />
-            {/* <Footer /> */}
+            {/* <ProductPage /> */}
+            <Footer />
         </div>
     )
 }

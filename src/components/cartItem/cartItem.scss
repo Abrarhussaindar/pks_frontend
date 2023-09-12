@@ -1,0 +1,113 @@
+.indiProductContainer{
+    display: flex;
+    // gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    .cartLeft{
+        display: flex;
+        width: 60%;
+        gap: 20px;
+        img{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .cartProductDetailContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            
+            p{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 500;
+                color: var(--hover-color);
+            }
+            .quantity{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                h5{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: var(--hover-color);
+                    
+                    span{
+                        font-size: 20px;
+                        margin-left: 10px;
+                        font-weight: 600;
+                        color: var(--hover-color);
+
+                    }
+                    
+                }
+
+                .upDown{
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        cursor: pointer;
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                
+            }
+        }
+    }
+    .cartRight{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .buyBtn{
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--hover-color);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                color: white;
+                background-color: var(--main-color);
+            }
+        }
+        .delBtn{
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                color: white;
+                background-color: rgb(232, 4, 4);
+            }
+        }
+        .saveBtn{
+            padding: 10px 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                color: white;
+                background-color: rgb(10, 96, 10);
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.indiProductContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.indiProductContainer .cartLeft {
+  display: flex;
+  width: 60%;
+  gap: 20px;
+}
+.indiProductContainer .cartLeft img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 span {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer .quantity .upDown {
+  display: flex;
+  flex-direction: column;
+}
+.indiProductContainer .cartLeft .cartProductDetailContainer .quantity .upDown img {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+.indiProductContainer .cartRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.indiProductContainer .cartRight .buyBtn {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--hover-color);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.indiProductContainer .cartRight .buyBtn:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.indiProductContainer .cartRight .delBtn {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.indiProductContainer .cartRight .delBtn:hover {
+  color: white;
+  background-color: rgb(232, 4, 4);
+}
+.indiProductContainer .cartRight .saveBtn {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.indiProductContainer .cartRight .saveBtn:hover {
+  color: white;
+  background-color: rgb(10, 96, 10);
+}/*# sourceMappingURL=cartItem.css.map */

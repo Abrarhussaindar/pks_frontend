@@ -1,0 +1,17 @@
+.proDet{
+    display: flex;
+    flex-direction: column;
+    // gap: 10px;
+
+    h5{
+        font-size: 18px;
+        font-weight: 400;
+
+        .itemSpan,.priceSpan{
+            font-size: 20px;
+            margin-left: 10px;
+            font-weight: 500;
+            color: var(--hover-color);
+        }
+    }
+}

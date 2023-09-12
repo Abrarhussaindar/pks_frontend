@@ -1,0 +1,14 @@
+.proDet {
+  display: flex;
+  flex-direction: column;
+}
+.proDet h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.proDet h5 .itemSpan, .proDet h5 .priceSpan {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: var(--hover-color);
+}/*# sourceMappingURL=cartSubTotal.css.map */

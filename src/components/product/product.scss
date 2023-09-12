@@ -457,7 +457,7 @@
             font-weight: 500;
         }
         p{
-            font-size: 14px;
+            font-size: 13px;
             margin: 10px 20px;
         }
     }
@@ -537,17 +537,18 @@
                         margin: 10px 0;
                         .bar{
                             display: flex;
-                            align-items: center;
                             justify-content: space-between;
+                            align-items: center;
                             gap: 5px;
+                            grid-template-columns: repeat(3, 1fr);
                             margin-right: 30px;
-                            .css-eglki6-MuiLinearProgress-root{
+                            .css-7p5u54{
                                 height: 20px !important;
-                                width: 50%;
+                                width: 40%;
                                 background-color: var(--un-color);
                                 border-radius: 10px;
                             }
-                            .css-5xe99f-MuiLinearProgress-bar1{
+                            .css-t752vm{
                                 background-color: var(--hover-color);
                                 border-radius: 10px;
                             }

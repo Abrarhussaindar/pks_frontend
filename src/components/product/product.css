@@ -396,7 +396,7 @@
   font-weight: 500;
 }
 .productContainer .productDescriptionSection p {
-  font-size: 14px;
+  font-size: 13px;
   margin: 10px 20px;
 }
 .productContainer .productReviewsSection .top {
@@ -463,18 +463,19 @@
 }
 .productContainer .productReviewsSection .bottom .left .customerReviwes .ratingProgressBar .bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
   margin-right: 30px;
 }
-.productContainer .productReviewsSection .bottom .left .customerReviwes .ratingProgressBar .bar .css-eglki6-MuiLinearProgress-root {
+.productContainer .productReviewsSection .bottom .left .customerReviwes .ratingProgressBar .bar .css-7p5u54 {
   height: 20px !important;
-  width: 50%;
+  width: 40%;
   background-color: var(--un-color);
   border-radius: 10px;
 }
-.productContainer .productReviewsSection .bottom .left .customerReviwes .ratingProgressBar .bar .css-5xe99f-MuiLinearProgress-bar1 {
+.productContainer .productReviewsSection .bottom .left .customerReviwes .ratingProgressBar .bar .css-t752vm {
   background-color: var(--hover-color);
   border-radius: 10px;
 }

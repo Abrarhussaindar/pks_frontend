@@ -332,7 +332,7 @@ export default function Product() {
                                 <div className="bar"><span>1 Star </span><ProgressBar progress={10} /> <span> 10% </span></div>
                             </div>
                         </div>
-                        <hr className="simiHr" />
+                        <hr className="revHr" />
                         <div className="byFeature">
                             <div className="heading">
                                 <h4>By feature</h4>
@@ -412,7 +412,7 @@ export default function Product() {
                                 </div>
                             </div>
                         </div>
-                        <hr className="simiHr"/>
+                        <hr className="revHr"/>
                         <div className="reviewThisProduct">
                             <div className="heading">
                                 <h4>Review this product</h4>
@@ -422,7 +422,7 @@ export default function Product() {
                                 <button>Write a product review</button>
                             </div>
                         </div>
-                        <hr className="simiHr"/>
+                        <hr className="revHr"/>
                     </div>
                     <div className="right">
                         <div className="top">

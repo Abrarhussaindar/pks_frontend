@@ -222,6 +222,119 @@
   margin: 15px 0;
   width: 40%;
 }
+.productContainer .mainSection .right .aboutItemContainer .productTable {
+  margin: 15px 0;
+  width: 100%;
+}
+.productContainer .mainSection .right .aboutItemContainer .productTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.productContainer .mainSection .right .aboutItemContainer .productTable table th {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--un-color);
+}
+.productContainer .mainSection .right .aboutItemContainer .productTable table td {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--un-color);
+}
+.productContainer .mainSection .right .aboutItemContainer .productAbout {
+  margin-top: 15px;
+}
+.productContainer .mainSection .right .aboutItemContainer .productAbout .heading h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.productContainer .mainSection .right .aboutItemContainer .productAbout .description ul {
+  margin-left: 20px;
+}
+.productContainer .mainSection .right .aboutItemContainer .productAbout .description ul li {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgb(106, 101, 101);
+}
+.productContainer .brandSection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.productContainer .brandSection .heading {
+  display: flex;
+  align-items: center;
+}
+.productContainer .brandSection .heading img {
+  width: 90px;
+}
+.productContainer .brandSection .heading span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.productContainer .brandSection .container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.productContainer .brandSection .container .left {
+  margin-top: 10px;
+  padding-right: 50px;
+  border-right: 2px solid var(--un-color);
+}
+.productContainer .brandSection .container .left ul {
+  list-style: none;
+}
+.productContainer .brandSection .container .left ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.productContainer .brandSection .container .left ul li span {
+  margin-right: 10px;
+}
+.productContainer .brandSection .container .left ul li span img {
+  width: 18px;
+}
+.productContainer .brandSection .container .right {
+  margin-top: 10px;
+}
+.productContainer .brandSection .container .right h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.productContainer .brandSection .container .right .rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+.productContainer .brandSection .container .right .rate .inner {
+  display: flex;
+  align-items: center;
+  background-color: var(--un-color);
+  padding: 3px 10px;
+  gap: 5px;
+}
+.productContainer .brandSection .container .right .rate .inner img {
+  width: 15px;
+}
+.productContainer .brandSection .container .right .rate .inner span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.productContainer .simiHr {
+  margin: 15px 0;
+}
 .productContainer .similarProductsSection .heading h4 {
   font-size: 18px;
   font-weight: 600;
@@ -229,6 +342,73 @@
 }
 .productContainer .similarProductsSection .container {
   display: flex;
-  overflow-x: scroll;
   gap: 15px;
+}
+.productContainer .fromManufaturerSection {
+  text-align: center;
+  padding: 20px 0;
+}
+.productContainer .productReviewsSection .bottom {
+  display: flex;
+}
+.productContainer .productReviewsSection .bottom .left {
+  flex: 3;
+}
+.productContainer .productReviewsSection .bottom .right {
+  flex: 9;
+}
+.productContainer .productReviewsSection .bottom .right .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.productContainer .productDetailsSection h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.productContainer .productDetailsSection table tr {
+  display: flex;
+  align-items: center;
+}
+.productContainer .productDetailsSection table tr th {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid var(--un-color);
+}
+.productContainer .productDetailsSection table tr th .tspan {
+  margin-left: 10px;
+}
+.productContainer .productDetailsSection table tr td {
+  font-size: 14px;
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid var(--un-color);
+}
+.productContainer .productDetailsSection table tr td ul {
+  list-style: none;
+}
+.productContainer .productDetailsSection table tr td ul li {
+  display: flex;
+  align-items: center;
+}
+.productContainer .productDetailsSection table tr td ul li .numStars {
+  margin-right: 10px;
+  font-weight: 500;
+}
+.productContainer .productDetailsSection table tr td ul li img {
+  width: 15px;
+}
+.productContainer .productDetailsSection table tr td ul li .numRatings {
+  margin-left: 10px;
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.productContainer .productDescriptionSection h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.productContainer .productDescriptionSection p {
+  font-size: 14px;
+  margin: 10px 20px;
 }/*# sourceMappingURL=product.css.map */

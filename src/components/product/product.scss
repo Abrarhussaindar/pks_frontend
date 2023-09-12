@@ -247,12 +247,137 @@
                     margin: 15px 0;
                     width: 40%;
                 }
+                .productTable{
+                    margin: 15px 0;
+                    width: 100%;
+                    
+                    table{
+                        width: 100%;
+                        border-collapse: collapse;
+                        th{
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 10px;
+                            text-align: left;
+                            border-bottom: 1px solid var(--un-color);
+                        }
+                        td{
+                            font-size: 14px;
+                            font-weight: 500;
+                            padding: 10px;
+                            text-align: left;
+                            border-bottom: 1px solid var(--un-color);
+                        }
+                    }
+                }
+                .productAbout{
+                    margin-top: 15px;
+
+                    .heading{
+                        h4{
+
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .description{
+                        ul{
+                            margin-left: 20px;
+                            li{
+                                font-size: 14px;
+                                font-weight: 500;
+                                margin-bottom: 5px;
+                                color: rgb(106, 101, 101);
+                            }
+                        }
+                    }
+                }
             }
 
             
         }
     }
 
+    .brandSection{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        .heading{
+            display: flex;
+            align-items: center;
+            img{
+                width: 90px;
+            }
+            span{
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+        }
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            gap: 50px;
+
+            .left{
+                margin-top: 10px;
+                padding-right: 50px;
+                border-right: 2px solid var(--un-color);
+                ul{
+                    list-style: none;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        span{
+
+                            img{
+                                width: 18px;
+                            }
+                            margin-right: 10px;
+                        }
+                            font-size: 14px;
+                            font-weight: 500;
+                        
+                    }
+                }
+            }
+
+            .right{
+                margin-top: 10px;
+                h4{
+                    font-size: 14px;
+                    font-weight: 600;
+                    // margin-bottom: 10px;
+                }
+                .rate{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 10px;
+                    gap: 20px;
+                    .inner{
+                        display: flex;
+                        align-items: center;
+                        background-color: var(--un-color);
+                        padding: 3px 10px;
+                        gap: 5px;
+                        img{
+                            width: 15px;
+                        }
+                        span{
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .simiHr{
+        margin: 15px 0;
+    }
     .similarProductsSection{
         .heading{
             h4{
@@ -263,9 +388,95 @@
         }
         .container{
             display: flex;
-            overflow-x: scroll;
+            // overflow-x: scroll;
             gap: 15px;
             // width: 80%;
+        }
+    }
+
+    .fromManufaturerSection{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .productReviewsSection{
+        .top{}
+        .bottom{
+            display: flex;
+
+            .left{
+                flex: 3;
+            }
+            .right{
+                flex: 9;
+                .top{}
+                .center{}
+                .bottom{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    
+    .productDetailsSection{
+        h4{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        table{
+            tr{
+                display: flex;
+                align-items: center;
+                th{
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 5px;
+                    text-align: left;
+                    border-bottom: 1px solid var(--un-color);
+                    
+                    .tspan{
+                        margin-left: 10px;
+                    }
+                }
+                td{
+                    font-size: 14px;
+                    // font-weight:400;
+                    padding: 5px;
+                    text-align: left;
+                    border-bottom: 1px solid var(--un-color);
+                
+                    ul{
+                        list-style: none;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            .numStars{
+                                margin-right: 10px;
+                                font-weight: 500;
+                            }
+                            img{
+                                width: 15px;
+                            }
+                            .numRatings{
+                                margin-left: 10px;
+                                font-weight: 500;
+                                color: var(--hover-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .productDescriptionSection{
+        h4{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 14px;
+            margin: 10px 20px;
         }
     }
 }

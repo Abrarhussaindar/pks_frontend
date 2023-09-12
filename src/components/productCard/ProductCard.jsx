@@ -3,11 +3,13 @@ import "./productCard.css"
 
 export default function ProductCard() {
     return (
+
         <div className="productCard">
             <div className="productImgContainer">
                 <Link to=".">
                     <img src="/assets/images/products/shirt.jpg" alt="" />
                 </Link>
+
                 <ul className="shirtColors">
                     <li className="blue active"></li>
                     <li className="green"></li>

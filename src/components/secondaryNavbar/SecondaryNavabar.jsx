@@ -2,26 +2,27 @@ import { Link } from "react-router-dom";
 import "./secondaryNavbar.css";
 
 export default function SecondaryNavabar() {
+
     return (
         <div className="secondaryNavbarContainer">
             <div className="container">
 
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/man.png" alt="" />
-                    <span>Men's</span>
+                    <span className="cate">Men's</span>
                 </Link>
             </div>
             <div className="container">
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/woman.png" alt="" />
-                    <span>Women's</span>
+                    <span className="cate">Women's</span>
                 </Link>
 
             </div>
             <div className="container">
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/kids.png" alt="" />
-                    <span>Kids</span>
+                    <span className="cate">Kids</span>
                 </Link>
 
             </div>
@@ -29,20 +30,20 @@ export default function SecondaryNavabar() {
 
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/phone.png" alt="" />
-                    <span>Mobiles</span>
+                    <span className="cate">Mobiles</span>
                 </Link>
             </div>
             <div className="container">
 
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/electronics.png" alt="" />
-                    <span>Electronics</span>
+                    <span className="cate">Electronics</span>
                 </Link>
             </div>
             <div className="container">
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/sports.png" alt="" />
-                    <span>Sports</span>
+                    <span className="cate">Sports</span>
                 </Link>
 
             </div>
@@ -50,21 +51,21 @@ export default function SecondaryNavabar() {
 
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/toys.png" alt="" />
-                    <span>Toys</span>
+                    <span className="cate">Toys</span>
                 </Link>
             </div>
             <div className="container">
 
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/grocery.png" alt="" />
-                    <span>Grocery</span>
+                    <span className="cate">Grocery</span>
                 </Link>
             </div>
             <div className="container">
 
                 <Link to=".">
                     <img src="/assets/images/cate_imgs/beauty.png" alt="" />
-                    <span>Beauty</span>
+                    <span className="cate">Beauty</span>
                 </Link>
             </div>
         </div>

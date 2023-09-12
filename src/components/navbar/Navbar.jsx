@@ -13,7 +13,7 @@ export default function Navbar() {
             </div>
             <div className="center">
                     <span className="searchBarIcon">
-                        <img className='searchbarIcon' src="./assets/images/search.png" alt="" />
+                        <img className='searchbarIcon' src="/assets/images/search.png" alt="" />
                     </span>
                     <input type="text" className="navSearchInput" placeholder="Search here for any product..." />
             </div>
@@ -27,7 +27,7 @@ export default function Navbar() {
                     </div>
                     <Link to=".">
                     {/* <img src={user.profilePicture ? PF + user.profilePicture : PF+"noAvatar.png"} alt="img"/> */}
-                        <img src="./assets/images/user.png"  alt="user" />
+                        <img src="/assets/images/user.png"  alt="user" />
                     </Link>
                 </div>
             </div>

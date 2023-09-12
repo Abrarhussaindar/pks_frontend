@@ -1,0 +1,20 @@
+.serviceContainer ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.serviceContainer ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 15px;
+}
+.serviceContainer ul li img {
+  width: 30px;
+}
+.serviceContainer ul li span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--hover-color);
+}/*# sourceMappingURL=services.css.map */

@@ -5,9 +5,9 @@ import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar"
 // import HomeSuggetsProducts from "../../components/homeSuggestProducts/HomeSuggetsProducts";
 // import RecentProductsContainer from "../../components/recentProductsContainer/RecentProductsContainer";
 // import CategoryPage from "../categoryPage/CategoryPage";
-// import ProductPage from "../productPage/ProductPage";
+import ProductPage from "../productPage/ProductPage";
 
-import Cart from "../cart/Cart";
+// import Cart from "../cart/Cart";
 
 export default function Home() {
     return (
@@ -22,9 +22,9 @@ export default function Home() {
                 <HomeSuggetsProducts />
                 <HomeSuggetsProducts />
             </div> */}
-            <Cart />
+            {/* <Cart /> */}
             {/* <CategoryPage /> */}
-            {/* <ProductPage /> */}
+            <ProductPage />
             <Footer />
         </div>
     )

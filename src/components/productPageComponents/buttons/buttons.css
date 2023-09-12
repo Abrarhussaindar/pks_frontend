@@ -1,0 +1,40 @@
+.btnsContainer {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.btnsContainer .addToCart {
+  background-color: var(--hover-color);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 20%;
+}
+.btnsContainer .addToCart:hover {
+  background-color: var(--main-color);
+  transition: all 0.3s ease-in-out;
+}
+.btnsContainer .buyNow {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 20%;
+}
+.btnsContainer .buyNow:hover {
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=buttons.css.map */

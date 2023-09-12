@@ -1,0 +1,28 @@
+.priceContainer {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.priceContainer .prices {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  position: relative;
+}
+.priceContainer .prices span {
+  position: absolute;
+  font-size: 14px;
+  left: -15%;
+}
+.priceContainer p {
+  font-size: 14px;
+  color: var(--hover-color);
+}
+.priceContainer p span {
+  text-decoration: line-through;
+}
+.priceContainer .discounts {
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+}/*# sourceMappingURL=productPrice.css.map */

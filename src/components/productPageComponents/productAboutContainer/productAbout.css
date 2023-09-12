@@ -1,0 +1,17 @@
+.productAbout {
+  margin-top: 15px;
+}
+.productAbout .heading h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.productAbout .description ul {
+  margin-left: 20px;
+}
+.productAbout .description ul li {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgb(106, 101, 101);
+}/*# sourceMappingURL=productAbout.css.map */

@@ -1,0 +1,22 @@
+.stockContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.stockContainer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.stockContainer p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.stockContainer p span {
+  font-weight: 600;
+  color: var(--main-color);
+}
+.stockContainer p .quantityCount {
+  font-size: 20px;
+  font-weight: 700;
+}/*# sourceMappingURL=productStock.css.map */

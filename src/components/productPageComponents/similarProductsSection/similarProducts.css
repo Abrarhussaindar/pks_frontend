@@ -1,0 +1,9 @@
+.similarProductsSection .heading h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px;
+}
+.similarProductsSection .container {
+  display: flex;
+  gap: 15px;
+}/*# sourceMappingURL=similarProducts.css.map */

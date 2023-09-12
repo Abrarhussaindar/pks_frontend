@@ -1,0 +1,18 @@
+.pincodeContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.pincodeContainer img {
+  width: 25px;
+}
+.pincodeContainer p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.pincodeContainer p span {
+  font-weight: 700;
+  color: var(--main-color);
+}/*# sourceMappingURL=pinCode.css.map */

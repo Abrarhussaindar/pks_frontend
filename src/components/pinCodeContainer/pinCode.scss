@@ -1,0 +1,20 @@
+.pincodeContainer{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    img{
+        width: 25px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 10px;
+
+        span{
+            font-weight: 700;
+            color: var(--main-color);
+        }
+    }
+}

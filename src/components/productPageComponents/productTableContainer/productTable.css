@@ -1,0 +1,22 @@
+.productTable {
+  margin: 15px 0;
+  width: 100%;
+}
+.productTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.productTable table th {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--un-color);
+}
+.productTable table td {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--un-color);
+}/*# sourceMappingURL=productTable.css.map */

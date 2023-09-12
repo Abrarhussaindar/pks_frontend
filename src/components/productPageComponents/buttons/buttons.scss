@@ -1,0 +1,41 @@
+.btnsContainer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    .addToCart{
+        background-color: var(--hover-color);
+        color: white;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 20%;
+        &:hover{
+            background-color: var(--main-color);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .buyNow{
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+        width: 20%;
+        &:hover{
+            // background-color: var(--hover-color);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}

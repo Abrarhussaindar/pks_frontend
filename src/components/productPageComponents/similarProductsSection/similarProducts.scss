@@ -1,0 +1,15 @@
+.similarProductsSection{
+    .heading{
+        h4{
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px;
+        }
+    }
+    .container{
+        display: flex;
+        // overflow-x: scroll;
+        gap: 15px;
+        // width: 80%;
+    }
+}

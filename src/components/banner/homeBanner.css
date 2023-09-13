@@ -20,7 +20,7 @@
   right: 0;
   display: flex;
   margin: 0 20px;
-  bottom: 100px;
+  bottom: 10vh;
   justify-content: space-between;
 }
 .homeBanner .icons .icon {

@@ -6,10 +6,10 @@ export default function HomeBanner() {
     const [currentSlide, setCurrentSlide] = useState(0)
 
     const prevSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? 3 : (prev)=>prev-1)
+        setCurrentSlide(currentSlide === 0 ? 2 : (prev)=>prev-1)
     }
     const nextSlide = () => {
-        setCurrentSlide(currentSlide === 3 ? 0 : (prev)=>prev+1)
+        setCurrentSlide(currentSlide === 2 ? 0 : (prev)=>prev+1)
 
     }
 
@@ -17,15 +17,15 @@ export default function HomeBanner() {
         "assets/images/banner1.jpg",
         "assets/images/banner2.jpg",
         "assets/images/banner1.jpg",
-        "assets/images/banner2.jpg",
+        // "assets/images/banner2.jpg",
     ]
     return (
         <div className="homeBanner">
-            <div className="bannerContainer" style={{transform:`translateX(-${currentSlide * 50}vw)`}}>
+            <div className="bannerContainer" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
                 <img src={data[0]} alt="" />
                 <img src={data[1]} alt="" />
                 <img src={data[2]} alt="" />
-                <img src={data[3]} alt="" />
+                {/* <img src={data[3]} alt="" /> */}
             </div>
             <div className="icons">
                 <div className="icon">

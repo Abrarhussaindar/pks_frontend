@@ -1,0 +1,107 @@
+.loginContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--main-color);
+    .loginWrapper{
+        width: 60%;
+        height: 60%;
+        display: flex;
+        
+        .loginLeft,.loginRight{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .loginLeft{
+            justify-content: center;
+            h1{
+                font-weight: 600;
+                font-size: 36px;
+                color: white;
+                span{
+                    color: var(--hover-color);
+                    // color: var(--box-color);
+                }
+            }
+        }
+        .loginRight{
+            background-color: var(--hover-color);
+            padding: 30px;
+            border-radius: 10px;
+            justify-content: space-around;
+            .heading{
+                h2{
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: white;
+                    text-align: center;
+                }
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                input{
+                    padding: 10px;
+                    border: 1px solid var(--primary-color);
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 18px;
+
+                }
+                button{
+                    padding: 10px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: black;
+                    cursor: pointer;
+                    font-size: 18px;
+                    font-weight: 600;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: white;
+                        background-color: var(--main-color);
+                    }
+                }
+            }
+
+            .loginLinks{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: var(--un-color);
+                    }
+
+                }
+                .forgotPassword{
+                    text-decoration: underline;
+                }
+                .loginRegisterButton{
+                    background-color: var(--main-color);
+                    padding: 10px;
+                    border-radius: 5px;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: black;
+                        background-color: var(--un-color);
+                    }
+                }
+            }
+        }
+    }
+}

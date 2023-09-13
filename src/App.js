@@ -20,8 +20,13 @@ import {
   RouterProvider,
 
 } from "react-router-dom";
+
 import NoPage from "./pages/noPage/NoPage";
 import BuyPage from "./pages/buyPage/BuyPage";
+import Profile from "./pages/userPage/profile/Profile";
+import Login from "./pages/userPage/login/Login";
+import Register from "./pages/userPage/register/Register";
+import ForGotPassword from "./pages/userPage/forgotPassword/ForGotPassword";
 
 const Layout = () => {
   return (
@@ -102,7 +107,23 @@ const router = createBrowserRouter([
         element: <TermsConditions />
       },
     ]
-  }
+  },
+  {
+    path: "/login",
+    element: <Login />
+  },
+  {
+    path: "/register",
+    element: <Register />
+  },
+  {
+    path: "/forgotpassword",
+    element: <ForGotPassword />
+  },
+  {
+    path: "/profile/:userId",
+    element: <Profile />
+  },
 ]);
 
 function App() {

@@ -1,0 +1,99 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--main-color);
+}
+.loginContainer .loginWrapper {
+  width: 60%;
+  height: 60%;
+  display: flex;
+}
+.loginContainer .loginWrapper .loginLeft, .loginContainer .loginWrapper .loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.loginContainer .loginWrapper .loginLeft {
+  justify-content: center;
+}
+.loginContainer .loginWrapper .loginLeft h1 {
+  font-weight: 600;
+  font-size: 36px;
+  color: white;
+}
+.loginContainer .loginWrapper .loginLeft h1 span {
+  color: var(--hover-color);
+}
+.loginContainer .loginWrapper .loginRight {
+  background-color: var(--hover-color);
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.loginContainer .loginWrapper .loginRight .heading h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+.loginContainer .loginWrapper .loginRight form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loginContainer .loginWrapper .loginRight form input {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+}
+.loginContainer .loginWrapper .loginRight form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.loginContainer .loginWrapper .loginRight form button:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.loginContainer .loginWrapper .loginRight .loginLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginContainer .loginWrapper .loginRight .loginLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.loginContainer .loginWrapper .loginRight .loginLinks a:hover {
+  color: var(--un-color);
+}
+.loginContainer .loginWrapper .loginRight .loginLinks .forgotPassword {
+  text-decoration: underline;
+}
+.loginContainer .loginWrapper .loginRight .loginLinks .loginRegisterButton {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.loginContainer .loginWrapper .loginRight .loginLinks .loginRegisterButton:hover {
+  color: black;
+  background-color: var(--un-color);
+}/*# sourceMappingURL=login.css.map */

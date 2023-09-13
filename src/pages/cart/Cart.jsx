@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import CartItem from "../../components/cartItem/CartItem"
 import CartSubTotal from "../../components/cartSubTotal/CartSubTotal"
 import "./cart.css"
@@ -17,8 +18,9 @@ export default function Cart() {
                 </div>
                 
                 <div className="btn">
-
-                    <button>Proceed to Checkout</button>  
+                    <Link className="checkOut" to="/buy/checkout">
+                        Proceed to Checkout
+                    </Link> 
                 </div>
             </div>
             <div className="cartProductContainer">

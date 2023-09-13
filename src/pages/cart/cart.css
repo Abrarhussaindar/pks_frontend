@@ -18,9 +18,10 @@
   font-size: 24px;
   font-weight: 500;
 }
-.cartContainer .cartTotalContainer .btn button {
+.cartContainer .cartTotalContainer .btn .checkOut {
   padding: 10px 20px;
   border: none;
+  text-decoration: none;
   border-radius: 5px;
   background-color: var(--hover-color);
   color: white;
@@ -29,7 +30,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.cartContainer .cartTotalContainer .btn button:hover {
+.cartContainer .cartTotalContainer .btn .checkOut:hover {
   color: white;
   background-color: var(--main-color);
 }

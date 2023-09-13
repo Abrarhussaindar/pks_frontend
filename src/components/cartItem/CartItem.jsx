@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./cartItem.css"
 
 export default function CartItem() {
@@ -23,7 +24,10 @@ export default function CartItem() {
                     </div>
                 </div>
                 <div className="cartRight">
-                    <button className="buyBtn">Buy</button>
+                    <Link className="buyBtn" to="/buy/1">
+                        Buy
+                    </Link> 
+                    {/* <button className="buyBtn">Buy</button> */}
                     {/* <button className="qtnBtn">Quatity: 1</button> */}
                     <button className="delBtn">Delete</button>
                     <button className="saveBtn">Save for later</button>

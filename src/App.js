@@ -21,6 +21,7 @@ import {
 
 } from "react-router-dom";
 import NoPage from "./pages/noPage/NoPage";
+import BuyPage from "./pages/buyPage/BuyPage";
 
 const Layout = () => {
   return (
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
         element: <Cart />
       },
       {
+        path: "/buy/:id",
+        element: <BuyPage productId />
+      },
+      {
+        path: "/buy/checkout",
+        element: <BuyPage cart/>
+      },
+      {
         path: "/products/:category",
         element: <ProductsPage />
       },
@@ -58,6 +67,7 @@ const router = createBrowserRouter([
         path: "/product/:category/:id",
         element: <ProductPage />
       },
+
       // footer links
       {
         path: "/aboutus",

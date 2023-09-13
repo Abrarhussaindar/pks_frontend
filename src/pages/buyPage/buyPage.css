@@ -1,0 +1,148 @@
+.buyContainer .buyWrapper .buyTop {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.buyContainer .buyWrapper .buyTop .heading h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.buyContainer .buyWrapper .buyTop .topLeft {
+  flex: 8;
+  border-right: 1px solid var(--hover-color);
+  margin-right: 50px;
+}
+.buyContainer .buyWrapper .buyTop .topLeft .orderSummary {
+  margin-top: 20px;
+}
+.buyContainer .buyWrapper .buyTop .topRight {
+  flex: 4;
+}
+.buyContainer .buyWrapper .buyTop .topRight .paymentOptions {
+  border: 1px solid var(--hover-color);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.buyContainer .buyWrapper .buyBottom {
+  margin: 20px 30px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm {
+  flex: 8;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  border-right: 1px solid var(--hover-color);
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .heading h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form .fName, .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form .lName {
+  width: 45%;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form input {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  width: 45%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .addBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--hover-color);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .addBtn:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress {
+  flex: 4;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .heading h3 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress {
+  border: 1px solid var(--hover-color);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address {
+  list-style: none;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li {
+  margin-bottom: 10px;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .userNameAddress {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--hover-color);
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .addSpanBtn {
+  display: flex;
+  gap: 10px;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .addSpanBtn .useBtn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid green;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .addSpanBtn .useBtn:hover {
+  color: white;
+  background-color: green;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .addSpanBtn .removeBtn {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .addSpanBtn .removeBtn:hover {
+  color: white;
+  background-color: red;
+}/*# sourceMappingURL=buyPage.css.map */

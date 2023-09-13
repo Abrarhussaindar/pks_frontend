@@ -26,9 +26,10 @@
         }
 
         .btn{
-            button{
+            .checkOut{
                 padding: 10px 20px;
                 border: none;
+                text-decoration: none;
                 border-radius: 5px;
                 background-color: var(--hover-color);
                 color: white;

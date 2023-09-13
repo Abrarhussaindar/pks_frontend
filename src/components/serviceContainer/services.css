@@ -14,6 +14,7 @@
   width: 30px;
 }
 .serviceContainer ul li span {
+  text-align: center;
   font-size: 14px;
   font-weight: 600;
   color: var(--hover-color);

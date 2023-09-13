@@ -26,6 +26,8 @@
   background-color: var(--main-color);
   color: white;
   border: none;
+  text-decoration: none;
+  text-align: center;
   outline: none;
   padding: 10px;
   border-radius: 5px;

@@ -1,0 +1,169 @@
+.buyContainer{
+    // height: calc(100vh - 140px);
+    .buyWrapper{
+        .buyTop{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 30px;
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            .heading{
+                h3{
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: var(--hover-color);
+                }
+            }
+            
+            .topLeft{
+                flex: 8;
+                border-right: 1px solid var(--hover-color);
+                margin-right: 50px;
+
+                .orderSummary{
+                    margin-top: 20px;
+                }
+            }
+            .topRight{
+                flex: 4;
+
+                .paymentOptions{
+                    border: 1px solid var(--hover-color);
+                    padding: 10px;
+                    margin-top: 20px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .buyBottom{
+            margin: 20px 30px;
+            padding: 10px 30px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .addressContainer{
+                display: flex;
+
+                justify-content: space-between;
+
+                .addressForm{
+                    flex: 8;
+                    margin-bottom: 20px;
+                    margin-right: 50px;
+                    border-right: 1px solid var(--hover-color);
+                    .heading{
+                        h3{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: var(--hover-color);
+                        }
+                    }
+                    form{
+                        margin-top: 20px;
+                        display: flex;
+                        // flex-direction: column;
+                        flex-wrap: wrap;
+                        gap: 15px;
+                        .fName,.lName{
+                            width: 45%;
+                        }
+                        input{
+                            padding: 15px;
+                            margin-bottom: 10px;
+                            border: none;
+                            outline: none;
+                            width: 45%;
+                            border-radius: 5px;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        }
+                    }
+                    .addBtn{
+                        margin-top: 20px;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: var(--hover-color);
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        &:hover{
+                            color: white;
+                            background-color: var(--main-color);
+                        }
+                    }
+                }
+                .exsistingAddress{
+                    flex: 4;
+                    .heading{
+                        h3{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: var(--hover-color);
+                        }
+                    }
+                    .userAddress{
+                        border: 1px solid var(--hover-color);
+                        padding: 10px;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                        .address{
+                            list-style: none;
+                            li{
+                                margin-bottom: 10px;
+                                .userNameAddress{
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    color: var(--hover-color);
+                                }
+
+                                .addSpanBtn{
+                                    display: flex;
+                                    gap: 10px;
+                                    .useBtn{
+                                        margin-top: 10px;
+                                        padding: 5px 10px;
+                                        border: 1px solid green;
+                                        border-radius: 5px;
+                                        background-color: white;
+                                        color: black;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                        transition: all 0.3s ease;
+                                        &:hover{
+                                            color: white;
+                                            background-color: green;
+                                        }
+                                    }
+                                    .removeBtn{
+                                        margin-top: 10px;
+                                        padding: 5px 10px;
+                                        border: 1px solid red;
+                                        border-radius: 5px;
+                                        background-color: white;
+                                        color: black;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                        transition: all 0.3s ease;
+                                        &:hover{
+                                            color: white;
+                                            background-color: red;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}

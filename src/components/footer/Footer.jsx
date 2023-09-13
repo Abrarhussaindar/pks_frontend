@@ -13,15 +13,15 @@ export default function Footer() {
                 <div className="center">
                     <h3>Important Links</h3>
                     <ul>
-                        <Link to=".">
+                        <Link to="/aboutus">
                         <li>About Us</li>
 
                         </Link>
-                        <Link to=".">
+                        <Link to="/contactus">
 
                         <li>Contact Us</li>
                         </Link>
-                        <Link to=".">
+                        <Link to="/services">
                         <li>Services</li>
 
                         </Link>
@@ -38,23 +38,23 @@ export default function Footer() {
                 <div className="center">
                     <h3>Other Links</h3>
                     <ul>
-                        <Link to=".">
+                        <Link to="/privacypolicy">
 
                         <li>Privacy Policy</li>
                         </Link>
-                        <Link to=".">
+                        <Link to="/disclaimer">
                         <li>Disclaimer</li>
 
                         </Link>
-                        <Link to=".">
+                        <Link to="/termsconditions">
                         <li>Terms & Conditions</li>
 
                         </Link>
-                        <Link to=".">
+                        <Link to="/sitemap">
                         <li>Index</li>
 
                         </Link>
-                        <Link to=".">
+                        <Link to="returnrefund">
 
                         <li>Return & Refund Policy</li>
                         </Link>

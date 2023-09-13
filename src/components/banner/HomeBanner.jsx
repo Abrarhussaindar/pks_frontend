@@ -10,14 +10,12 @@ export default function HomeBanner() {
     }
     const nextSlide = () => {
         setCurrentSlide(currentSlide === 2 ? 0 : (prev)=>prev+1)
-
     }
 
     const data = [
         "assets/images/banner1.jpg",
         "assets/images/banner2.jpg",
         "assets/images/banner1.jpg",
-        // "assets/images/banner2.jpg",
     ]
     return (
         <div className="homeBanner">
@@ -25,7 +23,6 @@ export default function HomeBanner() {
                 <img src={data[0]} alt="" />
                 <img src={data[1]} alt="" />
                 <img src={data[2]} alt="" />
-                {/* <img src={data[3]} alt="" /> */}
             </div>
             <div className="icons">
                 <div className="icon">

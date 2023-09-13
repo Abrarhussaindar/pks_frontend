@@ -2,8 +2,13 @@ import React from 'react'
 // import { Link } from "react-router-dom";
 import "./navbar.css"
 import { Link } from "react-router-dom";
+import RightSideBar from '../rightSideBar/RightSideBar';
 
 export default function Navbar() {
+
+    const openRightSideBar = () => {
+        document.querySelector(".rightSideBar").classList.add("open")
+    }
     return (
         <div className="nav_container">
             <div className="leftSide">
@@ -25,12 +30,11 @@ export default function Navbar() {
                         </Link>
                         <span className="cartCount">0</span>
                     </div>
-                    <Link to=".">
                     {/* <img src={user.profilePicture ? PF + user.profilePicture : PF+"noAvatar.png"} alt="img"/> */}
-                        <img src="/assets/images/user.png"  alt="user" />
-                    </Link>
+                        <img src="/assets/images/user.png" onClick={openRightSideBar}  alt="user" />
                 </div>
             </div>
+            <RightSideBar />
         </div>
     )
 }

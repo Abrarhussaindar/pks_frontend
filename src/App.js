@@ -1,22 +1,58 @@
+import Navbar from "./components/navbar/Navbar";
+import SecondaryNavbar from "./components/secondaryNavbar/SecondaryNavabar";
 import Home from "./pages/home/Home";
-// import CategoryPage from "./pages/categoryPage/CategoryPage";
-// import ProductPage from "./pages/productPage/ProductPage";
+import Cart from "./pages/cart/Cart";
+import ProductsPage from "./pages/productsPage/ProductsPage";
+import ProductPage from "./pages/productPage/ProductPage";
+import Footer from "./components/footer/Footer";
+
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
+  Outlet,
+  createBrowserRouter,
+  RouterProvider,
+
 } from "react-router-dom";
+
+const Layout = () => {
+  return (
+    <div className="app">
+      <Navbar />
+      <SecondaryNavbar />
+      <Outlet />
+      <Footer />
+    </div>
+  );
+}
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
+      },
+      {
+        path: "/products/:category",
+        element: <ProductsPage />
+      },
+      {
+        path: "/product/:category/:id",
+        element: <ProductPage />
+      },
+    ]
+  }
+]);
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/category/:name" element={<CategoryPage />} /> */}
-          {/* <Route exact path="/category/:name/:productname" element={<ProductPage />} /> */}
-        </Routes>
-      </Router>
+      <RouterProvider router={router}/>
     </div>
   );
 }

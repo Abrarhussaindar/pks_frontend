@@ -6,7 +6,7 @@ export default function ProductCard() {
 
         <div className="productCard">
             <div className="productImgContainer">
-                <Link to=".">
+                <Link to="/product/mens/1">
                     <img src="/assets/images/products/shirt.jpg" alt="" />
                 </Link>
 

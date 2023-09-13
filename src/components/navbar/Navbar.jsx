@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className="rightSide">
                 <div className="navUserImg">
                     <div className="cart">
-                        <Link to=".">
+                        <Link to="/cart">
                             <img src="/assets/images/cart.png" alt="" />
                         </Link>
                         <span className="cartCount">0</span>

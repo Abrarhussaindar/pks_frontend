@@ -1,17 +1,11 @@
 import CategoryContent from "../../components/categoryContent/CategoryContent"
 import CategoryFilterOptionLeftSideBar from "../../components/categoryFilterOptionLeftSideBar/CategoryFilterOptionLeftSideBar"
 import CategoryTopBar from "../../components/categoryTopBar/CategoryTopBar"
-import "./categoryPage.css"
-
-// import Footer from "../../components/footer/Footer";
-// import Navbar from "../../components/navbar/Navbar";
-// import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
+import "./productsPage.css"
 
 export default function CategoryPage() {
     return (
         <>
-            {/* <Navbar /> */}
-            {/* <SecondaryNavabar /> */}
             <div className="categoryContainer">
                 <CategoryTopBar />
                 <div className="mainContent">
@@ -19,7 +13,6 @@ export default function CategoryPage() {
                     <CategoryContent />
                 </div>
             </div>
-            {/* <Footer /> */}
         </>
     )
 }

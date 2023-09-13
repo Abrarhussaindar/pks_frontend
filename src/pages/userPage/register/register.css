@@ -1,1 +1,80 @@
-/*# sourceMappingURL=register.css.map */
+.registerContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerContainer .registerWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--un-color);
+}
+.registerContainer .registerWrapper .heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.registerContainer .registerWrapper .formContainer {
+  width: 30%;
+  padding: 20px 30px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+.registerContainer .registerWrapper .formContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registerContainer .registerWrapper .formContainer form .formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.registerContainer .registerWrapper .formContainer form .formGroup label {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+.registerContainer .registerWrapper .formContainer form .formGroup input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+}
+.registerContainer .registerWrapper .formContainer form .registerBtn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+.registerContainer .registerWrapper .formContainer form .registerBtn:hover {
+  color: white;
+  background-color: var(--hover-color);
+}
+.registerContainer .registerWrapper .formContainer .loginLink p {
+  color: white;
+}
+.registerContainer .registerWrapper .formContainer .loginLink p span {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}/*# sourceMappingURL=register.css.map */

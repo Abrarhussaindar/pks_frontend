@@ -25,12 +25,12 @@ export default function Footer() {
                         <li>Services</li>
 
                         </Link>
-                        <Link to=".">
-                        <li>dummy</li>
+                        <Link to="/login">
+                        <li>Login</li>
 
                         </Link>
-                        <Link to=".">
-                        <li>dummy</li>
+                        <Link to="/register">
+                        <li>Register</li>
 
                         </Link>
                     </ul>

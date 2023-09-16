@@ -10,6 +10,7 @@ export default function BuyPage(props) {
         return <h4>cart item details</h4>
     }
 
+    
     return (
         <div className="buyContainer">
             <div className="buyWrapper">

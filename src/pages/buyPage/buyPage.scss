@@ -1,3 +1,6 @@
+@import "../../breakpoints.scss";
+
+
 .buyContainer{
     // height: calc(100vh - 140px);
     .buyWrapper{
@@ -8,12 +11,28 @@
             padding: 10px 30px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            
+            @include media('>phone', '<=mobile'){
+                margin: 10px 10px;
+                padding: 10px 15px;
+        
+            }
+            @include media('>smphone', '<=phone'){
+                margin: 10px 10px;
+                padding: 10px 15px;
+            }
             .heading{
                 h3{
                     font-size: 24px;
                     font-weight: 500;
                     color: var(--hover-color);
+
+                    @include media('>phone', '<=mobile'){
+                        font-size: 16px;
+                
+                    }
+                    @include media('>smphone', '<=phone'){
+                        font-size: 16px;
+                    }
                 }
             }
             
@@ -21,14 +40,28 @@
                 flex: 8;
                 border-right: 1px solid var(--hover-color);
                 margin-right: 50px;
-
+                @include media('>phone', '<=mobile'){
+                    flex: 1;
+                    margin-right: 20px;
+            
+                }
+                @include media('>smphone', '<=phone'){
+                    flex: 1;
+                    margin-right: 20px;
+                }
                 .orderSummary{
                     margin-top: 20px;
                 }
             }
             .topRight{
                 flex: 4;
-
+                @include media('>phone', '<=mobile'){
+                    flex: 1;
+            
+                }
+                @include media('>smphone', '<=phone'){
+                    flex: 1;
+                }
                 .paymentOptions{
                     border: 1px solid var(--hover-color);
                     padding: 10px;
@@ -42,21 +75,56 @@
             padding: 10px 30px;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            @include media('>phone', '<=mobile'){
+                margin: 10px 10px;
+                padding: 10px 10px;
+        
+            }
+            @include media('>smphone', '<=phone'){
+                margin: 10px 10px;
+                padding: 10px 10px;
+            }
             .addressContainer{
                 display: flex;
 
                 justify-content: space-between;
 
+                @include media('>phone', '<=mobile'){
+                    flex-direction: column-reverse;
+                    gap: 20px;
+            
+                }
+                @include media('>smphone', '<=phone'){
+                        flex-direction: column-reverse;
+                        gap: 20px;
+                }
                 .addressForm{
                     flex: 8;
                     margin-bottom: 20px;
                     margin-right: 50px;
                     border-right: 1px solid var(--hover-color);
+
+                    @include media('>phone', '<=mobile'){
+                        border-right: none;
+                
+                    }
+                    @include media('>smphone', '<=phone'){
+                        border-right: none;
+                    }
                     .heading{
                         h3{
                             font-size: 24px;
                             font-weight: 500;
                             color: var(--hover-color);
+
+                            @include media('>phone', '<=mobile'){
+                                font-size: 18px;
+                        
+                            }
+                            @include media('>smphone', '<=phone'){
+                                font-size: 18px;
+                            }
                         }
                     }
                     form{
@@ -67,6 +135,14 @@
                         gap: 15px;
                         .fName,.lName{
                             width: 45%;
+
+                            @include media('>phone', '<=mobile'){
+                                width: 100%;
+                        
+                            }
+                            @include media('>smphone', '<=phone'){
+                                width: 100%;
+                            }
                         }
                         input{
                             padding: 15px;
@@ -76,6 +152,13 @@
                             width: 45%;
                             border-radius: 5px;
                             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            @include media('>phone', '<=mobile'){
+                                width: 100%;
+                        
+                            }
+                            @include media('>smphone', '<=phone'){
+                                width: 100%;
+                            }
                         }
                     }
                     .addBtn{
@@ -93,6 +176,13 @@
                             color: white;
                             background-color: var(--main-color);
                         }
+                        @include media('>phone', '<=mobile'){
+                            font-size: 16px;
+                    
+                        }
+                        @include media('>smphone', '<=phone'){
+                            font-size: 16px;
+                        }
                     }
                 }
                 .exsistingAddress{
@@ -102,6 +192,13 @@
                             font-size: 24px;
                             font-weight: 500;
                             color: var(--hover-color);
+                            @include media('>phone', '<=mobile'){
+                                font-size: 18px;
+                        
+                            }
+                            @include media('>smphone', '<=phone'){
+                                font-size: 18px;
+                            }
                         }
                     }
                     .userAddress{
@@ -117,6 +214,14 @@
                                     font-weight: 600;
                                     font-size: 18px;
                                     color: var(--hover-color);
+
+                                    @include media('>phone', '<=mobile'){
+                                        font-size: 16px;
+                                
+                                    }
+                                    @include media('>smphone', '<=phone'){
+                                        font-size: 16px;
+                                    }
                                 }
 
                                 .addSpanBtn{

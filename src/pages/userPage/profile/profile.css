@@ -95,64 +95,11 @@
 }
 .profileContainer .profileWrapper .profileBottom .profileBottomLeft {
   flex: 8;
-  padding: 1 0px;
+  padding: 10px;
   border-right: 1px solid var(--un-color);
 }
 .profileContainer .profileWrapper .profileBottom .profileBottomRight {
   flex: 4;
   padding: 10px;
   margin-left: 10px;
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiHr {
-  margin: 10px 0px;
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid var(--un-color);
-  padding: 10px;
-  border-radius: 10px;
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .addressType h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .address h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .state h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .city h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .pin h4 {
-  color: var(--main-color);
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .addressType .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .address .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .state .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .city .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .pin .type {
-  color: var(--hover-color);
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .addressType span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .address span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .state span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .city span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .pin span {
-  margin-left: 15px;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--hover-color);
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns button {
-  border: 1px solid var(--hover-color);
-  background-color: transparent;
-  padding: 5px 15px;
-  border-radius: 10px;
-  color: var(--hover-color);
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns button:hover {
-  background-color: var(--hover-color);
-  color: white;
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns .addressUpdateBtn:hover {
-  background-color: rgb(9, 105, 165);
-  color: white;
-  border: 1px solid rgb(9, 105, 165);
-}
-.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns .addressDelBtn:hover {
-  background-color: red;
-  color: white;
-  border: 1px solid red;
 }/*# sourceMappingURL=profile.css.map */

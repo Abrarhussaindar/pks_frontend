@@ -1,0 +1,54 @@
+.indiHr {
+  margin: 10px 0px;
+}
+
+.indiAddress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--un-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.indiAddress .addressContent .addressType h4, .indiAddress .addressContent .address h4, .indiAddress .addressContent .state h4, .indiAddress .addressContent .city h4, .indiAddress .addressContent .pin h4 {
+  color: var(--main-color);
+}
+.indiAddress .addressContent .addressType .type, .indiAddress .addressContent .address .type, .indiAddress .addressContent .state .type, .indiAddress .addressContent .city .type, .indiAddress .addressContent .pin .type {
+  color: var(--hover-color);
+}
+.indiAddress .addressContent .addressType span, .indiAddress .addressContent .address span, .indiAddress .addressContent .state span, .indiAddress .addressContent .city span, .indiAddress .addressContent .pin span {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+.indiAddress .indiBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.indiAddress .indiBtns button {
+  border: 1px solid var(--hover-color);
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: var(--hover-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.indiAddress .indiBtns button:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+.indiAddress .indiBtns .addressUpdateBtn:hover {
+  background-color: rgb(9, 105, 165);
+  color: white;
+  border: 1px solid rgb(9, 105, 165);
+}
+.indiAddress .indiBtns .addressDelBtn:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}/*# sourceMappingURL=userAddress.css.map */

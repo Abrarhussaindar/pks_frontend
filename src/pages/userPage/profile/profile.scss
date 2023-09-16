@@ -108,7 +108,7 @@
             }
             .profileBottomLeft{
                 flex: 8;
-                padding: 1  0px;
+                padding: 10px;
                 border-right: 1px solid var(--un-color);
             }
             .profileBottomRight{
@@ -118,76 +118,7 @@
 
                 .profileBottomAddressContainer{
                     // border: 1px solid black;
-                    .indiHr{
-                        margin: 10px 0px;
-                    }
-                    .indiAddress{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        border: 1px solid var(--un-color);
-                        padding: 10px;
-                        border-radius: 10px;
-                        .addressContent{
 
-                            .addressType,.address,.state,.city,.pin{
-                                h4{
-                                    color: var(--main-color);
-                                }
-                                .type{
-                                    color: var(--hover-color)
-                                }
-                                span{
-                                    margin-left: 15px;
-                                    // text-decoration: underline;
-                                    font-size: 16px;
-                                    font-weight: 600;
-                                    color: var(--hover-color);
-                                }
-                            }
-
-
-                            
-                        }
-
-                        .indiBtns{
-                            display: flex;
-                            flex-direction: column;
-                            gap: 10px;
-
-                            button{
-                                border: 1px solid var(--hover-color);
-                                background-color: transparent;
-                                padding: 5px 15px;
-                                border-radius: 10px;
-                                color: var(--hover-color);
-                                font-size: 14px;
-                                font-weight: 500;
-                                cursor: pointer;
-                                transition: all 0.3s ease-in-out;
-                                &:hover{
-                                    background-color: var(--hover-color);
-                                    color: white;
-                                    // border: none;
-                                }
-                            }
-                            .addressUpdateBtn{
-                                &:hover{
-                                    background-color: rgb(9, 105, 165);
-                                    color: white;
-                                    border: 1px solid rgb(9, 105, 165);
-                                }
-                            }
-                            .addressDelBtn{
-                                &:hover{
-                                    background-color: red;
-                                    color: white;
-                                    border: 1px solid red;
-                                }
-                            }
-
-                        }
-                    }
                 }
             }
         }

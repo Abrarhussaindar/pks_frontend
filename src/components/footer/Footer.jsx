@@ -4,7 +4,7 @@ import "./footer.css"
 export default function Footer() {
     return (
         <div className="footerContainer">
-            <div className="top">
+            <div className="top">  
                 <div className="left">
                     <h1>Panun<span>Keshur</span> Store</h1>
                     <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>

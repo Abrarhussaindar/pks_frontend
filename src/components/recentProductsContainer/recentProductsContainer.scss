@@ -1,9 +1,17 @@
+@import "../../breakpoints.scss";
+
 .recentProductsContainer{
     display: flex;
     justify-content: space-between;
     padding: 30px;
     gap: 20px;
     width: 100%;
+
+    @include media('>phone', '<=425px'){
+        overflow-x: scroll;
+        padding: 20px;
+    }
+
     .innerContainer{
         background-color: var(--box-color);
         width: 100%;
@@ -12,6 +20,11 @@
         .heading{
             h3{
                 padding: 10px;
+
+                @include media('>phone', '<=425px'){
+                    font-size: 16px;
+                    // padding: 5px;
+                }
             }
         }
 

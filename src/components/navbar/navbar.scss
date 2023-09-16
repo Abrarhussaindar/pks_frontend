@@ -1,3 +1,6 @@
+@import "../../breakpoints.scss";
+
+
 :root{
     --main-color: #27374D;
     --hover-color: #526D82;
@@ -17,15 +20,24 @@
     z-index: 3;
     background-color: var(--main-color);
     color: white;
+
+    @include media('>phone', '<=425px'){
+        padding: 0 20px;
+    }
     .leftSide{
         .logoLink{
             text-decoration: none;
             color: white;
             h1{
+                font-size: 32px;
                 font-weight: 500;
                 cursor: pointer;
                 span{
                     color: var(--box-color);
+                }
+
+                @include media('>phone', '<=425px'){
+                    font-size: 20px;
                 }
             }
         }
@@ -38,6 +50,10 @@
         height: 40px;
         border-radius: 30px;
         background-color: white;
+
+        @include media('>phone', '<=425px'){
+            display: none;
+        }
 
         .searchbarIcon{
             margin-left: 15px;
@@ -103,6 +119,22 @@
                 width: 32px;
                 object-fit: cover;
                 cursor: pointer;
+            }
+
+            @include media('>phone', '<=425px'){
+                img{
+                    width: 22px;
+                }
+
+                .cart{
+                    a{
+                        display: flex;
+                    }
+                    .cartCount{
+                        top: -40%;
+                        right: -40%;
+                    }
+                }
             }
         }
     }

@@ -1,9 +1,20 @@
+/**
+*
+* Testing
+*
+**/
 .recentProductsContainer {
   display: flex;
   justify-content: space-between;
   padding: 30px;
   gap: 20px;
   width: 100%;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .recentProductsContainer {
+    overflow-x: scroll;
+    padding: 20px;
+  }
 }
 .recentProductsContainer .innerContainer {
   background-color: var(--box-color);
@@ -12,6 +23,11 @@
 }
 .recentProductsContainer .innerContainer .heading h3 {
   padding: 10px;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .recentProductsContainer .innerContainer .heading h3 {
+    font-size: 16px;
+  }
 }
 .recentProductsContainer .innerContainer .content {
   padding: 10px;

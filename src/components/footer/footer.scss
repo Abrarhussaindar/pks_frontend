@@ -1,3 +1,6 @@
+@import "../../breakpoints.scss";
+
+
 .footerContainer{
     background-color: var(--main-color);
     color: white;
@@ -7,9 +10,18 @@
     position: relative;
     bottom: 0;
     width: 100%;
+
+    @include media('>phone', '<=425px'){
+        padding: 20px 20px 10px 20px;
+    }
     .top{
         display: flex;
         justify-content: space-between;
+
+        @include media('>phone', '<=425px'){
+            flex-direction: column;
+            text-align: center;
+        }
 
         .left{
             h1{
@@ -26,6 +38,9 @@
         }
 
         .center{
+            @include media('>phone', '<=425px'){
+                margin-top: 20px;
+            }
             h3{
                 font-size: 18px;
                 font-weight: 600;
@@ -53,6 +68,9 @@
 
         .right{
             .rightTop{
+                @include media('>phone', '<=425px'){
+                    margin-top: 20px;
+                }
                 h3{
                     font-size: 20px;
                     font-weight: 600;
@@ -62,10 +80,15 @@
                     display: flex;
                     align-items: center;
                     gap: 20px;
+                    @include media('>phone', '<=425px'){
+                        justify-content: center;
+                    }
                     img{
                         width: 30px;
                         cursor: pointer;
-
+                        @include media('>phone', '<=425px'){
+                            width: 20px;
+                        }
                         &:hover{
                             transform: scale(1.1);
                             transition: transform 0.3s ease-in-out;
@@ -84,6 +107,9 @@
                 ul{
                     list-style: none;
                     width: 252px;
+                    @include media('>phone', '<=425px'){
+                        width: unset;
+                    }
                     li{
                         a{
                             text-decoration: none;

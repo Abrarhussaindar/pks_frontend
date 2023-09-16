@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .secondaryNavbarContainer{
     display: flex;
     justify-content: space-around;
@@ -7,7 +9,9 @@
     // position: sticky;
     // top: 9.3%;
     // z-index: 3;
-
+    @include media('>phone', '<=425px'){
+        height: 50px;
+    }
     .container{
         a{
             display: flex;
@@ -25,10 +29,18 @@
                     transform: scale(1.1);
                     transition: transform 0.3s ease-in-out;
                 }
+
+                @include media('>phone', '<=425px'){
+                    width: 20px;
+                }
             }
 
             span{
                 font-size: 14px;
+
+                @include media('>phone', '<=425px'){
+                    font-size: 10px;
+                }
             }
 
         }

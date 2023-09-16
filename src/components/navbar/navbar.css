@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 :root {
   --main-color: #27374D;
   --hover-color: #526D82;
@@ -17,16 +22,27 @@
   background-color: var(--main-color);
   color: white;
 }
+@media (min-width: 361px) and (max-width: 425px) {
+  .nav_container {
+    padding: 0 20px;
+  }
+}
 .nav_container .leftSide .logoLink {
   text-decoration: none;
   color: white;
 }
 .nav_container .leftSide .logoLink h1 {
+  font-size: 32px;
   font-weight: 500;
   cursor: pointer;
 }
 .nav_container .leftSide .logoLink h1 span {
   color: var(--box-color);
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .nav_container .leftSide .logoLink h1 {
+    font-size: 20px;
+  }
 }
 .nav_container .center {
   display: flex;
@@ -35,6 +51,11 @@
   height: 40px;
   border-radius: 30px;
   background-color: white;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .nav_container .center {
+    display: none;
+  }
 }
 .nav_container .center .searchbarIcon {
   margin-left: 15px;
@@ -93,4 +114,16 @@
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .nav_container .rightSide .navUserImg img {
+    width: 22px;
+  }
+  .nav_container .rightSide .navUserImg .cart a {
+    display: flex;
+  }
+  .nav_container .rightSide .navUserImg .cart .cartCount {
+    top: -40%;
+    right: -40%;
+  }
 }/*# sourceMappingURL=navbar.css.map */

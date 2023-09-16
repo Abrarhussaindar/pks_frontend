@@ -1,9 +1,19 @@
+/**
+*
+* Testing
+*
+**/
 .secondaryNavbarContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 70px;
   background-color: var(--hover-color);
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .secondaryNavbarContainer {
+    height: 50px;
+  }
 }
 .secondaryNavbarContainer .container a {
   display: flex;
@@ -21,6 +31,16 @@
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
+@media (min-width: 361px) and (max-width: 425px) {
+  .secondaryNavbarContainer .container a img {
+    width: 20px;
+  }
+}
 .secondaryNavbarContainer .container a span {
   font-size: 14px;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .secondaryNavbarContainer .container a span {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=secondaryNavbar.css.map */

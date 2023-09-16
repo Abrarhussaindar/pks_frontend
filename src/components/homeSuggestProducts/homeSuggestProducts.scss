@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .SuggetProductsContainer{
     display: flex;
     flex-direction: column;
@@ -6,8 +8,19 @@
     border-radius: 10px;
     padding: 10px 0;
     margin-bottom: 20px;
+
+    @include media('>phone', '<=425px'){
+        overflow-x: scroll;
+        margin: 20px;
+
+
+    }
     .suggetHeading{
         padding: 10px;
+
+        @include media('>phone', '<=425px'){
+            font-size: 14px;
+        }
     }
     .container{
         display: flex;
@@ -24,12 +37,20 @@
                 
                 img{
                     width: 100px;
+
+                    @include media('>phone', '<=425px'){
+                        width: 70px;
+                    }
                 }
                 p{
                     font-size: 14px;
                     font-weight: 500;
                     margin-top: 10px;
                     text-align: center;
+
+                    @include media('>phone', '<=425px'){
+                        font-size: 12px;
+                    }
                 }
             
         }

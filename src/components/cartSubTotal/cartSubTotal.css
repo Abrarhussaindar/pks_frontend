@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .proDet {
   display: flex;
   flex-direction: column;
@@ -11,4 +16,12 @@
   margin-left: 10px;
   font-weight: 500;
   color: var(--hover-color);
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .proDet h5 {
+    font-size: 16px;
+  }
+  .proDet h5 .itemSpan, .proDet h5 .priceSpan {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=cartSubTotal.css.map */

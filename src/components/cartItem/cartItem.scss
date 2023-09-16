@@ -1,31 +1,53 @@
+@import "../../breakpoints.scss";
+
 .indiProductContainer{
     display: flex;
     // gap: 20px;
     align-items: center;
     justify-content: space-between;
+    @include media('>phone', '<=425px'){
+        align-items: unset;
+    }
     .cartLeft{
         display: flex;
         width: 60%;
         gap: 20px;
+        @include media('>phone', '<=425px'){
+            flex-direction: column;    
+            gap: 10px;
+        }
         img{
             width: 150px;
             height: 150px;
             border-radius: 10px;
+
+            @include media('>phone', '<=425px'){
+                width: 90px;
+                height: 90px;
+            }
         }
         .cartProductDetailContainer{
             display: flex;
             flex-direction: column;
             gap: 5px;
 
-            
             p{
                 font-size: 18px;
                 font-weight: 500;
+                @include media('>phone', '<=425px'){
+                    font-size: 12px;
+                    
+            
+                }
             }
             h4{
                 font-size: 20px;
                 font-weight: 500;
                 color: var(--hover-color);
+
+                @include media('>phone', '<=425px'){
+                    font-size: 16px;
+                }
             }
             .quantity{
                 display: flex;
@@ -41,7 +63,18 @@
                         margin-left: 10px;
                         font-weight: 600;
                         color: var(--hover-color);
+                        @include media('>phone', '<=425px'){
+                            font-size: 16px;
+                            
+                    
+                        }
 
+                    }
+                    @include media('>phone', '<=425px'){
+                        font-size: 16px;
+            
+
+                
                     }
                     
                 }
@@ -53,6 +86,11 @@
                         cursor: pointer;
                         width: 15px;
                         height: 15px;
+
+                        @include media('>phone', '<=425px'){
+                            width: 10px;
+                            height: 10px;
+                        }
                     }
                 }
                 
@@ -80,6 +118,12 @@
                 color: white;
                 background-color: var(--main-color);
             }
+
+            @include media('>phone', '<=425px'){
+                font-size: 14px;
+                padding: 10px 8px;
+        
+            }
         }
         .delBtn{
             padding: 10px 40px;
@@ -95,6 +139,11 @@
                 color: white;
                 background-color: rgb(232, 4, 4);
             }
+            @include media('>phone', '<=425px'){
+                font-size: 14px;
+                padding: 10px 8px;
+        
+            }
         }
         .saveBtn{
             padding: 10px 40px;
@@ -109,6 +158,11 @@
             &:hover{
                 color: white;
                 background-color: rgb(10, 96, 10);
+            }
+            @include media('>phone', '<=425px'){
+                font-size: 14px;
+                padding: 10px 8px;
+        
             }
         }
     }

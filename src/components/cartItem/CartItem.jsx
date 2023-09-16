@@ -4,6 +4,7 @@ import "./cartItem.css"
 export default function CartItem() {
     return (
         <>
+
             <div className="indiProductContainer">
                 <div className="cartLeft">
                     <div className="cartImgContainer">
@@ -11,7 +12,7 @@ export default function CartItem() {
                     </div>
                         
                     <div className="cartProductDetailContainer">
-                        <p className="productName">Logitech G USB G G203 Wired Gaming Mouse, 8000 DPI, Rainbow Optical Effect LIGHTSYNC RGB, 6 Programmable Buttons, On-Board Memory, Screen Mapping, PC/Mac Computer and Laptop Compatible - Black</p>
+                        <p className="productName">Logitech G USB G G203 Wired Gaming Mouse, 8000 DPI, Rainbow Optical Effect LIGHTSYNC RGB</p>
                         <h4 className="productPrice">$ 100</h4>
                         <div className="quantity">
 

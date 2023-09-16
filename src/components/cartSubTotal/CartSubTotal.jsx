@@ -7,4 +7,5 @@ export default function CartSubTotal() {
             <h5>Total: <span className="priceSpan">$ 100</span></h5>
         </div>
     )
+    
 }

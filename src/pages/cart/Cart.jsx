@@ -31,6 +31,7 @@ export default function Cart() {
                 <hr className="cartHr"/>
                 <div className="container">
                     <CartItem />
+                    
                 </div>
             </div>
         </div>

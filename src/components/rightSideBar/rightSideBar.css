@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .rightSideBar {
   height: 100vh;
   width: 25%;
@@ -9,6 +14,11 @@
   color: black;
   transform: translateX(460px);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar {
+    width: 100%;
+  }
 }
 .rightSideBar.open {
   transition: all 0.5s ease-in;
@@ -28,6 +38,11 @@
   width: 25px;
   cursor: pointer;
 }
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar .rightSideBarHeading .close {
+    width: 20px;
+  }
+}
 .rightSideBar .rightSideBarHeading .userPic {
   width: 40px;
   border-radius: 50px;
@@ -35,8 +50,18 @@
      object-fit: cover;
   cursor: pointer;
 }
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar .rightSideBarHeading .userPic {
+    width: 35px;
+  }
+}
 .rightSideBar .rsHr {
   margin: 20px;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar .rsHr {
+    margin: 10px;
+  }
 }
 .rightSideBar .Container {
   display: flex;
@@ -44,6 +69,11 @@
   gap: 30px;
   position: relative;
   height: 80%;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar .Container {
+    height: 75%;
+  }
 }
 .rightSideBar .Container .linksContainer ul {
   list-style: none;
@@ -68,6 +98,11 @@
 }
 .rightSideBar .Container .linksContainer ul li .icon {
   width: 25px;
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar .Container .linksContainer ul li {
+    font-size: 16px;
+  }
 }
 .rightSideBar .Container .linksContainer ul li:hover {
   color: var(--main-color);
@@ -113,4 +148,10 @@
   color: white;
   background-color: var(--hover-color);
   transform: scale(1.05);
+}
+@media (min-width: 361px) and (max-width: 425px) {
+  .rightSideBar .Container .btnsContainer .logoutBtn {
+    width: 30%;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=rightSideBar.css.map */

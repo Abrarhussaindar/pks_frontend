@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .proDet{
     display: flex;
     flex-direction: column;
@@ -12,6 +14,16 @@
             margin-left: 10px;
             font-weight: 500;
             color: var(--hover-color);
+        }
+
+        @include media('>phone', '<=425px'){
+            font-size: 16px;
+
+            .itemSpan,.priceSpan{
+                font-size: 18px;
+            }
+            
+    
         }
     }
 }

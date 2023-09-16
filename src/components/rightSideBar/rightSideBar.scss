@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .rightSideBar{
     height: 100vh;
     width: 25%;
@@ -9,6 +11,12 @@
     color: black;
     transform: translateX(460px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    
+    @include media('>phone', '<=425px'){
+        // transform: translateX(500px);
+        width: 100%;
+
+    }
     &.open{
         transition: all 0.5s ease-in;
         transform: translateX(0);
@@ -29,18 +37,37 @@
         .close{
             width: 25px;
             cursor: pointer;
+            @include media('>phone', '<=425px'){
+                // transform: translateX(500px);
+                
+                width: 20px;
+                
+        
+            }
         }
         .userPic{
             width: 40px;
             border-radius: 50px;
             object-fit: cover;
             cursor: pointer;
+            @include media('>phone', '<=425px'){
+                // transform: translateX(500px);
+                
+                width: 35px;
+                
+        
+            }
         }
 
         
     }
     .rsHr{
         margin: 20px;
+        @include media('>phone', '<=425px'){
+            // transform: translateX(500px);
+            margin: 10px;
+    
+        }
     }
     .Container{
         display: flex;
@@ -50,6 +77,13 @@
         // padding: 20px;
         height: 80%;
         // border: 1px solid black;
+        @include media('>phone', '<=425px'){
+            // transform: translateX(500px);
+            
+            height: 75%;
+            
+    
+        }
 
         .linksContainer{
             // padding: ;
@@ -74,6 +108,11 @@
                     cursor: pointer;
                     .icon{
                         width: 25px;
+                    }
+                    @include media('>phone', '<=425px'){
+                        // transform: translateX(500px);
+                        font-size: 16px;
+                
                     }
 
                     &:hover{
@@ -130,6 +169,15 @@
                     background-color: var(--hover-color);
                     transform: scale(1.05);
                 }
+
+                @include media('>phone', '<=425px'){
+                    // transform: translateX(500px);
+                    
+                    width: 30%;
+                    font-size: 16px;
+            
+                }
+                
             }
         }
     }

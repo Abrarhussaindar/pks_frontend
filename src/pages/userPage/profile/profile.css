@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .profileContainer .profileWrapper {
   display: flex;
   flex-direction: column;
@@ -6,16 +11,48 @@
   margin: 30px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .profileContainer .profileWrapper {
+    margin: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper {
+    margin: 10px;
+  }
+}
 .profileContainer .profileWrapper .profileTop {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .profileContainer .profileWrapper .profileTop {
+    padding: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileTop {
+    padding: 10px;
+  }
+}
 .profileContainer .profileWrapper .profileBottom {
   padding: 10px;
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .profileContainer .profileWrapper .profileBottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileBottom {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .profileContainer .profileWrapper .profileBottom .heading {
   display: flex;
@@ -25,6 +62,16 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--hover-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .profileContainer .profileWrapper .profileBottom .heading h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileBottom .heading h3 {
+    font-size: 16px;
+  }
 }
 .profileContainer .profileWrapper .profileBottom .heading .addressBtns {
   display: flex;
@@ -62,4 +109,14 @@
   flex: 4;
   padding: 10px;
   margin-left: 10px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .profileContainer .profileWrapper .profileBottom .profileBottomRight {
+    margin-left: 0;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileBottom .profileBottomRight {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=profile.css.map */

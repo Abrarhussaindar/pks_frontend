@@ -1,3 +1,6 @@
+@import "../../../breakpoints.scss";
+
+
 .indiHr{
     margin: 10px 0px;
 }
@@ -10,9 +13,19 @@
     border-radius: 10px;
     .addressContent{
 
+
         .addressType,.address,.state,.city,.pin{
             h4{
                 color: var(--main-color);
+                @include media('>phone', '<=mobile'){
+                    
+                    font-size: 14px;
+            
+                }
+                @include media('>smphone', '<=phone'){
+                    font-size: 14px;
+                    
+                }
             }
             .type{
                 color: var(--hover-color)
@@ -23,6 +36,15 @@
                 font-size: 16px;
                 font-weight: 600;
                 color: var(--hover-color);
+                @include media('>phone', '<=mobile'){
+                    
+                    font-size: 14px;
+            
+                }
+                @include media('>smphone', '<=phone'){
+                    font-size: 14px;
+                    
+                }
             }
         }
 

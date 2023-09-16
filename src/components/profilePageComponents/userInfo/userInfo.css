@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .indiUserInfo {
   border: 1px solid var(--un-color);
   border-radius: 10px;
@@ -5,6 +10,18 @@
 }
 .indiUserInfo .indiUserInfoTop {
   display: flex;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiUserInfo .indiUserInfoTop {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiUserInfo .indiUserInfoTop {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .indiUserInfo .indiUserInfoTop .firstName, .indiUserInfo .indiUserInfoTop .lastName {
   flex: 1;
@@ -16,6 +33,16 @@
   font-weight: 600;
   color: var(--main-color);
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiUserInfo .indiUserInfoTop .firstName h4, .indiUserInfo .indiUserInfoTop .lastName h4 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiUserInfo .indiUserInfoTop .firstName h4, .indiUserInfo .indiUserInfoTop .lastName h4 {
+    font-size: 14px;
+  }
+}
 .indiUserInfo .indiUserInfoTop .firstName span, .indiUserInfo .indiUserInfoTop .lastName span {
   padding: 0 10px;
   border-bottom: 1px solid var(--un-color);
@@ -23,11 +50,33 @@
   font-size: 18px;
   font-weight: 500;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiUserInfo .indiUserInfoTop .firstName span, .indiUserInfo .indiUserInfoTop .lastName span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiUserInfo .indiUserInfoTop .firstName span, .indiUserInfo .indiUserInfoTop .lastName span {
+    font-size: 14px;
+  }
+}
 .indiUserInfo .indiUserInfoBottom {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: 30px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiUserInfo .indiUserInfoBottom {
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiUserInfo .indiUserInfoBottom {
+    gap: 10px;
+    margin-top: 10px;
+  }
 }
 .indiUserInfo .indiUserInfoBottom .userName, .indiUserInfo .indiUserInfoBottom .userEmail, .indiUserInfo .indiUserInfoBottom .userPhone {
   display: flex;
@@ -39,10 +88,30 @@
   font-weight: 600;
   color: var(--main-color);
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiUserInfo .indiUserInfoBottom .userName h4, .indiUserInfo .indiUserInfoBottom .userEmail h4, .indiUserInfo .indiUserInfoBottom .userPhone h4 {
+    font-size: 14px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiUserInfo .indiUserInfoBottom .userName h4, .indiUserInfo .indiUserInfoBottom .userEmail h4, .indiUserInfo .indiUserInfoBottom .userPhone h4 {
+    font-size: 12px;
+  }
+}
 .indiUserInfo .indiUserInfoBottom .userName span, .indiUserInfo .indiUserInfoBottom .userEmail span, .indiUserInfo .indiUserInfoBottom .userPhone span {
   padding: 0 10px;
   border-bottom: 1px solid var(--un-color);
   color: var(--hover-color);
   font-size: 18px;
   font-weight: 500;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiUserInfo .indiUserInfoBottom .userName span, .indiUserInfo .indiUserInfoBottom .userEmail span, .indiUserInfo .indiUserInfoBottom .userPhone span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiUserInfo .indiUserInfoBottom .userName span, .indiUserInfo .indiUserInfoBottom .userEmail span, .indiUserInfo .indiUserInfoBottom .userPhone span {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=userInfo.css.map */

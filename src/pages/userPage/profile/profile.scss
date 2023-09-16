@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .profileContainer{
     // height: 100vh;
     .profileWrapper{
@@ -9,12 +11,27 @@
         border-radius: 10px;
         margin: 30px;
         box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        
+        @include media('>phone', '<=mobile'){
+            margin: 10px;
+    
+        }
+        @include media('>smphone', '<=phone'){
+            margin: 10px;
+        }
         .profileTop{
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 20px;
 
+            @include media('>phone', '<=mobile'){
+                padding: 10px;
+        
+            }
+            @include media('>smphone', '<=phone'){
+                padding: 10px;
+            }
         }
 
         .profileBottom{
@@ -23,6 +40,15 @@
             display: flex;
             justify-content: space-between;
 
+            @include media('>phone', '<=mobile'){
+                flex-direction: column;
+                gap: 20px;
+        
+            }
+            @include media('>smphone', '<=phone'){
+                flex-direction: column;
+                gap: 20px;
+            }
             .heading{
                 display: flex;
                 justify-content: space-between;
@@ -30,7 +56,15 @@
                 h3{
                     font-size: 20px;
                     font-weight: 600;
-                    color: var(--hover-color)
+                    color: var(--hover-color);
+
+                    @include media('>phone', '<=mobile'){
+                        font-size: 16px;
+                
+                    }
+                    @include media('>smphone', '<=phone'){
+                        font-size: 16px;
+                    }
                 }
 
                 .addressBtns{
@@ -74,6 +108,15 @@
                 flex: 4;
                 padding: 10px;
                 margin-left: 10px;
+                @include media('>phone', '<=mobile'){
+                    
+                    margin-left: 0;
+            
+                }
+                @include media('>smphone', '<=phone'){
+                    margin-left: 0;
+                    
+                }
             }
         }
         

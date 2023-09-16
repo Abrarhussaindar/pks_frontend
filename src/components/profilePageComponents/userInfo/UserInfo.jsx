@@ -3,6 +3,7 @@ import "./userInfo.css"
 export default function UserInfo() {
     return (
         
+        
         <div className="indiUserInfo">
             <div className="indiUserInfoTop">
                 <div className="firstName">

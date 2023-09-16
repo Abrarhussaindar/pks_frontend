@@ -3,7 +3,6 @@ import "./userAddress.css"
 export default function UserAddress() {
     return (
         <>
-        
             <div className="indiAddress">
                 <div className="addressContent">
                     <div className="addressType">

@@ -5,6 +5,7 @@ import UserAddress from "../../../components/profilePageComponents/userAddress/U
 import UserProfilePicture from "../../../components/profilePageComponents/userProfilePicture/UserProfilePicture"
 import UserInfo from "../../../components/profilePageComponents/userInfo/UserInfo"
 
+
 export default function Profile() {
     return (
         <>

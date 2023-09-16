@@ -21,7 +21,7 @@
     background-color: var(--main-color);
     color: white;
 
-    @include media('>phone', '<=425px'){
+    @include media('>phone', '<=450px'){
         padding: 0 20px;
     }
     .leftSide{
@@ -36,7 +36,7 @@
                     color: var(--box-color);
                 }
 
-                @include media('>phone', '<=425px'){
+                @include media('>phone', '<=450px'){
                     font-size: 20px;
                 }
             }
@@ -51,7 +51,7 @@
         border-radius: 30px;
         background-color: white;
 
-        @include media('>phone', '<=425px'){
+        @include media('>phone', '<=450px'){
             display: none;
         }
 
@@ -121,7 +121,7 @@
                 cursor: pointer;
             }
 
-            @include media('>phone', '<=425px'){
+            @include media('>phone', '<=450px'){
                 img{
                     width: 22px;
                 }

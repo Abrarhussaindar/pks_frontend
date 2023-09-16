@@ -12,6 +12,10 @@
         gap: 10px;
 
     }
+    @include media('>smphone', '<=phone'){
+        padding: 10px;
+        gap: 10px;
+    }
 
     .cartTotalContainer{
         padding: 15px;
@@ -32,6 +36,10 @@
                         font-size: 18px;
                         
                     }
+                    @include media('>smphone', '<=phone'){
+                        font-size: 18px;
+                    }
+                    
                 }
 
             }
@@ -61,6 +69,11 @@
                     
             
                 }
+                @include media('>smphone', '<=phone'){
+                    font-size: 12px;
+                    padding: 10px 8px;
+                }
+                
             }
         }
     }
@@ -80,6 +93,10 @@
                     
             
                 }
+                
+                @include media('>smphone', '<=phone'){
+                    font-size: 20px;
+                }
             }
         }
         .cartHr,.bottomHr{
@@ -88,6 +105,10 @@
                 margin: 20px 0;
                 
         
+            }
+            
+            @include media('>smphone', '<=phone'){
+                margin: 20px 0;
             }
         }
 

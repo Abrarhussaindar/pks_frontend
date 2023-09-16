@@ -13,6 +13,11 @@
     align-items: unset;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiProductContainer {
+    align-items: unset;
+  }
+}
 .indiProductContainer .cartLeft {
   display: flex;
   width: 60%;
@@ -24,12 +29,24 @@
     gap: 10px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiProductContainer .cartLeft {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .indiProductContainer .cartLeft img {
   width: 150px;
   height: 150px;
   border-radius: 10px;
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .indiProductContainer .cartLeft img {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .indiProductContainer .cartLeft img {
     width: 90px;
     height: 90px;
@@ -49,12 +66,22 @@
     font-size: 12px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiProductContainer .cartLeft .cartProductDetailContainer p {
+    font-size: 12px;
+  }
+}
 .indiProductContainer .cartLeft .cartProductDetailContainer h4 {
   font-size: 20px;
   font-weight: 500;
   color: var(--hover-color);
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .indiProductContainer .cartLeft .cartProductDetailContainer h4 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer h4 {
     font-size: 16px;
   }
@@ -80,7 +107,17 @@
     font-size: 16px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 span {
+    font-size: 16px;
+  }
+}
 @media (min-width: 371px) and (max-width: 460px) {
+  .indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 {
     font-size: 16px;
   }
@@ -95,6 +132,12 @@
   height: 15px;
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .indiProductContainer .cartLeft .cartProductDetailContainer .quantity .upDown img {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer .quantity .upDown img {
     width: 10px;
     height: 10px;
@@ -128,6 +171,12 @@
     padding: 10px 8px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiProductContainer .cartRight .buyBtn {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
 .indiProductContainer .cartRight .delBtn {
   padding: 10px 40px;
   border: 1px solid red;
@@ -149,6 +198,12 @@
     padding: 10px 8px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiProductContainer .cartRight .delBtn {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
 .indiProductContainer .cartRight .saveBtn {
   padding: 10px 40px;
   border: 1px solid green;
@@ -165,6 +220,12 @@
   background-color: rgb(10, 96, 10);
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .indiProductContainer .cartRight .saveBtn {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .indiProductContainer .cartRight .saveBtn {
     font-size: 14px;
     padding: 10px 8px;

@@ -24,4 +24,12 @@
   .proDet h5 .itemSpan, .proDet h5 .priceSpan {
     font-size: 18px;
   }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .proDet h5 {
+    font-size: 16px;
+  }
+  .proDet h5 .itemSpan, .proDet h5 .priceSpan {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=cartSubTotal.css.map */

@@ -25,5 +25,12 @@
             
     
         }
+        @include media('>smphone', '<=phone'){
+            font-size: 16px;
+
+            .itemSpan,.priceSpan{
+                font-size: 18px;
+            }
+        }
     }
 }

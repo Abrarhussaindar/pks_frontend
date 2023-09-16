@@ -1,1 +1,158 @@
-/*# sourceMappingURL=profile.css.map */
+.profileContainer .profileWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 15px 30px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.profileContainer .profileWrapper .profileTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.profileContainer .profileWrapper .profileTop .profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profileContainer .profileWrapper .profileTop .profileImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profileContainer .profileWrapper .profileTop .updateBtn {
+  position: relative;
+  top: -30px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: var(--un-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.profileContainer .profileWrapper .profileTop .updateBtn img {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.profileContainer .profileWrapper .profileTop .updateBtn:hover {
+  background-color: #e1e1e1;
+  transform: scale(1.01);
+}
+.profileContainer .profileWrapper .profileTop .updateBtn:hover img {
+  content: url("http://localhost:3000/assets/images/pen-fill.png");
+}
+.profileContainer .profileWrapper .profileBottom {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.profileContainer .profileWrapper .profileBottom .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.profileContainer .profileWrapper .profileBottom .heading h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+.profileContainer .profileWrapper .profileBottom .heading .addressBtns {
+  display: flex;
+  gap: 10px;
+}
+.profileContainer .profileWrapper .profileBottom .heading button {
+  border: 1px solid var(--hover-color);
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: var(--hover-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.profileContainer .profileWrapper .profileBottom .heading button:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+.profileContainer .profileWrapper .profileBottom .heading .addNew:hover {
+  background-color: green;
+  color: white;
+  border: 1px solid green;
+}
+.profileContainer .profileWrapper .profileBottom .headingHr {
+  margin: 10px 0px;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomLeft {
+  flex: 8;
+  padding: 1 0px;
+  border-right: 1px solid var(--un-color);
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight {
+  flex: 4;
+  padding: 10px;
+  margin-left: 10px;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiHr {
+  margin: 10px 0px;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--un-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .addressType h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .address h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .state h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .city h4, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .pin h4 {
+  color: var(--main-color);
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .addressType .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .address .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .state .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .city .type, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .pin .type {
+  color: var(--hover-color);
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .addressType span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .address span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .state span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .city span, .profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .addressContent .pin span {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--hover-color);
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns button {
+  border: 1px solid var(--hover-color);
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: var(--hover-color);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns button:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns .addressUpdateBtn:hover {
+  background-color: rgb(9, 105, 165);
+  color: white;
+  border: 1px solid rgb(9, 105, 165);
+}
+.profileContainer .profileWrapper .profileBottom .profileBottomRight .profileBottomAddressContainer .indiAddress .indiBtns .addressDelBtn:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}/*# sourceMappingURL=profile.css.map */

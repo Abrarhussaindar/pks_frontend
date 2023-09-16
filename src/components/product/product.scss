@@ -9,8 +9,11 @@
         .left{
             flex: 6;
             display: flex;
-            justify-content: space-around;
-            height: 650px;
+            // justify-content: space-around;
+            height: 500px;
+            // border: 1px solid black;
+            justify-content: center;
+            gap: 30px;
         }
         .right{
             height: 650px;

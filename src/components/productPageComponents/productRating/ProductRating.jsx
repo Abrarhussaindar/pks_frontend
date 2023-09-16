@@ -4,11 +4,11 @@ export default function ProductRating() {
     return (
         <ul className="productRating">
             <li>
-                <img src="/assets/images/star.svg" alt="" />
-                <img src="/assets/images/star.svg" alt="" />
-                <img src="/assets/images/star.svg" alt="" />
-                <img src="/assets/images/star.svg" alt="" />
-                <img src="/assets/images/starOutline.png" alt="" />
+                <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                <img src="/assets/images/star-outline.png" alt="" />
                 <span>
 
                     - 2000 Ratings

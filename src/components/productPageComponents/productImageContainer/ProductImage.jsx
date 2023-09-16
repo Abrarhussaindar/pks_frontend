@@ -3,6 +3,7 @@ import "./productImage.css"
 export default function ProductImage() {
     return (
         <>
+        
             <div className="otherImageContainer">
                 <img src="/assets/images/products/shirt.jpg" className="active" alt="" />
                 <img src="/assets/images/products/shirt.jpg" alt="" />

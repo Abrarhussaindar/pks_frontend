@@ -54,7 +54,7 @@
             .ordersLeftSide{
                 flex: 2;
                 border-right: 1px solid var(--un-color);
-                margin-right: 30px;
+                margin-right: 5px;
 
                 .leftSideHeading{
                     padding: 20px;
@@ -93,7 +93,7 @@
             }
             .ordersRightSide{
                 flex: 10;
-                // padding: 20px;
+                margin-top: 5px;
                 display: flex;
                 flex-direction: column;
                 // gap: px;

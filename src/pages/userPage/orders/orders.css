@@ -51,7 +51,7 @@
 .orderContainer .orderWrapper .ordersContent .ordersLeftSide {
   flex: 2;
   border-right: 1px solid var(--un-color);
-  margin-right: 30px;
+  margin-right: 5px;
 }
 .orderContainer .orderWrapper .ordersContent .ordersLeftSide .leftSideHeading {
   padding: 20px;
@@ -86,6 +86,7 @@
 }
 .orderContainer .orderWrapper .ordersContent .ordersRightSide {
   flex: 10;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
 }/*# sourceMappingURL=orders.css.map */

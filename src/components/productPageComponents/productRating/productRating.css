@@ -2,8 +2,15 @@
   list-style: none;
   padding: 10px;
 }
+.productRating li {
+  display: flex;
+  align-items: center;
+}
+.productRating li .starFill {
+  width: 18px;
+}
 .productRating li img {
-  width: 15px;
+  width: 16px;
 }
 .productRating li span {
   margin-left: 5px;

@@ -1,6 +1,3 @@
-.profileContainer {
-  height: 100vh;
-}
 .profileContainer .profileWrapper {
   display: flex;
   flex-direction: column;

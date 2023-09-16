@@ -11,8 +11,9 @@
 .productContainer .mainSection .left {
   flex: 6;
   display: flex;
-  justify-content: space-around;
-  height: 650px;
+  height: 500px;
+  justify-content: center;
+  gap: 30px;
 }
 .productContainer .mainSection .right {
   height: 650px;

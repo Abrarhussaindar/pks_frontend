@@ -5,21 +5,23 @@
   gap: 20px;
 }
 .otherImageContainer .active {
-  border: 2px solid var(--hover-color);
+  border: 1px solid var(--hover-color);
 }
 .otherImageContainer img {
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   width: 40px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .productImageContainer {
-  background-color: var(--un-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .productImageContainer img {
   width: 90%;

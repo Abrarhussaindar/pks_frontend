@@ -10,24 +10,25 @@ export default function ProductCard() {
                     <img src="/assets/images/products/shirt.jpg" alt="" />
                 </Link>
 
-                <ul className="shirtColors">
+                {/* <ul className="shirtColors">
                     <li className="blue active"></li>
                     <li className="green"></li>
                     <li className="yellow"></li>
                     <li className="white"></li>
-                </ul>
+                </ul> */}
             </div>
+            <hr className="productCardHr"/>
             <div className="productDetailsContainer">
                 <h4>product name</h4>
-                <p>Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeve</p>
+                {/* <p>Men's Solid Slim Fit Cotton Casual Shirt with Spread Collar & Full Sleeve</p> */}
             
                 <ul className="productCardRating">
                     <li>
-                        <img src="/assets/images/star.svg" alt="" />
-                        <img src="/assets/images/star.svg" alt="" />
-                        <img src="/assets/images/star.svg" alt="" />
-                        <img src="/assets/images/star.svg" alt="" />
-                        <img src="/assets/images/starOutline.png" alt="" />
+                        <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                        <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                        <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                        <img className="starFill" src="/assets/images/star-fill.png" alt="" />
+                        <img src="/assets/images/star-outline.png" alt="" />
                         <span>
 
                             - 2000
@@ -37,14 +38,14 @@ export default function ProductCard() {
                 <div className="productPrice">
                     <div className="prices">
                         <span>&#x20B9;</span>
-                        462
+                        <h4>462</h4>
                     </div>
-                    <p>M.R.P: <span>&#x20B9;1000</span> </p>
-                    <div className="discounts">(75% off)</div>
+                    <p>M.R.P: <span>&#x20B9;1000</span><span className="discounts">(75% off)</span> </p>
+                    
                 </div>
-                <div className="deliveryOptions">
+                {/* <div className="deliveryOptions">
                     <p>FREE Delivery over &#x20B9;499</p>
-                </div>
+                </div> */}
             </div>
         </div>
     )

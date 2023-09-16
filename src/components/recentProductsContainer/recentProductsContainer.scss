@@ -11,6 +11,10 @@
         overflow-x: scroll;
         padding: 20px;
     }
+    @include media('>smphone', '<=phone'){
+        overflow-x: scroll;
+        padding: 20px;
+    }
 
     .innerContainer{
         background-color: var(--box-color);
@@ -24,6 +28,9 @@
                 @include media('>phone', '<=mobile'){
                     font-size: 16px;
                     // padding: 5px;
+                }
+                @include media('>smphone', '<=phone'){
+                    font-size: 16px;
                 }
             }
         }

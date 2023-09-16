@@ -10,7 +10,12 @@
   height: 70px;
   background-color: var(--hover-color);
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .secondaryNavbarContainer {
+    height: 50px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .secondaryNavbarContainer {
     height: 50px;
   }
@@ -31,16 +36,26 @@
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .secondaryNavbarContainer .container a img {
     width: 20px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .secondaryNavbarContainer .container a img {
+    width: 18px;
   }
 }
 .secondaryNavbarContainer .container a span {
   font-size: 14px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .secondaryNavbarContainer .container a span {
     font-size: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .secondaryNavbarContainer .container a span {
+    font-size: 8px;
   }
 }/*# sourceMappingURL=secondaryNavbar.css.map */

@@ -24,6 +24,11 @@
     @include media('>phone', '<=mobile'){
         padding: 0 20px;
     }
+    @include media('>smphone', '<=phone'){
+        padding: 0 15px;
+
+        height: 60px;
+    }
     .leftSide{
         .logoLink{
             text-decoration: none;
@@ -39,6 +44,11 @@
                 @include media('>phone', '<=mobile'){
                     font-size: 20px;
                 }
+
+                @include media('>smphone', '<=phone'){
+                    font-size: 18px;
+            
+                }
             }
         }
     }
@@ -53,6 +63,10 @@
 
         @include media('>phone', '<=800px'){
             display: none;
+        }
+        @include media('>smphone', '<=phone'){
+            display: none;
+    
         }
 
         .searchbarIcon{
@@ -135,6 +149,21 @@
                         right: -40%;
                     }
                 }
+            }
+            @include media('>smphone', '<=phone'){
+                img{
+                    width: 20px;
+                }
+                .cart{
+                    a{
+                        display: flex;
+                    }
+                    .cartCount{
+                        top: -40%;
+                        right: -40%;
+                    }
+                }
+        
             }
         }
     }

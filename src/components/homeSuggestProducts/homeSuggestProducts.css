@@ -12,7 +12,14 @@
   padding: 10px 0;
   margin-bottom: 20px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .SuggetProductsContainer {
+    overflow-x: scroll;
+    margin: 15px 0;
+    border-radius: 0;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
     margin: 15px 0;
@@ -22,9 +29,14 @@
 .SuggetProductsContainer .suggetHeading {
   padding: 10px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .SuggetProductsContainer .suggetHeading {
     font-size: 14px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .SuggetProductsContainer .suggetHeading {
+    font-size: 12px;
   }
 }
 .SuggetProductsContainer .container {
@@ -44,7 +56,12 @@
 .SuggetProductsContainer .container .innerContainer img {
   width: 100px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .SuggetProductsContainer .container .innerContainer img {
+    width: 70px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .SuggetProductsContainer .container .innerContainer img {
     width: 70px;
   }
@@ -55,8 +72,13 @@
   margin-top: 10px;
   text-align: center;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .SuggetProductsContainer .container .innerContainer p {
     font-size: 12px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .SuggetProductsContainer .container .innerContainer p {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=homeSuggestProducts.css.map */

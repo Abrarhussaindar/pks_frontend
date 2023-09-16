@@ -17,7 +17,7 @@
   font-weight: 500;
   color: var(--hover-color);
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .proDet h5 {
     font-size: 16px;
   }

@@ -14,11 +14,18 @@
     @include media('>phone', '<=mobile'){
         padding: 20px 20px 10px 20px;
     }
+    @include media('>smphone', '<=phone'){
+        padding: 15px;
+    }
     .top{
         display: flex;
         justify-content: space-between;
 
         @include media('>phone', '<=mobile'){
+            flex-direction: column;
+            text-align: center;
+        }
+        @include media('>smphone', '<=phone'){
             flex-direction: column;
             text-align: center;
         }
@@ -39,6 +46,9 @@
 
         .center{
             @include media('>phone', '<=mobile'){
+                margin-top: 20px;
+            }
+            @include media('>smphone', '<=phone'){
                 margin-top: 20px;
             }
             h3{
@@ -71,6 +81,9 @@
                 @include media('>phone', '<=mobile'){
                     margin-top: 20px;
                 }
+                @include media('>smphone', '<=phone'){
+                    margin-top: 20px;
+                }
                 h3{
                     font-size: 20px;
                     font-weight: 600;
@@ -83,11 +96,17 @@
                     @include media('>phone', '<=mobile'){
                         justify-content: center;
                     }
+                    @include media('>smphone', '<=phone'){
+                        justify-content: center;
+                    }
                     img{
                         width: 30px;
                         cursor: pointer;
                         @include media('>phone', '<=mobile'){
-                            width: 20px;
+                            width: 22px;
+                        }
+                        @include media('>smphone', '<=phone'){
+                            width: 22px;
                         }
                         &:hover{
                             transform: scale(1.1);
@@ -110,11 +129,24 @@
                     @include media('>phone', '<=mobile'){
                         width: unset;
                     }
+                    @include media('>smphone', '<=phone'){
+                        width: unset;
+                    }
                     li{
                         a{
                             text-decoration: none;
                             color: white;
                             font-weight: 600;
+                            @include media('>phone', '<=mobile'){
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            @include media('>smphone', '<=phone'){
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
                             span{
                                 margin-right: 8px;
 
@@ -142,6 +174,9 @@
         p{
             span{
                 color: var(--box-color);
+            }
+            @include media('>smphone', '<=phone'){
+                font-size: 14px;
             }
         }
     }

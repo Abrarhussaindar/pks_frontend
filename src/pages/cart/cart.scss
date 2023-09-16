@@ -12,6 +12,7 @@
         gap: 10px;
 
     }
+
     .cartTotalContainer{
         padding: 15px;
         border-radius: 10px;
@@ -30,7 +31,6 @@
                     @include media('>phone', '<=mobile'){
                         font-size: 18px;
                         
-                
                     }
                 }
 

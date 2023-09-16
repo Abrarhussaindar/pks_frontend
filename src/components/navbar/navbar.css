@@ -22,9 +22,15 @@
   background-color: var(--main-color);
   color: white;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .nav_container {
     padding: 0 20px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .nav_container {
+    padding: 0 15px;
+    height: 60px;
   }
 }
 .nav_container .leftSide .logoLink {
@@ -39,9 +45,14 @@
 .nav_container .leftSide .logoLink h1 span {
   color: var(--box-color);
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .nav_container .leftSide .logoLink h1 {
     font-size: 20px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .nav_container .leftSide .logoLink h1 {
+    font-size: 18px;
   }
 }
 .nav_container .center {
@@ -52,7 +63,12 @@
   border-radius: 30px;
   background-color: white;
 }
-@media (min-width: 321px) and (max-width: 800px) {
+@media (min-width: 371px) and (max-width: 800px) {
+  .nav_container .center {
+    display: none;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .nav_container .center {
     display: none;
   }
@@ -115,9 +131,21 @@
      object-fit: cover;
   cursor: pointer;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .nav_container .rightSide .navUserImg img {
     width: 22px;
+  }
+  .nav_container .rightSide .navUserImg .cart a {
+    display: flex;
+  }
+  .nav_container .rightSide .navUserImg .cart .cartCount {
+    top: -40%;
+    right: -40%;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .nav_container .rightSide .navUserImg img {
+    width: 20px;
   }
   .nav_container .rightSide .navUserImg .cart a {
     display: flex;

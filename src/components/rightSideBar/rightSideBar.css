@@ -15,7 +15,12 @@
   transform: translateX(460px);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .rightSideBar {
+    width: 100%;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .rightSideBar {
     width: 100%;
   }
@@ -38,7 +43,12 @@
   width: 25px;
   cursor: pointer;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .rightSideBar .rightSideBarHeading .close {
+    width: 20px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .rightSideBar .rightSideBarHeading .close {
     width: 20px;
   }
@@ -50,7 +60,12 @@
      object-fit: cover;
   cursor: pointer;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .rightSideBar .rightSideBarHeading .userPic {
+    width: 35px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .rightSideBar .rightSideBarHeading .userPic {
     width: 35px;
   }
@@ -58,7 +73,7 @@
 .rightSideBar .rsHr {
   margin: 20px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
   .rightSideBar .rsHr {
     margin: 10px;
   }
@@ -70,7 +85,12 @@
   position: relative;
   height: 80%;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .rightSideBar .Container {
+    height: 75%;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .rightSideBar .Container {
     height: 75%;
   }
@@ -99,7 +119,12 @@
 .rightSideBar .Container .linksContainer ul li .icon {
   width: 25px;
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .rightSideBar .Container .linksContainer ul li {
+    font-size: 16px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .rightSideBar .Container .linksContainer ul li {
     font-size: 16px;
   }
@@ -149,7 +174,13 @@
   background-color: var(--hover-color);
   transform: scale(1.05);
 }
-@media (min-width: 321px) and (max-width: 550px) {
+@media (min-width: 371px) and (max-width: 460px) {
+  .rightSideBar .Container .btnsContainer .logoutBtn {
+    width: 30%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .rightSideBar .Container .btnsContainer .logoutBtn {
     width: 30%;
     font-size: 16px;

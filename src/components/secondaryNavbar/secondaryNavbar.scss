@@ -12,6 +12,10 @@
     @include media('>phone', '<=mobile'){
         height: 50px;
     }
+    @include media('>smphone', '<=phone'){
+        height: 50px;
+
+    }
     .container{
         a{
             display: flex;
@@ -33,6 +37,10 @@
                 @include media('>phone', '<=mobile'){
                     width: 20px;
                 }
+                @include media('>smphone', '<=phone'){
+                    width: 18px;
+            
+                }
             }
 
             span{
@@ -40,6 +48,10 @@
 
                 @include media('>phone', '<=mobile'){
                     font-size: 10px;
+                }
+                @include media('>smphone', '<=phone'){
+                    font-size: 8px;
+            
                 }
             }
 

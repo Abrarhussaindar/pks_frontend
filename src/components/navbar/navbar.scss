@@ -51,7 +51,7 @@
         border-radius: 30px;
         background-color: white;
 
-        @include media('>phone', '<=550px'){
+        @include media('>phone', '<=800px'){
             display: none;
         }
 

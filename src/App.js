@@ -27,6 +27,10 @@ import Profile from "./pages/userPage/profile/Profile";
 import Login from "./pages/userPage/login/Login";
 import Register from "./pages/userPage/register/Register";
 import ForGotPassword from "./pages/userPage/forgotPassword/ForGotPassword";
+import Orders from "./pages/userPage/orders/Orders";
+import WishList from "./pages/userPage/wishlist/WishList";
+import Help from "./pages/help/Help";
+import CustomerServices from "./pages/customerServices/CustomerServices";
 
 const Layout = () => {
   return (
@@ -65,12 +69,28 @@ const router = createBrowserRouter([
         element: <BuyPage cart/>
       },
       {
+        path: "/orders/:id",
+        element: <Orders/>
+      },
+      {
+        path: "/wishlist/:id",
+        element: <WishList/>
+      },
+      {
         path: "/products/:category",
         element: <ProductsPage />
       },
       {
         path: "/product/:category/:id",
         element: <ProductPage />
+      },
+      {
+        path: "/help",
+        element: <Help />
+      },
+      {
+        path: "/customer-service",
+        element: <CustomerServices />
       },
 
       // footer links

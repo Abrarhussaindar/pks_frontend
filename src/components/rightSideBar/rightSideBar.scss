@@ -1,6 +1,6 @@
 .rightSideBar{
     height: 100vh;
-    width: 30%;
+    width: 25%;
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -10,12 +10,126 @@
     transform: translateX(460px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     &.open{
-        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in;
         transform: translateX(0);
     }
 
     &.close{
         transition: all 0.5s ease-in-out;
         transform: translateX(460px);
+    }
+
+
+    .rightSideBarHeading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+
+        .close{
+            width: 25px;
+            cursor: pointer;
+        }
+        .userPic{
+            width: 40px;
+            border-radius: 50px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        
+    }
+    .rsHr{
+        margin: 20px;
+    }
+    .Container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: relative;
+        // padding: 20px;
+        height: 80%;
+        // border: 1px solid black;
+
+        .linksContainer{
+            // padding: ;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                }
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 10px 10px;
+                    color: var(--hover-color);
+                    border-bottom: 1px solid var(--un-color);
+                    cursor: pointer;
+                    .icon{
+                        width: 25px;
+                    }
+
+                    &:hover{
+                        color: var(--main-color);
+                        background-color: var(--un-color);
+                        transition: all .1s ease-in;
+                        transform: scale(1.05);
+                        .userOrdersIcon{
+                                content: url("http://localhost:3000/assets/images/orders-fill.png");
+                                
+                        }
+                        .userProfileIcon{
+                                content: url("http://localhost:3000/assets/images/user-fill.png");
+                                
+                        }
+                        .userWishlistIcon{
+                                content: url("http://localhost:3000/assets/images/love-fill.png");
+                                
+                        }
+                        .userHelpIcon{
+                                content: url("http://localhost:3000/assets/images/help-fill.png");
+                                
+                        }
+                        .customerServicesIcon{
+                                content: url("http://localhost:3000/assets/images/support-fill.png");
+                                
+                        }
+                    }
+
+
+                }
+            }
+        }
+        .btnsContainer{
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+            // top: 20%;
+            width: 100%;
+            .logoutBtn{
+                width: 40%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                cursor: pointer;
+                border: 1px solid var(--hover-color);
+                color: var(--main-color);
+                background-color: var(--un-color);
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: white;
+                    background-color: var(--hover-color);
+                    transform: scale(1.05);
+                }
+            }
+        }
     }
 }

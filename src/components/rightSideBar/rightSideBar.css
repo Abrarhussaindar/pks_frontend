@@ -1,6 +1,6 @@
 .rightSideBar {
   height: 100vh;
-  width: 30%;
+  width: 25%;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -11,10 +11,105 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .rightSideBar.open {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
   transform: translateX(0);
 }
 .rightSideBar.close {
   transition: all 0.5s ease-in-out;
   transform: translateX(460px);
+}
+.rightSideBar .rightSideBarHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.rightSideBar .rightSideBarHeading .close {
+  width: 25px;
+  cursor: pointer;
+}
+.rightSideBar .rightSideBarHeading .userPic {
+  width: 40px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.rightSideBar .rsHr {
+  margin: 20px;
+}
+.rightSideBar .Container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  height: 80%;
+}
+.rightSideBar .Container .linksContainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+.rightSideBar .Container .linksContainer ul a {
+  text-decoration: none;
+}
+.rightSideBar .Container .linksContainer ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 10px;
+  color: var(--hover-color);
+  border-bottom: 1px solid var(--un-color);
+  cursor: pointer;
+}
+.rightSideBar .Container .linksContainer ul li .icon {
+  width: 25px;
+}
+.rightSideBar .Container .linksContainer ul li:hover {
+  color: var(--main-color);
+  background-color: var(--un-color);
+  transition: all 0.1s ease-in;
+  transform: scale(1.05);
+}
+.rightSideBar .Container .linksContainer ul li:hover .userOrdersIcon {
+  content: url("http://localhost:3000/assets/images/orders-fill.png");
+}
+.rightSideBar .Container .linksContainer ul li:hover .userProfileIcon {
+  content: url("http://localhost:3000/assets/images/user-fill.png");
+}
+.rightSideBar .Container .linksContainer ul li:hover .userWishlistIcon {
+  content: url("http://localhost:3000/assets/images/love-fill.png");
+}
+.rightSideBar .Container .linksContainer ul li:hover .userHelpIcon {
+  content: url("http://localhost:3000/assets/images/help-fill.png");
+}
+.rightSideBar .Container .linksContainer ul li:hover .customerServicesIcon {
+  content: url("http://localhost:3000/assets/images/support-fill.png");
+}
+.rightSideBar .Container .btnsContainer {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 100%;
+}
+.rightSideBar .Container .btnsContainer .logoutBtn {
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--hover-color);
+  color: var(--main-color);
+  background-color: var(--un-color);
+  transition: all 0.3s ease-in-out;
+}
+.rightSideBar .Container .btnsContainer .logoutBtn:hover {
+  color: white;
+  background-color: var(--hover-color);
+  transform: scale(1.05);
 }/*# sourceMappingURL=rightSideBar.css.map */

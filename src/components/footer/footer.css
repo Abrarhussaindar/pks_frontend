@@ -50,6 +50,12 @@
   width: 350px;
   margin-top: 10px;
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .footerContainer .top .left p {
+    width: unset;
+    font-size: 16px;
+  }
+}
 @media (min-width: 371px) and (max-width: 460px) {
   .footerContainer .top .center {
     margin-top: 20px;

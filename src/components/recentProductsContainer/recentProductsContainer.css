@@ -19,7 +19,7 @@
 @media (min-width: 301px) and (max-width: 370px) {
   .recentProductsContainer {
     overflow-x: scroll;
-    padding: 20px;
+    padding: 10px;
   }
 }
 .recentProductsContainer .innerContainer {

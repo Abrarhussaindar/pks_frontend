@@ -1,0 +1,87 @@
+.indiOrderCard {
+  border: 1px solid var(--un-color);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.indiOrderCard .cardTop {
+  display: flex;
+  justify-content: space-between;
+}
+.indiOrderCard .cardTop .cardTopLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 60%;
+  border-right: 1px solid var(--un-color);
+  margin-right: 30px;
+}
+.indiOrderCard .cardTop .cardTopLeft img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.indiOrderCard .cardTop .cardTopLeft h4 {
+  font-weight: 600;
+  color: var(--hover-color);
+  cursor: pointer;
+}
+.indiOrderCard .cardTop .cardTopRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.indiOrderCard .cardTop .cardTopRight .orderDetailsSpan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: var(--main-color);
+  font-weight: 500;
+  border-bottom: 1px solid var(--un-color);
+}
+.indiOrderCard .cardTop .cardTopRight .orderDetailsSpan span {
+  font-weight: 500;
+  color: var(--hover-color);
+}
+.indiOrderCard .cardTop .cardTopRight .orderDetailsSpan .orderPriceSpan {
+  font-size: 18px;
+  font-weight: 700;
+}
+.indiOrderCard .cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 10px;
+  color: var(--main-color);
+  font-weight: 500;
+  border-top: 1px solid var(--un-color);
+}
+.indiOrderCard .cardBottom button {
+  border: 1px solid var(--un-color);
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: var(--un-color);
+  cursor: pointer;
+  color: var(--hover-color);
+  transition: all 0.3s ease;
+}
+.indiOrderCard .cardBottom button:hover {
+  background-color: var(--hover-color);
+  color: var(--un-color);
+}
+.indiOrderCard .cardBottom .cancelOrder:hover {
+  background-color: red;
+  color: white;
+}/*# sourceMappingURL=orderCard.css.map */

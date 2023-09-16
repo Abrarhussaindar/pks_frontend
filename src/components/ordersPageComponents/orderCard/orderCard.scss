@@ -1,0 +1,96 @@
+.indiOrderCard{
+    border: 1px solid var(--un-color);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    .cardTop{
+        display: flex;
+        justify-content: space-between;
+
+        .cardTopLeft{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            width: 60%;
+            border-right: 1px solid var(--un-color);
+            margin-right: 30px;
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            h4{
+                font-weight: 600;
+                color: var(--hover-color);
+                cursor: pointer;
+            }
+        }
+        .cardTopRight{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // align-items: center;
+            // padding: 20px;
+            width: 40%;
+
+            .orderDetailsSpan{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                color: var(--main-color);
+                font-weight: 500;
+                border-bottom: 1px solid var(--un-color);
+                span{
+                    font-weight: 500;
+                    color: var(--hover-color);
+                }
+
+                .orderPriceSpan{
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .cardBottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        padding-bottom: 10px;
+        color: var(--main-color);
+        font-weight: 500;
+        border-top: 1px solid var(--un-color);
+    
+        button{
+            border: 1px solid var(--un-color);
+            outline: none;
+            padding: 5px 20px;
+            border-radius: 20px;
+            background-color: var(--un-color);
+            cursor: pointer;
+            color: var(--hover-color);
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: var(--hover-color);
+                color: var(--un-color);
+            }
+        }
+
+        .cancelOrder{
+            &:hover{
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+}

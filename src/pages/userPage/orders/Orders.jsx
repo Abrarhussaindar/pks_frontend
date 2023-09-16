@@ -1,7 +1,40 @@
-import React from 'react'
+import OrderCard from "../../../components/ordersPageComponents/orderCard/OrderCard"
+import "./orders.css"
 
 export default function Orders() {
     return (
-        <div>Orders</div>
+        
+        <div className="orderContainer">
+            <div className="orderWrapper">
+                <div className="heading">
+                    <h1>Orders</h1>
+                    <div className="orderSearchBar">
+                        <input type="text" placeholder="Search Orders here..." />
+                        <button>Search</button>
+                    </div>
+                </div>
+                <hr />
+                <div className="ordersContent">
+                    <div className="ordersLeftSide">
+                        <div className="leftSideHeading">
+                            <h3>Filter by :</h3>
+                        </div>
+                        <hr />
+                        <ul>
+                            <li className="active">Orderd</li>
+                            <li>Not Yet Dispatched</li>
+                            <li>Cancelled Orders</li>
+                            <li>Returned</li>
+                            <li>Buy Again</li>
+                        </ul>
+                    </div>
+                    <div className="ordersRightSide">
+                        <OrderCard />
+                        <OrderCard />
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }

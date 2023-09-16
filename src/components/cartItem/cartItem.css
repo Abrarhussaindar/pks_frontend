@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer {
     align-items: unset;
   }
@@ -18,7 +18,7 @@
   width: 60%;
   gap: 20px;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft {
     flex-direction: column;
     gap: 10px;
@@ -29,7 +29,7 @@
   height: 150px;
   border-radius: 10px;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft img {
     width: 90px;
     height: 90px;
@@ -44,7 +44,7 @@
   font-size: 18px;
   font-weight: 500;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer p {
     font-size: 12px;
   }
@@ -54,7 +54,7 @@
   font-weight: 500;
   color: var(--hover-color);
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer h4 {
     font-size: 16px;
   }
@@ -75,12 +75,12 @@
   font-weight: 600;
   color: var(--hover-color);
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 span {
     font-size: 16px;
   }
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer .quantity h5 {
     font-size: 16px;
   }
@@ -94,7 +94,7 @@
   width: 15px;
   height: 15px;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartLeft .cartProductDetailContainer .quantity .upDown img {
     width: 10px;
     height: 10px;
@@ -122,7 +122,7 @@
   color: white;
   background-color: var(--main-color);
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartRight .buyBtn {
     font-size: 14px;
     padding: 10px 8px;
@@ -143,7 +143,7 @@
   color: white;
   background-color: rgb(232, 4, 4);
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartRight .delBtn {
     font-size: 14px;
     padding: 10px 8px;
@@ -164,7 +164,7 @@
   color: white;
   background-color: rgb(10, 96, 10);
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .indiProductContainer .cartRight .saveBtn {
     font-size: 14px;
     padding: 10px 8px;

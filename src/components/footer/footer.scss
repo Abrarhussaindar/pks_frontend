@@ -11,14 +11,14 @@
     bottom: 0;
     width: 100%;
 
-    @include media('>phone', '<=425px'){
+    @include media('>phone', '<=mobile'){
         padding: 20px 20px 10px 20px;
     }
     .top{
         display: flex;
         justify-content: space-between;
 
-        @include media('>phone', '<=425px'){
+        @include media('>phone', '<=mobile'){
             flex-direction: column;
             text-align: center;
         }
@@ -38,7 +38,7 @@
         }
 
         .center{
-            @include media('>phone', '<=425px'){
+            @include media('>phone', '<=mobile'){
                 margin-top: 20px;
             }
             h3{
@@ -68,7 +68,7 @@
 
         .right{
             .rightTop{
-                @include media('>phone', '<=425px'){
+                @include media('>phone', '<=mobile'){
                     margin-top: 20px;
                 }
                 h3{
@@ -80,13 +80,13 @@
                     display: flex;
                     align-items: center;
                     gap: 20px;
-                    @include media('>phone', '<=425px'){
+                    @include media('>phone', '<=mobile'){
                         justify-content: center;
                     }
                     img{
                         width: 30px;
                         cursor: pointer;
-                        @include media('>phone', '<=425px'){
+                        @include media('>phone', '<=mobile'){
                             width: 20px;
                         }
                         &:hover{
@@ -107,7 +107,7 @@
                 ul{
                     list-style: none;
                     width: 252px;
-                    @include media('>phone', '<=425px'){
+                    @include media('>phone', '<=mobile'){
                         width: unset;
                     }
                     li{

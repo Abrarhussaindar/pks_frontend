@@ -7,7 +7,7 @@
     gap: 20px;
     width: 100%;
 
-    @include media('>phone', '<=425px'){
+    @include media('>phone', '<=mobile'){
         overflow-x: scroll;
         padding: 20px;
     }
@@ -21,7 +21,7 @@
             h3{
                 padding: 10px;
 
-                @include media('>phone', '<=425px'){
+                @include media('>phone', '<=mobile'){
                     font-size: 16px;
                     // padding: 5px;
                 }

@@ -22,7 +22,7 @@
   background-color: var(--main-color);
   color: white;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .nav_container {
     padding: 0 20px;
   }
@@ -39,7 +39,7 @@
 .nav_container .leftSide .logoLink h1 span {
   color: var(--box-color);
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .nav_container .leftSide .logoLink h1 {
     font-size: 20px;
   }
@@ -52,7 +52,7 @@
   border-radius: 30px;
   background-color: white;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 800px) {
   .nav_container .center {
     display: none;
   }
@@ -115,7 +115,7 @@
      object-fit: cover;
   cursor: pointer;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .nav_container .rightSide .navUserImg img {
     width: 22px;
   }

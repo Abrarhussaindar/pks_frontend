@@ -21,7 +21,7 @@
     background-color: var(--main-color);
     color: white;
 
-    @include media('>phone', '<=450px'){
+    @include media('>phone', '<=mobile'){
         padding: 0 20px;
     }
     .leftSide{
@@ -36,7 +36,7 @@
                     color: var(--box-color);
                 }
 
-                @include media('>phone', '<=450px'){
+                @include media('>phone', '<=mobile'){
                     font-size: 20px;
                 }
             }
@@ -121,7 +121,7 @@
                 cursor: pointer;
             }
 
-            @include media('>phone', '<=450px'){
+            @include media('>phone', '<=mobile'){
                 img{
                     width: 22px;
                 }

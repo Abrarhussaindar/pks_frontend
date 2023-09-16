@@ -9,7 +9,7 @@
     padding: 10px 0;
     margin-bottom: 20px;
 
-    @include media('>phone', '<=425px'){
+    @include media('>phone', '<=mobile'){
         overflow-x: scroll;
         margin: 15px 0;
         border-radius: 0;
@@ -18,7 +18,7 @@
     .suggetHeading{
         padding: 10px;
 
-        @include media('>phone', '<=425px'){
+        @include media('>phone', '<=mobile'){
             font-size: 14px;
         }
     }
@@ -38,7 +38,7 @@
                 img{
                     width: 100px;
 
-                    @include media('>phone', '<=425px'){
+                    @include media('>phone', '<=mobile'){
                         width: 70px;
                     }
                 }
@@ -48,7 +48,7 @@
                     margin-top: 10px;
                     text-align: center;
 
-                    @include media('>phone', '<=425px'){
+                    @include media('>phone', '<=mobile'){
                         font-size: 12px;
                     }
                 }

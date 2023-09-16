@@ -9,7 +9,7 @@
     // position: sticky;
     // top: 9.3%;
     // z-index: 3;
-    @include media('>phone', '<=425px'){
+    @include media('>phone', '<=mobile'){
         height: 50px;
     }
     .container{
@@ -30,7 +30,7 @@
                     transition: transform 0.3s ease-in-out;
                 }
 
-                @include media('>phone', '<=425px'){
+                @include media('>phone', '<=mobile'){
                     width: 20px;
                 }
             }
@@ -38,7 +38,7 @@
             span{
                 font-size: 14px;
 
-                @include media('>phone', '<=425px'){
+                @include media('>phone', '<=mobile'){
                     font-size: 10px;
                 }
             }

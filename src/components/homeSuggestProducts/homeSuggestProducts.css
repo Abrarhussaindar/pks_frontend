@@ -12,7 +12,7 @@
   padding: 10px 0;
   margin-bottom: 20px;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
     margin: 15px 0;
@@ -22,7 +22,7 @@
 .SuggetProductsContainer .suggetHeading {
   padding: 10px;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .SuggetProductsContainer .suggetHeading {
     font-size: 14px;
   }
@@ -44,7 +44,7 @@
 .SuggetProductsContainer .container .innerContainer img {
   width: 100px;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .SuggetProductsContainer .container .innerContainer img {
     width: 70px;
   }
@@ -55,7 +55,7 @@
   margin-top: 10px;
   text-align: center;
 }
-@media (min-width: 361px) and (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 550px) {
   .SuggetProductsContainer .container .innerContainer p {
     font-size: 12px;
   }

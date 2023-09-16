@@ -1,9 +1,12 @@
+.profileContainer {
+  height: 100vh;
+}
 .profileContainer .profileWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
-  margin: 15px 30px;
+  margin: 30px;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .profileContainer .profileWrapper .profileTop {

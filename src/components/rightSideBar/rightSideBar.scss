@@ -80,6 +80,7 @@
                         color: var(--main-color);
                         background-color: var(--un-color);
                         transition: all .1s ease-in;
+                        font-weight: 600;
                         transform: scale(1.05);
                         .userOrdersIcon{
                                 content: url("http://localhost:3000/assets/images/orders-fill.png");

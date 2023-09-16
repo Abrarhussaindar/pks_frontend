@@ -73,6 +73,7 @@
   color: var(--main-color);
   background-color: var(--un-color);
   transition: all 0.1s ease-in;
+  font-weight: 600;
   transform: scale(1.05);
 }
 .rightSideBar .Container .linksContainer ul li:hover .userOrdersIcon {

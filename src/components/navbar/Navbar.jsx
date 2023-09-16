@@ -18,7 +18,7 @@ export default function Navbar() {
             </div>
             <div className="center">
                     <span className="searchBarIcon">
-                        <img className='searchbarIcon' src="/assets/images/search.png" alt="" />
+                        <img className='searchbarIcon' src="/assets/images/Topsearch.png" alt="" />
                     </span>
                     <input type="text" className="navSearchInput" placeholder="Search here for any product..." />
             </div>

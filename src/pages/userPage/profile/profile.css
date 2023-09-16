@@ -12,46 +12,6 @@
   align-items: center;
   padding: 20px;
 }
-.profileContainer .profileWrapper .profileTop .profileImage {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.profileContainer .profileWrapper .profileTop .profileImage img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.profileContainer .profileWrapper .profileTop .updateBtn {
-  position: relative;
-  top: -30px;
-  left: 40px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid white;
-  border-radius: 50%;
-  background-color: var(--un-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-.profileContainer .profileWrapper .profileTop .updateBtn img {
-  width: 20px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.profileContainer .profileWrapper .profileTop .updateBtn:hover {
-  background-color: #e1e1e1;
-  transform: scale(1.01);
-}
-.profileContainer .profileWrapper .profileTop .updateBtn:hover img {
-  content: url("http://localhost:3000/assets/images/pen-fill.png");
-}
 .profileContainer .profileWrapper .profileBottom {
   padding: 10px;
   display: flex;

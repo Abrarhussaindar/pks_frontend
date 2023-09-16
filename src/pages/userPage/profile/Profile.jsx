@@ -2,6 +2,8 @@ import "./profile.css"
 import Navbar from "../../../components/navbar/Navbar"
 import Footer from "../../../components/footer/Footer"
 import UserAddress from "../../../components/profilePageComponents/userAddress/UserAddress"
+import UserProfilePicture from "../../../components/profilePageComponents/userProfilePicture/UserProfilePicture"
+import UserInfo from "../../../components/profilePageComponents/userInfo/UserInfo"
 
 export default function Profile() {
     return (
@@ -10,13 +12,7 @@ export default function Profile() {
             <div className="profileContainer">
                 <div className="profileWrapper">
                     <div className="profileTop">
-                        <div className="profileImage">
-                            <img className="profileUserImg" src="/assets/images/me.jpg" width="50px" alt="" />
-                        </div>
-                        <div className="updateBtn">
-
-                            <img src="/assets/images/pen.png" alt="" />
-                        </div>
+                        <UserProfilePicture />
                     </div>
                     <hr />
                     <div className="profileBottom">
@@ -27,7 +23,7 @@ export default function Profile() {
                             </div>
                             <hr className="headingHr"/>
                             <div className="profileBottomInfoContainer">
-
+                                <UserInfo />
                             </div>
                         </div>
                         <div className="profileBottomRight">

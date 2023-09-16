@@ -1,0 +1,48 @@
+.indiUserInfo {
+  border: 1px solid var(--un-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+.indiUserInfo .indiUserInfoTop {
+  display: flex;
+}
+.indiUserInfo .indiUserInfoTop .firstName, .indiUserInfo .indiUserInfoTop .lastName {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+}
+.indiUserInfo .indiUserInfoTop .firstName h4, .indiUserInfo .indiUserInfoTop .lastName h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.indiUserInfo .indiUserInfoTop .firstName span, .indiUserInfo .indiUserInfoTop .lastName span {
+  padding: 0 10px;
+  border-bottom: 1px solid var(--un-color);
+  color: var(--hover-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+.indiUserInfo .indiUserInfoBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.indiUserInfo .indiUserInfoBottom .userName, .indiUserInfo .indiUserInfoBottom .userEmail, .indiUserInfo .indiUserInfoBottom .userPhone {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.indiUserInfo .indiUserInfoBottom .userName h4, .indiUserInfo .indiUserInfoBottom .userEmail h4, .indiUserInfo .indiUserInfoBottom .userPhone h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.indiUserInfo .indiUserInfoBottom .userName span, .indiUserInfo .indiUserInfoBottom .userEmail span, .indiUserInfo .indiUserInfoBottom .userPhone span {
+  padding: 0 10px;
+  border-bottom: 1px solid var(--un-color);
+  color: var(--hover-color);
+  font-size: 18px;
+  font-weight: 500;
+}/*# sourceMappingURL=userInfo.css.map */

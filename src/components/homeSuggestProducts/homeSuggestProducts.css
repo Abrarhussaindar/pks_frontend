@@ -15,7 +15,8 @@
 @media (min-width: 361px) and (max-width: 425px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
-    margin: 20px;
+    margin: 15px 0;
+    border-radius: 0;
   }
 }
 .SuggetProductsContainer .suggetHeading {

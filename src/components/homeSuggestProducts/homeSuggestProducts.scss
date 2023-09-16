@@ -11,8 +11,8 @@
 
     @include media('>phone', '<=425px'){
         overflow-x: scroll;
-        margin: 20px;
-
+        margin: 15px 0;
+        border-radius: 0;
 
     }
     .suggetHeading{

@@ -49,7 +49,7 @@
     font-size: 8px;
   }
 }
-@media (min-width: 371px) and (max-width: 560px) {
+@media (min-width: 461px) and (max-width: 560px) {
   .rating .ratingDate p {
     font-size: 12px;
   }

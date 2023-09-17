@@ -194,19 +194,19 @@
                             color: white;
                             font-weight: 600;
                             @include media('>phone', '<=mobile'){
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
+                                // display: flex;
+                                // align-items: center;
+                                // justify-content: center;
                             }
                             @include media('>smphone', '<=phone'){
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
+                                // display: flex;
+                                // align-items: center;
+                                // justify-content: center;
                             }
                             @include media('>phone', '<=largemb'){
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
+                                // display: flex;
+                                // align-items: center;
+                                // justify-content: center;
                             }
                             span{
                                 margin-right: 8px;

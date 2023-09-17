@@ -4,6 +4,7 @@
     .customerProductRating{
         list-style: none;
         li{
+
             display: flex;
             align-items: center;
             img{
@@ -58,7 +59,7 @@
             @include media('>smphone', '<=phone'){
         
             }
-            @include media('>phone', '<=largemb'){
+            @include media('>mobile', '<=largemb'){
                 font-size: 12px;
             }
             @include media('>largemb', '<=tablet'){

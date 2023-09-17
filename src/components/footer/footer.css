@@ -238,27 +238,6 @@
   color: white;
   font-weight: 600;
 }
-@media (min-width: 371px) and (max-width: 460px) {
-  .footerContainer .top .right .rightBottom ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (min-width: 301px) and (max-width: 370px) {
-  .footerContainer .top .right .rightBottom ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (min-width: 371px) and (max-width: 560px) {
-  .footerContainer .top .right .rightBottom ul li a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
 .footerContainer .top .right .rightBottom ul li a span {
   margin-right: 8px;
 }

@@ -37,7 +37,7 @@
 
             @include media('>phone', '<=mobile'){
                 gap: 10px;
-                padding-right: 30px;
+                padding-right: 20px;
             }
             @include media('>smphone', '<=phone'){
                 

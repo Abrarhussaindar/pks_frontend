@@ -131,6 +131,39 @@
 .orderContainer .orderWrapper .ordersContent {
   display: flex;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .ordersContent {
+    flex-direction: column;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .ordersContent {
+    flex-direction: column;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .ordersContent {
+    flex-direction: column;
+  }
+}
+.orderContainer .orderWrapper .ordersContent .leftSiderToggleBtn {
+  display: none;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .ordersContent .leftSiderToggleBtn {
+    display: block;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .ordersContent .leftSiderToggleBtn {
+    display: block;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .ordersContent .leftSiderToggleBtn {
+    display: block;
+  }
+}
 .orderContainer .orderWrapper .ordersContent .ordersLeftSide {
   flex: 2;
   border-right: 1px solid var(--un-color);

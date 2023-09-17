@@ -2,6 +2,11 @@ import OrderCard from "../../../components/ordersPageComponents/orderCard/OrderC
 import "./orders.css"
 
 export default function Orders() {
+
+    const openLeftSideBarFilterOptions = () => {
+        console.log("open left side bar filter options")
+    }
+
     return (
         
         <div className="orderContainer">
@@ -15,6 +20,9 @@ export default function Orders() {
                 </div>
                 <hr />
                 <div className="ordersContent">
+                    <div className="leftSiderToggleBtn">
+                        <img src="/assets/images/filter.png" onClick={openLeftSideBarFilterOptions} alt="" />
+                    </div>
                     <div className="ordersLeftSide">
                         <div className="leftSideHeading">
                             <h3>Filter by :</h3>

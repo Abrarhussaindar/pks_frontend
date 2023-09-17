@@ -30,6 +30,7 @@ export default function Orders() {
                     </div>
                     <div className="ordersRightSide">
                         <OrderCard />
+                        <hr className="orderHr"/>
                         <OrderCard />
                         
                     </div>

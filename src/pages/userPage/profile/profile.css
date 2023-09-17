@@ -21,6 +21,11 @@
     margin: 10px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .profileContainer .profileWrapper {
+    margin: 10px;
+  }
+}
 .profileContainer .profileWrapper .profileTop {
   display: flex;
   flex-direction: column;
@@ -33,6 +38,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileTop {
+    padding: 10px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .profileContainer .profileWrapper .profileTop {
     padding: 10px;
   }
@@ -54,6 +64,12 @@
     gap: 20px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .profileContainer .profileWrapper .profileBottom {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .profileContainer .profileWrapper .profileBottom .heading {
   display: flex;
   justify-content: space-between;
@@ -69,6 +85,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileBottom .heading h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .profileContainer .profileWrapper .profileBottom .heading h3 {
     font-size: 16px;
   }
@@ -116,6 +137,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .profileContainer .profileWrapper .profileBottom .profileBottomRight {
+    margin-left: 0;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .profileContainer .profileWrapper .profileBottom .profileBottomRight {
     margin-left: 0;
   }

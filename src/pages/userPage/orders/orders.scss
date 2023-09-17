@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .orderContainer{
     .orderWrapper{
         border: 1px solid var(--un-color);
@@ -5,14 +7,48 @@
         // padding: 10px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         border-radius: 10px;
+
+        @include media('>phone', '<=mobile'){
+
+            margin: 10px;
+        }
+        @include media('>smphone', '<=phone'){
+                margin: 10px;
+        }
+        @include media('>mobile', '<=largemb'){
+            margin: 10px;
+        }
+        .orderHr{
+            margin: 10px 0;
+        }
         .heading{
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 10px;
+            @include media('>phone', '<=mobile'){
+
+                justify-content: space-between;
+            }
+            @include media('>smphone', '<=phone'){
+                    justify-content: space-between;
+            }
+            @include media('>mobile', '<=largemb'){
+                justify-content: space-between;
+            }
             h1{
                 font-weight: 500;
                 color: var(--hover-color);
+                @include media('>phone', '<=mobile'){
+
+                    font-size: 20px;
+                }
+                @include media('>smphone', '<=phone'){
+                        font-size: 20px;
+                }
+                @include media('>mobile', '<=largemb'){
+                    font-size: 20px;
+                }
             }
 
             .orderSearchBar{
@@ -24,12 +60,33 @@
                 border: 1px solid var(--un-color);
                 border-radius: 20px;
                 padding: 5px;
+
+                @include media('>phone', '<=mobile'){
+
+                    width: 250px;
+                }
+                @include media('>smphone', '<=phone'){
+                        width: 250px;
+                }
+                @include media('>mobile', '<=largemb'){
+                    width: 250px;
+                }
                 input{
                     border: none;
                     outline: none;
                     width: 200px;
                     height: 100%;
                     padding: 0 10px;
+                    @include media('>phone', '<=mobile'){
+
+                        width: 150px;
+                    }
+                    @include media('>smphone', '<=phone'){
+                            width: 150px;
+                    }
+                    @include media('>mobile', '<=largemb'){
+                        width: 150px;
+                    }
                 }
                 button{
                     border: 1px solid var(--un-color);
@@ -56,6 +113,16 @@
                 border-right: 1px solid var(--un-color);
                 margin-right: 5px;
 
+                @include media('>phone', '<=mobile'){
+
+                    display: none;
+                }
+                @include media('>smphone', '<=phone'){
+                        display: none;
+                }
+                @include media('>mobile', '<=largemb'){
+                    display: none;
+                }
                 .leftSideHeading{
                     padding: 20px;
                     h3{

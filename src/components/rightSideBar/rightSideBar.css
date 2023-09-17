@@ -25,6 +25,12 @@
     width: 100%;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .rightSideBar {
+    width: 100%;
+    transform: translateX(600px);
+  }
+}
 .rightSideBar.open {
   transition: all 0.5s ease-in;
   transform: translateX(0);
@@ -53,6 +59,11 @@
     width: 20px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .rightSideBar .rightSideBarHeading .close {
+    width: 20px;
+  }
+}
 .rightSideBar .rightSideBarHeading .userPic {
   width: 40px;
   border-radius: 50px;
@@ -66,6 +77,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .rightSideBar .rightSideBarHeading .userPic {
+    width: 35px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .rightSideBar .rightSideBarHeading .userPic {
     width: 35px;
   }
@@ -91,6 +107,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .rightSideBar .Container {
+    height: 75%;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .rightSideBar .Container {
     height: 75%;
   }
@@ -125,6 +146,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .rightSideBar .Container .linksContainer ul li {
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .rightSideBar .Container .linksContainer ul li {
     font-size: 16px;
   }
@@ -181,6 +207,12 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .rightSideBar .Container .btnsContainer .logoutBtn {
+    width: 30%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .rightSideBar .Container .btnsContainer .logoutBtn {
     width: 30%;
     font-size: 16px;

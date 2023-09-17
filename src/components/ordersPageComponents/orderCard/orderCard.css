@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .indiOrderCard {
   border: 1px solid var(--un-color);
   width: 80%;
@@ -8,9 +13,39 @@
   padding: 10px;
   border-radius: 10px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiOrderCard {
+    width: unset;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiOrderCard {
+    width: unset;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .indiOrderCard {
+    width: unset;
+  }
+}
 .indiOrderCard .cardTop {
   display: flex;
   justify-content: space-between;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiOrderCard .cardTop {
+    flex-direction: column;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiOrderCard .cardTop {
+    flex-direction: column;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .indiOrderCard .cardTop {
+    flex-direction: column;
+  }
 }
 .indiOrderCard .cardTop .cardTopLeft {
   display: flex;
@@ -20,6 +55,30 @@
   width: 60%;
   border-right: 1px solid var(--un-color);
   margin-right: 30px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiOrderCard .cardTop .cardTopLeft {
+    flex-direction: column;
+    width: unset;
+    border-right: none;
+    margin-right: 0;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiOrderCard .cardTop .cardTopLeft {
+    flex-direction: column;
+    width: unset;
+    border-right: none;
+    margin-right: 0;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .indiOrderCard .cardTop .cardTopLeft {
+    flex-direction: column;
+    width: unset;
+    border-right: none;
+    margin-right: 0;
+  }
 }
 .indiOrderCard .cardTop .cardTopLeft img {
   width: 100px;
@@ -34,11 +93,41 @@
   color: var(--hover-color);
   cursor: pointer;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiOrderCard .cardTop .cardTopLeft h4 {
+    text-align: center;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiOrderCard .cardTop .cardTopLeft h4 {
+    text-align: center;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .indiOrderCard .cardTop .cardTopLeft h4 {
+    text-align: center;
+  }
+}
 .indiOrderCard .cardTop .cardTopRight {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiOrderCard .cardTop .cardTopRight {
+    width: unset;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiOrderCard .cardTop .cardTopRight {
+    width: unset;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .indiOrderCard .cardTop .cardTopRight {
+    width: unset;
+  }
 }
 .indiOrderCard .cardTop .cardTopRight .orderDetailsSpan {
   display: flex;
@@ -66,6 +155,27 @@
   color: var(--main-color);
   font-weight: 500;
   border-top: 1px solid var(--un-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .indiOrderCard .cardBottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: unset;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .indiOrderCard .cardBottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: unset;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .indiOrderCard .cardBottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: unset;
+  }
 }
 .indiOrderCard .cardBottom button {
   border: 1px solid var(--un-color);

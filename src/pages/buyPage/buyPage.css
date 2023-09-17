@@ -23,6 +23,12 @@
     padding: 10px 15px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .buyContainer .buyWrapper .buyTop {
+    margin: 10px 10px;
+    padding: 10px 15px;
+  }
+}
 .buyContainer .buyWrapper .buyTop .heading h3 {
   font-size: 24px;
   font-weight: 500;
@@ -34,6 +40,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyTop .heading h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyTop .heading h3 {
     font-size: 16px;
   }
@@ -55,6 +66,12 @@
     margin-right: 20px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .buyContainer .buyWrapper .buyTop .topLeft {
+    flex: 1;
+    margin-right: 20px;
+  }
+}
 .buyContainer .buyWrapper .buyTop .topLeft .orderSummary {
   margin-top: 20px;
 }
@@ -67,6 +84,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyTop .topRight {
+    flex: 1;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyTop .topRight {
     flex: 1;
   }
@@ -95,6 +117,12 @@
     padding: 10px 10px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .buyContainer .buyWrapper .buyBottom {
+    margin: 10px 10px;
+    padding: 10px 10px;
+  }
+}
 .buyContainer .buyWrapper .buyBottom .addressContainer {
   display: flex;
   justify-content: space-between;
@@ -106,6 +134,12 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyBottom .addressContainer {
     flex-direction: column-reverse;
     gap: 20px;
@@ -127,6 +161,11 @@
     border-right: none;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm {
+    border-right: none;
+  }
+}
 .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .heading h3 {
   font-size: 24px;
   font-weight: 500;
@@ -138,6 +177,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .heading h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .heading h3 {
     font-size: 18px;
   }
@@ -161,6 +205,11 @@
     width: 100%;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form .fName, .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form .lName {
+    width: 100%;
+  }
+}
 .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form input {
   padding: 15px;
   margin-bottom: 10px;
@@ -176,6 +225,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form input {
+    width: 100%;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm form input {
     width: 100%;
   }
@@ -206,6 +260,11 @@
     font-size: 16px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .addressForm .addBtn {
+    font-size: 16px;
+  }
+}
 .buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress {
   flex: 4;
 }
@@ -220,6 +279,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .heading h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .heading h3 {
     font-size: 18px;
   }
@@ -247,6 +311,11 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .userNameAddress {
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .buyContainer .buyWrapper .buyBottom .addressContainer .exsistingAddress .userAddress .address li .userNameAddress {
     font-size: 16px;
   }

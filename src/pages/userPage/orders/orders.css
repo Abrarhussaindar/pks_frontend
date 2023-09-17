@@ -1,8 +1,31 @@
+/**
+*
+* Testing
+*
+**/
 .orderContainer .orderWrapper {
   border: 1px solid var(--un-color);
   margin: 30px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   border-radius: 10px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper {
+    margin: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper {
+    margin: 10px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper {
+    margin: 10px;
+  }
+}
+.orderContainer .orderWrapper .orderHr {
+  margin: 10px 0;
 }
 .orderContainer .orderWrapper .heading {
   display: flex;
@@ -10,9 +33,39 @@
   align-items: center;
   padding: 10px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .heading {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .heading {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .heading {
+    justify-content: space-between;
+  }
+}
 .orderContainer .orderWrapper .heading h1 {
   font-weight: 500;
   color: var(--hover-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .heading h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .heading h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .heading h1 {
+    font-size: 20px;
+  }
 }
 .orderContainer .orderWrapper .heading .orderSearchBar {
   display: flex;
@@ -24,12 +77,42 @@
   border-radius: 20px;
   padding: 5px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .heading .orderSearchBar {
+    width: 250px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .heading .orderSearchBar {
+    width: 250px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .heading .orderSearchBar {
+    width: 250px;
+  }
+}
 .orderContainer .orderWrapper .heading .orderSearchBar input {
   border: none;
   outline: none;
   width: 200px;
   height: 100%;
   padding: 0 10px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .heading .orderSearchBar input {
+    width: 150px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .heading .orderSearchBar input {
+    width: 150px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .heading .orderSearchBar input {
+    width: 150px;
+  }
 }
 .orderContainer .orderWrapper .heading .orderSearchBar button {
   border: 1px solid var(--un-color);
@@ -52,6 +135,21 @@
   flex: 2;
   border-right: 1px solid var(--un-color);
   margin-right: 5px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .orderContainer .orderWrapper .ordersContent .ordersLeftSide {
+    display: none;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .orderContainer .orderWrapper .ordersContent .ordersLeftSide {
+    display: none;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .orderContainer .orderWrapper .ordersContent .ordersLeftSide {
+    display: none;
+  }
 }
 .orderContainer .orderWrapper .ordersContent .ordersLeftSide .leftSideHeading {
   padding: 20px;

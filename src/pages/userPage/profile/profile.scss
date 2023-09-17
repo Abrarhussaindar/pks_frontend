@@ -19,6 +19,9 @@
         @include media('>smphone', '<=phone'){
             margin: 10px;
         }
+        @include media('>mobile', '<=largemb'){
+            margin: 10px;
+        }
         .profileTop{
             display: flex;
             flex-direction: column;
@@ -30,6 +33,9 @@
         
             }
             @include media('>smphone', '<=phone'){
+                padding: 10px;
+            }
+            @include media('>mobile', '<=largemb'){
                 padding: 10px;
             }
         }
@@ -49,6 +55,10 @@
                 flex-direction: column;
                 gap: 20px;
             }
+            @include media('>mobile', '<=largemb'){
+                flex-direction: column;
+                gap: 20px;
+            }
             .heading{
                 display: flex;
                 justify-content: space-between;
@@ -63,6 +73,9 @@
                 
                     }
                     @include media('>smphone', '<=phone'){
+                        font-size: 16px;
+                    }
+                    @include media('>mobile', '<=largemb'){
                         font-size: 16px;
                     }
                 }
@@ -116,6 +129,9 @@
                 @include media('>smphone', '<=phone'){
                     margin-left: 0;
                     
+                }
+                @include media('>mobile', '<=largemb'){
+                    margin-left: 0;
                 }
             }
         }

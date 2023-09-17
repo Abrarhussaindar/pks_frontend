@@ -20,6 +20,11 @@
                 margin: 10px 10px;
                 padding: 10px 15px;
             }
+            @include media('>mobile', '<=largemb'){
+                margin: 10px 10px;
+                padding: 10px 15px;
+            }
+
             .heading{
                 h3{
                     font-size: 24px;
@@ -31,6 +36,9 @@
                 
                     }
                     @include media('>smphone', '<=phone'){
+                        font-size: 16px;
+                    }
+                    @include media('>mobile', '<=largemb'){
                         font-size: 16px;
                     }
                 }
@@ -49,6 +57,10 @@
                     flex: 1;
                     margin-right: 20px;
                 }
+                @include media('>mobile', '<=largemb'){
+                    flex: 1;
+                    margin-right: 20px;
+                }
                 .orderSummary{
                     margin-top: 20px;
                 }
@@ -61,6 +73,10 @@
                 }
                 @include media('>smphone', '<=phone'){
                     flex: 1;
+                }
+                @include media('>mobile', '<=largemb'){
+                    flex: 1;
+                    // margin-right: 20px;
                 }
                 .paymentOptions{
                     border: 1px solid var(--hover-color);
@@ -85,6 +101,10 @@
                 margin: 10px 10px;
                 padding: 10px 10px;
             }
+            @include media('>mobile', '<=largemb'){
+                margin: 10px 10px;
+                padding: 10px 10px;
+            }
             .addressContainer{
                 display: flex;
 
@@ -99,6 +119,10 @@
                         flex-direction: column-reverse;
                         gap: 20px;
                 }
+                @include media('>mobile', '<=largemb'){
+                    flex-direction: column-reverse;
+                    gap: 20px;
+                }
                 .addressForm{
                     flex: 8;
                     margin-bottom: 20px;
@@ -112,6 +136,9 @@
                     @include media('>smphone', '<=phone'){
                         border-right: none;
                     }
+                    @include media('>mobile', '<=largemb'){
+                        border-right: none;
+                    }
                     .heading{
                         h3{
                             font-size: 24px;
@@ -123,6 +150,9 @@
                         
                             }
                             @include media('>smphone', '<=phone'){
+                                font-size: 18px;
+                            }
+                            @include media('>mobile', '<=largemb'){
                                 font-size: 18px;
                             }
                         }
@@ -143,6 +173,9 @@
                             @include media('>smphone', '<=phone'){
                                 width: 100%;
                             }
+                            @include media('>mobile', '<=largemb'){
+                                width: 100%;
+                            }
                         }
                         input{
                             padding: 15px;
@@ -157,6 +190,9 @@
                         
                             }
                             @include media('>smphone', '<=phone'){
+                                width: 100%;
+                            }
+                            @include media('>mobile', '<=largemb'){
                                 width: 100%;
                             }
                         }
@@ -183,6 +219,9 @@
                         @include media('>smphone', '<=phone'){
                             font-size: 16px;
                         }
+                        @include media('>mobile', '<=largemb'){
+                            font-size: 16px;
+                        }
                     }
                 }
                 .exsistingAddress{
@@ -197,6 +236,9 @@
                         
                             }
                             @include media('>smphone', '<=phone'){
+                                font-size: 18px;
+                            }
+                            @include media('>mobile', '<=largemb'){
                                 font-size: 18px;
                             }
                         }
@@ -220,6 +262,9 @@
                                 
                                     }
                                     @include media('>smphone', '<=phone'){
+                                        font-size: 16px;
+                                    }
+                                    @include media('>mobile', '<=largemb'){
                                         font-size: 16px;
                                     }
                                 }

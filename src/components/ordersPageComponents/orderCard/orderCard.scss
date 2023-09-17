@@ -1,3 +1,6 @@
+@import "../../../breakpoints.scss";
+
+
 .indiOrderCard{
     border: 1px solid var(--un-color);
     width: 80%;
@@ -7,10 +10,30 @@
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
+    @include media('>phone', '<=mobile'){
+
+        width: unset;
+    }
+    @include media('>smphone', '<=phone'){
+            width: unset;
+    }
+    @include media('>mobile', '<=largemb'){
+        width: unset;
+    }
     .cardTop{
         display: flex;
         justify-content: space-between;
 
+        @include media('>phone', '<=mobile'){
+
+            flex-direction: column;
+        }
+        @include media('>smphone', '<=phone'){
+                flex-direction: column;
+        }
+        @include media('>mobile', '<=largemb'){
+            flex-direction: column;
+        }
         .cardTopLeft{
             display: flex;
             align-items: center;
@@ -19,6 +42,26 @@
             width: 60%;
             border-right: 1px solid var(--un-color);
             margin-right: 30px;
+
+            @include media('>phone', '<=mobile'){
+
+                flex-direction: column;
+                width: unset;
+                border-right: none;
+                margin-right: 0;
+            }
+            @include media('>smphone', '<=phone'){
+                    flex-direction: column;
+                    width: unset;
+                    border-right: none;
+                    margin-right: 0;
+            }
+            @include media('>mobile', '<=largemb'){
+                flex-direction: column;
+                width: unset;
+                border-right: none;
+                margin-right: 0;
+            }
             img{
                 width: 100px;
                 height: 100px;
@@ -30,6 +73,16 @@
                 font-weight: 600;
                 color: var(--hover-color);
                 cursor: pointer;
+                @include media('>phone', '<=mobile'){
+
+                    text-align: center;
+                }
+                @include media('>smphone', '<=phone'){
+                    text-align: center;
+                }
+                @include media('>mobile', '<=largemb'){
+                    text-align: center;
+                }
             }
         }
         .cardTopRight{
@@ -39,6 +92,19 @@
             // align-items: center;
             // padding: 20px;
             width: 40%;
+            @include media('>phone', '<=mobile'){
+
+                
+                width: unset;
+            }
+            @include media('>smphone', '<=phone'){
+                    
+                    width: unset;
+            }
+            @include media('>mobile', '<=largemb'){
+                
+                width: unset;
+            }
 
             .orderDetailsSpan{
                 display: flex;
@@ -71,6 +137,22 @@
         font-weight: 500;
         border-top: 1px solid var(--un-color);
     
+        @include media('>phone', '<=mobile'){
+
+            flex-direction: column;
+            gap: 10px;
+            align-items: unset;
+        }
+        @include media('>smphone', '<=phone'){
+                flex-direction: column;
+                gap: 10px;
+                align-items: unset;
+        }
+        @include media('>mobile', '<=largemb'){
+            flex-direction: column;
+            gap: 10px;
+            align-items: unset;
+        }
         button{
             border: 1px solid var(--un-color);
             outline: none;

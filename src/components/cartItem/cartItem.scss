@@ -11,6 +11,9 @@
     @include media('>smphone', '<=phone'){
         align-items: unset;
     }
+    @include media('>mobile', '<=largemb'){
+        align-items: unset;
+    }
     .cartLeft{
         display: flex;
         width: 60%;
@@ -20,6 +23,10 @@
             gap: 10px;
         }
         @include media('>smphone', '<=phone'){
+            flex-direction: column;    
+            gap: 10px;
+        }
+        @include media('>mobile', '<=largemb'){
             flex-direction: column;    
             gap: 10px;
         }
@@ -35,6 +42,10 @@
             @include media('>smphone', '<=phone'){
                 width: 90px;
                 height: 90px;
+        }
+        @include media('>mobile', '<=largemb'){
+            width: 90px;
+            height: 90px;
         }
         }
         .cartProductDetailContainer{
@@ -53,6 +64,9 @@
                 @include media('>smphone', '<=phone'){
                     font-size: 12px;
         }
+        @include media('>mobile', '<=largemb'){
+            font-size: 12px;
+        }
             }
             h4{
                 font-size: 20px;
@@ -64,6 +78,9 @@
                 }
                 @include media('>smphone', '<=phone'){
                     font-size: 16px;
+        }
+        @include media('>mobile', '<=largemb'){
+            font-size: 16px;
         }
             }
             .quantity{
@@ -90,15 +107,9 @@
         }
 
                     }
-                    @include media('>phone', '<=mobile'){
+                    @include media('>mobile', '<=largemb'){
                         font-size: 16px;
-            
-
-                
                     }
-                    @include media('>smphone', '<=phone'){
-                        font-size: 16px;
-        }
                     
                 }
 
@@ -117,6 +128,10 @@
                         @include media('>smphone', '<=phone'){
                             width: 10px;
                             height: 10px;
+        }
+        @include media('>mobile', '<=largemb'){
+            width: 10px;
+            height: 10px;
         }
                     }
                 }
@@ -155,6 +170,10 @@
                 font-size: 14px;
                 padding: 10px 8px;
         }
+        @include media('>mobile', '<=largemb'){
+            font-size: 14px;
+            padding: 10px 8px;
+        }
             
         }
         .delBtn{
@@ -180,7 +199,10 @@
                 font-size: 14px;
                 padding: 10px 8px;
         }
-            
+        @include media('>mobile', '<=largemb'){
+            font-size: 14px;
+            padding: 10px 8px;
+        }
         }
         .saveBtn{
             padding: 10px 40px;
@@ -204,6 +226,10 @@
             @include media('>smphone', '<=phone'){
                 font-size: 14px;
                 padding: 10px 8px;
+        }
+        @include media('>mobile', '<=largemb'){
+            font-size: 14px;
+            padding: 10px 8px;
         }
             
         }

@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .pincodeContainer {
   display: flex;
   align-items: center;
@@ -6,6 +11,11 @@
 }
 .pincodeContainer img {
   width: 25px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .pincodeContainer img {
+    width: 20px;
+  }
 }
 .pincodeContainer p {
   font-size: 16px;

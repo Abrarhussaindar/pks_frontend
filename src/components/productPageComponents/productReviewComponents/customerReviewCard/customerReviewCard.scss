@@ -1,3 +1,5 @@
+@import "../../../../breakpoints.scss";
+
 .cardInner{
     border: 1px solid var(--hover-color);
     padding: 15px;
@@ -5,6 +7,19 @@
     border-radius: 10px;
     width: 48%;
 
+    @include media('>phone', '<=mobile'){
+        width: unset;
+
+    }
+    @include media('>smphone', '<=phone'){
+
+    }
+    @include media('>phone', '<=largemb'){
+
+    }
+    @include media('>largemb', '<=tablet'){
+
+    }
     .ratHr{
         margin: 10px 0;
         color: var(--hover-color);
@@ -20,6 +35,20 @@
             gap: 15px;
             border-right: 1px solid var(--hover-color);
             padding-right: 50px;
+
+            @include media('>phone', '<=mobile'){
+                gap: 10px;
+                padding-right: 15px;
+            }
+            @include media('>smphone', '<=phone'){
+        
+            }
+            @include media('>phone', '<=largemb'){
+        
+            }
+            @include media('>largemb', '<=tablet'){
+        
+            }
             
         }
 

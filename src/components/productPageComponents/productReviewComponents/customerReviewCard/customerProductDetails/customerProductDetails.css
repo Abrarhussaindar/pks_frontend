@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .productDetails {
   display: flex;
   justify-content: space-between;
@@ -8,8 +13,19 @@
   border-right: 1px solid var(--hover-color);
   padding-right: 50px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .productDetails .size, .productDetails .color {
+    padding-right: 20px;
+    font-size: 14px;
+  }
+}
 .productDetails .proSpan {
   margin-left: 5px;
   color: var(--hover-color);
   font-weight: 500;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productDetails .proSpan {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=customerProductDetails.css.map */

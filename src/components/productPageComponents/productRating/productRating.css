@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .productRating {
   list-style: none;
   padding: 10px;
@@ -9,10 +14,25 @@
 .productRating li .starFill {
   width: 18px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .productRating li .starFill {
+    width: 16px;
+  }
+}
 .productRating li img {
   width: 16px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productRating li img {
+    width: 14px;
+  }
 }
 .productRating li span {
   margin-left: 5px;
   color: var(--hover-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productRating li span {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=productRating.css.map */

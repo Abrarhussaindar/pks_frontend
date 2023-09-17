@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .productAbout {
   margin-top: 15px;
 }
@@ -5,6 +10,11 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productAbout .heading h4 {
+    font-size: 16px;
+  }
 }
 .productAbout .description ul {
   margin-left: 20px;
@@ -14,4 +24,9 @@
   font-weight: 500;
   margin-bottom: 5px;
   color: rgb(106, 101, 101);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productAbout .description ul li {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=productAbout.css.map */

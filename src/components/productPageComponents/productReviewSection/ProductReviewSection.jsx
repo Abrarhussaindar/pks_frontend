@@ -56,6 +56,7 @@ export default function ProductReviewSection() {
                             Reviews with images
                         </h4>
                     </div>
+                    
                     <ReviewImages />
                 </div>
                 <hr className="rigHr" />

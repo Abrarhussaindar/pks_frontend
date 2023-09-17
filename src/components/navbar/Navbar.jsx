@@ -9,6 +9,7 @@ export default function Navbar() {
     const openRightSideBar = () => {
         document.querySelector(".rightSideBar").classList.add("open")
     }
+    
     return (
         <div className="nav_container">
             <div className="leftSide">

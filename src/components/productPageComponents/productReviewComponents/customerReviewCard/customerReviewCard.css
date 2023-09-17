@@ -1,9 +1,19 @@
+/**
+*
+* Testing
+*
+**/
 .cardInner {
   border: 1px solid var(--hover-color);
   padding: 15px;
   margin: 10px 0;
   border-radius: 10px;
   width: 48%;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .cardInner {
+    width: unset;
+  }
 }
 .cardInner .ratHr {
   margin: 10px 0;
@@ -20,4 +30,10 @@
   gap: 15px;
   border-right: 1px solid var(--hover-color);
   padding-right: 50px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .cardInner .head .customer {
+    gap: 10px;
+    padding-right: 15px;
+  }
 }/*# sourceMappingURL=customerReviewCard.css.map */

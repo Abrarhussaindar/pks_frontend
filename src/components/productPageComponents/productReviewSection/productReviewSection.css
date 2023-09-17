@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .productReviewsSection .top {
   margin: 10px 0;
 }
@@ -7,6 +12,11 @@
 }
 .productReviewsSection .bottom {
   display: flex;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productReviewsSection .bottom {
+    flex-direction: column;
+  }
 }
 .productReviewsSection .bottom .left {
   flex: 3;
@@ -49,6 +59,12 @@
   width: 45%;
   margin: 10px 0;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .productReviewsSection .bottom .right .rightCenter .container {
+    flex-wrap: wrap;
+    width: unset;
+  }
+}
 .productReviewsSection .bottom .right .rightBottom {
   display: flex;
   flex-direction: column;
@@ -57,4 +73,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productReviewsSection .bottom .right .rightBottom .container {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=productReviewSection.css.map */

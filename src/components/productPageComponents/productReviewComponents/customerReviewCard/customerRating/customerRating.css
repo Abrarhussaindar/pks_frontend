@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .rating .customerProductRating {
   list-style: none;
 }
@@ -8,16 +13,31 @@
 .rating .customerProductRating li img {
   width: 18px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .rating .customerProductRating li img {
+    width: 12px;
+  }
+}
 .rating .customerProductRating li span {
   font-size: 16px;
   font-weight: 600;
   margin-left: 10px;
   color: var(--hover-color);
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .rating .customerProductRating li span {
+    font-size: 12px;
+  }
+}
 .rating .ratingDate p {
   text-align: end;
   margin-top: 5px;
   font-size: 12px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .rating .ratingDate p {
+    font-size: 8px;
+  }
 }
 .rating .ratingDate .dateSpan {
   color: var(--hover-color);

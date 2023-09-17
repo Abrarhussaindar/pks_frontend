@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .serviceContainer ul {
   display: flex;
   gap: 20px;
@@ -18,4 +23,15 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--hover-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .serviceContainer ul li {
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .serviceContainer ul {
+    gap: unset;
+  }
 }/*# sourceMappingURL=services.css.map */

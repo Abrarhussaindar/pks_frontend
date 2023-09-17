@@ -1,19 +1,59 @@
+@import "../../../breakpoints.scss";
+
 .productDetailsSection{
     h4{
         font-size: 24px;
         font-weight: 500;
+        @include media('>phone', '<=mobile'){
+            font-size: 22px;
+
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
     }
     table{
         tr{
             display: flex;
             align-items: center;
+            @include media('>phone', '<=mobile'){
+                display: inherit;
+    
+            }
+            @include media('>smphone', '<=phone'){
+        
+            }
+            @include media('>phone', '<=largemb'){
+        
+            }
+            @include media('>largemb', '<=tablet'){
+        
+            }
             th{
                 font-size: 16px;
                 font-weight: 500;
                 padding: 5px;
                 text-align: left;
                 border-bottom: 1px solid var(--un-color);
-                
+                @include media('>phone', '<=mobile'){
+                    font-size: 14px;
+        
+                }
+                @include media('>smphone', '<=phone'){
+            
+                }
+                @include media('>phone', '<=largemb'){
+            
+                }
+                @include media('>largemb', '<=tablet'){
+            
+                }
                 .tspan{
                     margin-left: 10px;
                 }
@@ -25,6 +65,19 @@
                 text-align: left;
                 border-bottom: 1px solid var(--un-color);
             
+                @include media('>phone', '<=mobile'){
+                    font-size: 12px;
+        
+                }
+                @include media('>smphone', '<=phone'){
+            
+                }
+                @include media('>phone', '<=largemb'){
+            
+                }
+                @include media('>largemb', '<=tablet'){
+            
+                }
                 ul{
                     list-style: none;
                     li{

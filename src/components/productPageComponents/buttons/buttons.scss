@@ -1,9 +1,24 @@
+@import "../../../breakpoints.scss";
+
 .btnsContainer{
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 10px;
+
+    @include media('>phone', '<=mobile'){
+
+    }
+    @include media('>smphone', '<=phone'){
+
+    }
+    @include media('>phone', '<=largemb'){
+
+    }
+    @include media('>largemb', '<=tablet'){
+
+    }
     .addToCart{
         background-color: var(--hover-color);
         color: white;
@@ -19,6 +34,19 @@
         &:hover{
             background-color: var(--main-color);
             transition: all 0.3s ease-in-out;
+        }
+        @include media('>phone', '<=mobile'){
+            width: unset;
+            font-size: 16px;
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
         }
     }
     .buyNow{
@@ -38,6 +66,19 @@
         &:hover{
             // background-color: var(--hover-color);
             transition: all 0.3s ease-in-out;
+        }
+        @include media('>phone', '<=mobile'){
+            width: unset;
+            font-size: 16px;
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
         }
     }
 }

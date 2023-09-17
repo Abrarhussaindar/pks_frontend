@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .brandSection{
     display: flex;
     flex-direction: column;
@@ -18,7 +20,20 @@
         display: flex;
         justify-content: flex-start;
         gap: 50px;
+        @include media('>phone', '<=mobile'){
+            flex-direction: column;
+            gap: 0;
 
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
         .left{
             margin-top: 10px;
             padding-right: 50px;

@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .similarProductsSection .heading h4 {
   font-size: 18px;
   font-weight: 600;
@@ -6,4 +11,10 @@
 .similarProductsSection .container {
   display: flex;
   gap: 15px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .similarProductsSection .container {
+    display: -webkit-box;
+    overflow: scroll;
+  }
 }/*# sourceMappingURL=similarProducts.css.map */

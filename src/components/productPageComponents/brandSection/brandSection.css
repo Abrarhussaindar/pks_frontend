@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .brandSection {
   display: flex;
   flex-direction: column;
@@ -19,6 +24,12 @@
   display: flex;
   justify-content: flex-start;
   gap: 50px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .brandSection .container {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .brandSection .container .left {
   margin-top: 10px;

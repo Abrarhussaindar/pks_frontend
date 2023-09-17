@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .btns {
   margin: 10px 0;
   display: flex;
@@ -19,6 +24,12 @@
   color: white;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .btns .helpBtn {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
 .btns .repBtn {
   background-color: white;
   color: black;
@@ -34,4 +45,10 @@
   background-color: var(--hover-color);
   color: white;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .btns .repBtn {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
 }/*# sourceMappingURL=button.css.map */

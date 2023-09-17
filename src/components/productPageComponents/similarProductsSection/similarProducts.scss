@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .similarProductsSection{
     .heading{
         h4{
@@ -11,5 +13,19 @@
         // overflow-x: scroll;
         gap: 15px;
         // width: 80%;
+        @include media('>phone', '<=mobile'){
+            display: -webkit-box;
+            overflow: scroll;
+
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
     }
 }

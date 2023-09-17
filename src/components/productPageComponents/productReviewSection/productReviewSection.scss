@@ -1,3 +1,5 @@
+@import "../../../breakpoints.scss";
+
 .productReviewsSection{
     .top{
         margin: 10px 0;
@@ -12,6 +14,19 @@
     .bottom{
         display: flex;
 
+        @include media('>phone', '<=mobile'){
+            flex-direction: column;
+
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
         .left{
             flex: 3;
             .revHr{
@@ -81,6 +96,21 @@
                     // border: 1px solid black;
                     width: 45%;
                     margin: 10px 0;
+
+                    @include media('>phone', '<=mobile'){
+                        flex-wrap: wrap;
+                        width: unset;
+            
+                    }
+                    @include media('>smphone', '<=phone'){
+                
+                    }
+                    @include media('>phone', '<=largemb'){
+                
+                    }
+                    @include media('>largemb', '<=tablet'){
+                
+                    }
                     
                 }
             }
@@ -93,6 +123,19 @@
                     flex-wrap: wrap;
                     gap: 10px;
 
+                    @include media('>phone', '<=mobile'){
+                        flex-direction: column;
+            
+                    }
+                    @include media('>smphone', '<=phone'){
+                
+                    }
+                    @include media('>phone', '<=largemb'){
+                
+                    }
+                    @include media('>largemb', '<=tablet'){
+                
+                    }
                 }
 
             }

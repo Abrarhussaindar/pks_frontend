@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .imgContainer {
   display: flex;
   justify-content: space-between;
@@ -8,4 +13,14 @@
 .imgContainer img {
   width: 100px;
   border-radius: 10px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .imgContainer {
+    width: unset;
+    overflow: scroll;
+    gap: 5px;
+  }
+  .imgContainer img {
+    width: 80px;
+  }
 }/*# sourceMappingURL=ReviewImages.css.map */

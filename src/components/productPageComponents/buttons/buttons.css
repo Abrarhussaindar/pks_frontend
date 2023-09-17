@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .btnsContainer {
   display: flex;
   gap: 15px;
@@ -22,6 +27,12 @@
   background-color: var(--main-color);
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .btnsContainer .addToCart {
+    width: unset;
+    font-size: 16px;
+  }
+}
 .btnsContainer .buyNow {
   background-color: var(--main-color);
   color: white;
@@ -39,4 +50,10 @@
 }
 .btnsContainer .buyNow:hover {
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .btnsContainer .buyNow {
+    width: unset;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=buttons.css.map */

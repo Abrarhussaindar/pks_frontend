@@ -1,7 +1,17 @@
+/**
+*
+* Testing
+*
+**/
 .priceContainer {
   display: flex;
   align-items: baseline;
   gap: 5px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .priceContainer {
+    margin: 10px 0;
+  }
 }
 .priceContainer .prices {
   margin-left: 20px;

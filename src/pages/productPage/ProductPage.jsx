@@ -1,5 +1,5 @@
 import BreadCrums from "../../components/breadCrums/BreadCrums"
-import CategoryTopBar from "../../components/categoryTopBar/CategoryTopBar"
+// import CategoryTopBar from "../../components/categoryTopBar/CategoryTopBar"
 import Product from "../../components/product/Product"
 import "./productPage.css"
 
@@ -13,7 +13,7 @@ export default function ProductPage() {
             {/* <Navbar /> */}
             {/* <SecondaryNavabar /> */}
             <div className="productPage">
-                <CategoryTopBar />
+                {/* <CategoryTopBar /> */}
                 <BreadCrums />
                 <Product />
             </div>

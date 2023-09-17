@@ -22,6 +22,7 @@ import Services from "../serviceContainer/Services"
 import "./product.css"
 
 export default function Product() {
+    
     return (
         <div className="productContainer">
             <div className="mainSection">

@@ -1,8 +1,21 @@
+@import "../../../breakpoints.scss";
+
 .priceContainer{
     display: flex;
     align-items: baseline;
     gap: 5px;
+    @include media('>phone', '<=mobile'){
+        margin: 10px 0;
+    }
+    @include media('>smphone', '<=phone'){
 
+    }
+    @include media('>phone', '<=largemb'){
+
+    }
+    @include media('>largemb', '<=tablet'){
+
+    }
     .prices{
         margin-left: 20px;
         font-size: 28px;

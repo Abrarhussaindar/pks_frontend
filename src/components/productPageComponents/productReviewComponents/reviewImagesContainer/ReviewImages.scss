@@ -1,3 +1,5 @@
+@import "../../../../breakpoints.scss";
+
 .imgContainer{
     display: flex;
     justify-content: space-between;
@@ -7,5 +9,24 @@
     img{
         width: 100px;
         border-radius: 10px;
+    }
+
+    @include media('>phone', '<=mobile'){
+        width: unset;
+        overflow: scroll;
+        gap: 5px;
+        img{
+            width: 80px;
+        }
+
+    }
+    @include media('>smphone', '<=phone'){
+
+    }
+    @include media('>phone', '<=largemb'){
+
+    }
+    @include media('>largemb', '<=tablet'){
+
     }
 }

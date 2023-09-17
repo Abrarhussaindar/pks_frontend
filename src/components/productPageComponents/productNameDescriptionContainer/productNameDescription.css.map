@@ -1,1 +1,1 @@
-{"version":3,"sources":["productNameDescription.scss","productNameDescription.css"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,gBAAA;EACA,qBAAA;ACCJ","file":"productNameDescription.css"}
+{"version":3,"sources":["../../../breakpoints.scss","productNameDescription.scss","productNameDescription.css"],"names":[],"mappings":"AA6UA;;;;EAAA;ACzUA;EACI,eAAA;EACA,gBAAA;EACA,qBAAA;ACEJ;AFwGE;EC7GF;IAOQ,eAAA;ECEN;AACF","file":"productNameDescription.css"}

@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .offerContainer {
   display: flex;
   flex-direction: column;
@@ -13,6 +18,12 @@
   margin-top: 5px;
   width: 90%;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .offerContainer .container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
 .offerContainer .container .innerContainer {
   display: flex;
   flex-direction: column;
@@ -25,4 +36,9 @@
 .offerContainer .container .innerContainer p {
   font-size: 14px;
   font-weight: 500;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .offerContainer .container .innerContainer {
+    width: 45%;
+  }
 }/*# sourceMappingURL=offers.css.map */

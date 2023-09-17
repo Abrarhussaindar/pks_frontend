@@ -1,3 +1,6 @@
+@import "../../breakpoints.scss";
+
+
 .serviceContainer{
     ul{
         display: flex;
@@ -19,6 +22,32 @@
                 font-weight: 600;
                 color: var(--hover-color);
             }
+            @include media('>phone', '<=mobile'){
+                padding: 0;
+                margin: 20px 0;
+            }
+            @include media('>smphone', '<=phone'){
+        
+            }
+            @include media('>phone', '<=largemb'){
+        
+            }
+            @include media('>largemb', '<=tablet'){
+        
+            }
+        }
+                
+        @include media('>phone', '<=mobile'){
+            gap: unset;
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
         }
     }
 }

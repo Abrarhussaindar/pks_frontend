@@ -1,10 +1,25 @@
+/**
+*
+* Testing
+*
+**/
 .productDetailsSection h4 {
   font-size: 24px;
   font-weight: 500;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .productDetailsSection h4 {
+    font-size: 22px;
+  }
+}
 .productDetailsSection table tr {
   display: flex;
   align-items: center;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productDetailsSection table tr {
+    display: inherit;
+  }
 }
 .productDetailsSection table tr th {
   font-size: 16px;
@@ -12,6 +27,11 @@
   padding: 5px;
   text-align: left;
   border-bottom: 1px solid var(--un-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productDetailsSection table tr th {
+    font-size: 14px;
+  }
 }
 .productDetailsSection table tr th .tspan {
   margin-left: 10px;
@@ -21,6 +41,11 @@
   padding: 5px;
   text-align: left;
   border-bottom: 1px solid var(--un-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productDetailsSection table tr td {
+    font-size: 12px;
+  }
 }
 .productDetailsSection table tr td ul {
   list-style: none;

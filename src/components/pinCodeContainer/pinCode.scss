@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .pincodeContainer{
     display: flex;
     align-items: center;
@@ -5,6 +7,18 @@
     cursor: pointer;
     img{
         width: 25px;
+        @include media('>phone', '<=mobile'){
+            width: 20px;
+        }
+        @include media('>smphone', '<=phone'){
+    
+        }
+        @include media('>phone', '<=largemb'){
+    
+        }
+        @include media('>largemb', '<=tablet'){
+    
+        }
     }
 
     p{

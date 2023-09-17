@@ -22,6 +22,18 @@
     padding: 10px;
   }
 }
+@media (min-width: 561px) and (max-width: 768px) {
+  .recentProductsContainer {
+    overflow-x: scroll;
+    padding: 15px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .recentProductsContainer {
+    overflow-x: scroll;
+    padding: 15px;
+  }
+}
 .recentProductsContainer .innerContainer {
   background-color: var(--box-color);
   width: 100%;
@@ -36,6 +48,16 @@
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
+  .recentProductsContainer .innerContainer .heading h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .recentProductsContainer .innerContainer .heading h3 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
   .recentProductsContainer .innerContainer .heading h3 {
     font-size: 16px;
   }

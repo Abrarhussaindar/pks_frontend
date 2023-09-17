@@ -15,6 +15,14 @@
         overflow-x: scroll;
         padding: 10px;
     }
+    @include media('>largemb', '<=tablet'){ 
+        overflow-x: scroll;
+        padding: 15px;
+    }
+    @include media('>phone', '<=largemb'){
+        overflow-x: scroll;
+        padding: 15px;
+    }
 
     .innerContainer{
         background-color: var(--box-color);
@@ -30,6 +38,12 @@
                     // padding: 5px;
                 }
                 @include media('>smphone', '<=phone'){
+                    font-size: 16px;
+                }
+                @include media('>largemb', '<=tablet'){ 
+                    font-size: 16px;
+                }
+                @include media('>phone', '<=largemb'){
                     font-size: 16px;
                 }
             }

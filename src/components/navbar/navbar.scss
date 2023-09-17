@@ -29,6 +29,16 @@
 
         height: 60px;
     }
+    @include media('>phone', '<=largemb'){
+        padding: 0 15px;
+
+        height: 70px;
+    }
+    @include media('>largemb', '<=tablet'){
+        padding: 0 15px;
+
+        height: 70px;
+    }
     .leftSide{
         .logoLink{
             text-decoration: none;
@@ -49,6 +59,12 @@
                     font-size: 18px;
             
                 }
+                @include media('>largemb', '<=tablet'){
+                    font-size: 24px;
+                }
+                @include media('>phone', '<=largemb'){
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -68,6 +84,10 @@
             display: none;
     
         }
+        @include media('>largemb', '<=tablet'){
+            display: flex;
+            width: 40%;
+        }
 
         .searchbarIcon{
             margin-left: 15px;
@@ -80,6 +100,11 @@
             width: 90%;
             margin-left: 10px;
             color: black;
+
+            @include media('>largemb', '<=tablet'){
+                // display: flex;
+                width: 70%;
+            }
         }
         .navSearchInput:focus{
             outline: none;
@@ -164,6 +189,35 @@
                     }
                 }
         
+            }
+            @include media('>phone', '<=largemb'){
+                img{
+                    width: 25px;
+                }
+                .cart{
+                    a{
+                        display: flex;
+                    }
+                    .cartCount{
+                        top: -40%;
+                        right: -40%;
+                    }
+                }
+            }
+
+            @include media('>largemb', '<=tablet'){ 
+                img{
+                    width: 25px;
+                }
+                .cart{
+                    a{
+                        display: flex;
+                    }
+                    .cartCount{
+                        top: -40%;
+                        right: -40%;
+                    }
+                }
             }
         }
     }

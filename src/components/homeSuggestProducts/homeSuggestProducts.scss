@@ -19,6 +19,16 @@
         margin: 15px 0;
         border-radius: 0;
     }
+    @include media('>largemb', '<=tablet'){ 
+        overflow-x: scroll;
+        margin: 15px 0;
+        border-radius: 0;
+    }
+    @include media('>phone', '<=largemb'){
+        overflow-x: scroll;
+        margin: 15px 0;
+        border-radius: 0;
+    }
     .suggetHeading{
         padding: 10px;
 
@@ -27,6 +37,12 @@
         }
         @include media('>smphone', '<=phone'){
             font-size: 12px;
+        }
+        @include media('>largemb', '<=tablet'){ 
+            font-size: 14px;
+        }
+        @include media('>phone', '<=largemb'){
+            font-size: 14px;
         }
     }
     .container{
@@ -51,6 +67,12 @@
                     @include media('>smphone', '<=phone'){
                         width: 70px;
                     }
+                    @include media('>largemb', '<=tablet'){ 
+                        width: 70px;
+                    }
+                    @include media('>phone', '<=largemb'){
+                        width: 70px;
+                    }
                     
                 }
                 p{
@@ -64,6 +86,12 @@
                     }
                     @include media('>smphone', '<=phone'){
                         font-size: 10px;
+                    }
+                    @include media('>largemb', '<=tablet'){ 
+                        font-size: 12px;
+                    }
+                    @include media('>phone', '<=largemb'){
+                        font-size: 12px;
                     }
                 }
             

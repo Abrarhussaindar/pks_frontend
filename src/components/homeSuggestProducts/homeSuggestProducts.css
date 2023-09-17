@@ -26,6 +26,20 @@
     border-radius: 0;
   }
 }
+@media (min-width: 561px) and (max-width: 768px) {
+  .SuggetProductsContainer {
+    overflow-x: scroll;
+    margin: 15px 0;
+    border-radius: 0;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .SuggetProductsContainer {
+    overflow-x: scroll;
+    margin: 15px 0;
+    border-radius: 0;
+  }
+}
 .SuggetProductsContainer .suggetHeading {
   padding: 10px;
 }
@@ -37,6 +51,16 @@
 @media (min-width: 301px) and (max-width: 370px) {
   .SuggetProductsContainer .suggetHeading {
     font-size: 12px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .SuggetProductsContainer .suggetHeading {
+    font-size: 14px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .SuggetProductsContainer .suggetHeading {
+    font-size: 14px;
   }
 }
 .SuggetProductsContainer .container {
@@ -66,6 +90,16 @@
     width: 70px;
   }
 }
+@media (min-width: 561px) and (max-width: 768px) {
+  .SuggetProductsContainer .container .innerContainer img {
+    width: 70px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .SuggetProductsContainer .container .innerContainer img {
+    width: 70px;
+  }
+}
 .SuggetProductsContainer .container .innerContainer p {
   font-size: 14px;
   font-weight: 500;
@@ -80,5 +114,15 @@
 @media (min-width: 301px) and (max-width: 370px) {
   .SuggetProductsContainer .container .innerContainer p {
     font-size: 10px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .SuggetProductsContainer .container .innerContainer p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .SuggetProductsContainer .container .innerContainer p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=homeSuggestProducts.css.map */

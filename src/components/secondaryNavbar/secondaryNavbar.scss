@@ -16,6 +16,9 @@
         height: 50px;
 
     }
+    @include media('>phone', '<=largemb'){
+        height: 60px;
+    }
     .container{
         a{
             display: flex;
@@ -41,6 +44,9 @@
                     width: 18px;
             
                 }
+                @include media('>phone', '<=largemb'){
+                    width: 20px;
+                }
             }
 
             span{
@@ -52,6 +58,9 @@
                 @include media('>smphone', '<=phone'){
                     font-size: 8px;
             
+                }
+                @include media('>phone', '<=largemb'){
+                    font-size: 12px;
                 }
             }
 

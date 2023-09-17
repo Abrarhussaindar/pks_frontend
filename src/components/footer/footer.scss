@@ -17,6 +17,12 @@
     @include media('>smphone', '<=phone'){
         padding: 15px;
     }
+    @include media('>largemb', '<=tablet'){ 
+        padding: 20px;
+    }
+    @include media('>phone', '<=largemb'){
+        padding: 20px;
+    }
     .top{
         display: flex;
         justify-content: space-between;
@@ -29,13 +35,32 @@
             flex-direction: column;
             text-align: center;
         }
+        @include media('>phone', '<=largemb'){
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @include media('>largemb', '<=tablet'){ 
+            flex-wrap: wrap;
+        }
+
 
         .left{
+            @include media('>largemb', '<=tablet'){ 
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            @include media('>phone', '<=largemb'){
+                margin-bottom: 30px;
+            }
             h1{
                 font-weight: 500;
                 font-size: 30px;
                 span{
                     color: var(--box-color);
+                }
+                @include media('>largemb', '<=tablet'){ 
+                    font-size: 22px;
                 }
             }
             p{
@@ -45,6 +70,13 @@
                 @include media('>smphone', '<=phone'){
                     width: unset;
                     font-size: 16px;
+                }
+                @include media('>largemb', '<=tablet'){ 
+                    width: unset;
+                    font-size: 14px;
+                }
+                @include media('>phone', '<=largemb'){
+                    width: unset;
                 }
             }
         }
@@ -56,9 +88,15 @@
             @include media('>smphone', '<=phone'){
                 margin-top: 20px;
             }
+            @include media('>phone', '<=largemb'){
+                margin-bottom: 20px;
+            }
             h3{
                 font-size: 18px;
                 font-weight: 600;
+                @include media('>largemb', '<=tablet'){ 
+                    font-size: 16px;
+                }
             }
             ul{
                 list-style: none;
@@ -77,6 +115,10 @@
                         color: white;
                         transition: color 0.3s ease-in-out;
                     }
+
+                    @include media('>largemb', '<=tablet'){ 
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -93,6 +135,9 @@
                     font-size: 20px;
                     font-weight: 600;
                     margin-bottom: 20px;
+                    @include media('>largemb', '<=tablet'){ 
+                        font-size: 16px;
+                    }
                 }
                 .socialContainer{
                     display: flex;
@@ -102,6 +147,9 @@
                         justify-content: center;
                     }
                     @include media('>smphone', '<=phone'){
+                        justify-content: center;
+                    }
+                    @include media('>phone', '<=largemb'){
                         justify-content: center;
                     }
                     img{
@@ -137,6 +185,9 @@
                     @include media('>smphone', '<=phone'){
                         width: unset;
                     }
+                    @include media('>phone', '<=largemb'){
+                        width: unset;
+                    }
                     li{
                         a{
                             text-decoration: none;
@@ -148,6 +199,11 @@
                                 justify-content: center;
                             }
                             @include media('>smphone', '<=phone'){
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            @include media('>phone', '<=largemb'){
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
@@ -181,6 +237,9 @@
                 color: var(--box-color);
             }
             @include media('>smphone', '<=phone'){
+                font-size: 14px;
+            }
+            @include media('>largemb', '<=tablet'){ 
                 font-size: 14px;
             }
         }

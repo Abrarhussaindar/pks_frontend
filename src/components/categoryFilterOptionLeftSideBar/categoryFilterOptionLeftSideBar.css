@@ -1,7 +1,32 @@
+/**
+*
+* Testing
+*
+**/
 .leftSideBarContainer {
   flex: 2;
   border-right: 2px solid var(--un-color);
   padding-left: 20px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .leftSideBarContainer {
+    display: none;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .leftSideBarContainer {
+    display: none;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .leftSideBarContainer {
+    display: none;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .leftSideBarContainer {
+    display: none;
+  }
 }
 .leftSideBarContainer .size .heading h4, .leftSideBarContainer .colour .heading h4, .leftSideBarContainer .pattern .heading h4, .leftSideBarContainer .material .heading h4, .leftSideBarContainer .brands .heading h4, .leftSideBarContainer .price .heading h4, .leftSideBarContainer .customerRatings .heading h4, .leftSideBarContainer .discount .heading h4 {
   padding: 5px 10px;

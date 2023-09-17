@@ -20,6 +20,7 @@ export default function CategoryContent() {
             <ProductCard />
             <ProductCard />
             <ProductCard />
+            
         </div>
     )
 }

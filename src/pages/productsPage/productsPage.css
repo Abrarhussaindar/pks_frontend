@@ -1,3 +1,51 @@
+/**
+*
+* Testing
+*
+**/
+.categoryContainer .toggleBtns {
+  display: none;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .categoryContainer .toggleBtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .categoryContainer .toggleBtns img {
+    width: 25px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .categoryContainer .toggleBtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .categoryContainer .toggleBtns img {
+    width: 25px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .categoryContainer .toggleBtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .categoryContainer .toggleBtns img {
+    width: 25px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .categoryContainer .toggleBtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .categoryContainer .toggleBtns img {
+    width: 25px;
+  }
+}
 .categoryContainer .mainContent {
   display: flex;
   gap: 10px;

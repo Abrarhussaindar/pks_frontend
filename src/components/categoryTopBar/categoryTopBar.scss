@@ -1,3 +1,4 @@
+@import "../../breakpoints.scss";
 .categoryTopBarContainer{
     display: flex;
     justify-content: space-between;
@@ -5,10 +6,27 @@
     height: 45px;
     padding: 0 30px;
 
+    @include media('>phone', '<=mobile'){
+        display: none;
+        
+    }
+    @include media('>smphone', '<=phone'){
+        display: none;
+    }
+    @include media('>phone', '<=largemb'){
+        display: none;
+    }
+    @include media('>largemb', '<=tablet'){
+        display: none;
+    }
     .left{
         h3{
             font-size: 22px;
             font-weight: 600;
+
+            @include media('>phone', '<=mobile'){
+                font-size: 12px;
+            }
         }
     }
 
@@ -17,6 +35,9 @@
             list-style: none;
             display: flex;
             gap: 20px;
+            @include media('>phone', '<=mobile'){
+                gap: 5px;
+            }
             .active{
                 color: var(--main-color);
                 border-bottom: 1px solid var(--hover-color);
@@ -28,6 +49,17 @@
                 &:hover{
                     border-bottom: 1px solid var(--hover-color);
                 }
+                @include media('>phone', '<=mobile'){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .right{
+        p{
+            @include media('>phone', '<=mobile'){
+                font-size: 12px;
             }
         }
     }

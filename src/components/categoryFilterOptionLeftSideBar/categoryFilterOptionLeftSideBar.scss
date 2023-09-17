@@ -1,8 +1,22 @@
+@import "../../breakpoints.scss";
+
 .leftSideBarContainer{
     flex: 2;
     border-right: 2px solid var(--un-color);
     padding-left: 20px;
-
+    @include media('>phone', '<=mobile'){
+        display: none;
+        
+    }
+    @include media('>smphone', '<=phone'){
+        display: none;
+    }
+    @include media('>phone', '<=largemb'){
+        display: none;
+    }
+    @include media('>largemb', '<=tablet'){
+        display: none;
+    }
 
     .size,.colour,.pattern,.material,.brands,.price,.customerRatings,.discount{
         .heading{

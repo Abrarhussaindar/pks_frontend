@@ -1,8 +1,33 @@
+/**
+*
+* Testing
+*
+**/
 .productCard {
   width: 23%;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productCard {
+    width: 45%;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .productCard {
+    width: 45%;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .productCard {
+    width: 45%;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productCard {
+    width: 30%;
+  }
 }
 .productCard .productCardHr {
   border-color: var(--un-color);
@@ -67,6 +92,11 @@
   font-size: 18px;
   font-weight: 600;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .productCard .productDetailsContainer h4 {
+    font-size: 16px;
+  }
+}
 .productCard .productDetailsContainer p {
   font-size: 16px;
 }
@@ -81,8 +111,48 @@
 .productCard .productDetailsContainer .productCardRating li .starFill {
   width: 18px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .productCard .productDetailsContainer .productCardRating li .starFill {
+    width: 16px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .productCard .productDetailsContainer .productCardRating li .starFill {
+    width: 16px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .productCard .productDetailsContainer .productCardRating li .starFill {
+    width: 16px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productCard .productDetailsContainer .productCardRating li .starFill {
+    width: 16px;
+  }
+}
 .productCard .productDetailsContainer .productCardRating li img {
   width: 16px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .productCard .productDetailsContainer .productCardRating li img {
+    width: 14px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .productCard .productDetailsContainer .productCardRating li img {
+    width: 14px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .productCard .productDetailsContainer .productCardRating li img {
+    width: 14px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productCard .productDetailsContainer .productCardRating li img {
+    width: 14px;
+  }
 }
 .productCard .productDetailsContainer .productCardRating li span {
   margin-left: 10px;

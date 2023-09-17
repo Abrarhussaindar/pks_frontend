@@ -1,3 +1,6 @@
+@import "../../breakpoints.scss";
+
+
 .categoryContentContainer{
     flex: 10;
     padding: 10px;
@@ -6,4 +9,10 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-around;
+    margin-bottom: 20px;
+
+    @include media('>phone', '<=mobile'){ 
+        gap: 10px;
+        
+    }
 }

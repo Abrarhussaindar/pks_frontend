@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .categoryTopBarContainer {
   display: flex;
   justify-content: space-between;
@@ -5,14 +10,44 @@
   height: 45px;
   padding: 0 30px;
 }
+@media (min-width: 371px) and (max-width: 460px) {
+  .categoryTopBarContainer {
+    display: none;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .categoryTopBarContainer {
+    display: none;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .categoryTopBarContainer {
+    display: none;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .categoryTopBarContainer {
+    display: none;
+  }
+}
 .categoryTopBarContainer .left h3 {
   font-size: 22px;
   font-weight: 600;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .categoryTopBarContainer .left h3 {
+    font-size: 12px;
+  }
 }
 .categoryTopBarContainer .center ul {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .categoryTopBarContainer .center ul {
+    gap: 5px;
+  }
 }
 .categoryTopBarContainer .center ul .active {
   color: var(--main-color);
@@ -25,4 +60,14 @@
 }
 .categoryTopBarContainer .center ul li:hover {
   border-bottom: 1px solid var(--hover-color);
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .categoryTopBarContainer .center ul li {
+    font-size: 12px;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .categoryTopBarContainer .right p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=categoryTopBar.css.map */

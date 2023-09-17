@@ -1,6 +1,46 @@
+@import "../../breakpoints.scss";
+
 .categoryContainer{
     // height: calc(100vh - 140px);
 
+    .toggleBtns{
+        display: none;
+
+        @include media('>phone', '<=mobile'){
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            img{
+                width: 25px;
+            }
+        }
+
+        @include media('>smphone', '<=phone'){
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            img{
+                width: 25px;
+            }
+        }
+        @include media('>phone', '<=largemb'){
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            img{
+                width: 25px;
+            }
+        }
+        @include media('>largemb', '<=tablet'){
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            img{
+                width: 25px;
+            }
+        }
+    }
+    
     .mainContent{
         display: flex;
         gap: 10px;

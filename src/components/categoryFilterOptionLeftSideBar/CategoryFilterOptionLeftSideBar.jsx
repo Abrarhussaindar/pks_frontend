@@ -12,6 +12,7 @@ export default function CategoryFilterOptionLeftSideBar() {
     return (
         <div className="leftSideBarContainer">
             
+            
             <ProductSize />
             <ProductColor />
             <ProductPattern />

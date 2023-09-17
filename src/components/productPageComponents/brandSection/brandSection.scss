@@ -26,13 +26,16 @@
 
         }
         @include media('>smphone', '<=phone'){
-    
+                        flex-direction: column;
+            gap: 0;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+                        flex-direction: column;
+            gap: 0;
         }
         @include media('>largemb', '<=tablet'){
-    
+                        flex-direction: column;
+            gap: 0;
         }
         .left{
             margin-top: 10px;

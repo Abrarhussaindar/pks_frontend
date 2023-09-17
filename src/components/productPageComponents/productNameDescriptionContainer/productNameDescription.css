@@ -12,4 +12,19 @@
   .productNameDescriptionContainer {
     font-size: 16px;
   }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .productNameDescriptionContainer {
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .productNameDescriptionContainer {
+    font-size: 16px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productNameDescriptionContainer {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=productNameDescription.css.map */

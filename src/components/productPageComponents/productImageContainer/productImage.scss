@@ -14,13 +14,25 @@
         margin: 10px 0;
     }
     @include media('>smphone', '<=phone'){
-
+        flex-direction: unset;
+        padding: unset;
+        gap: 20px;
+        overflow: scroll;
+        margin: 10px 0;
     }
-    @include media('>phone', '<=largemb'){
-
+    @include media('>mobile', '<=largemb'){
+        flex-direction: unset;
+        padding: unset;
+        gap: 20px;
+        overflow: scroll;
+        margin: 10px 0;
     }
     @include media('>largemb', '<=tablet'){
-
+        flex-direction: unset;
+        padding: unset;
+        gap: 20px;
+        overflow: scroll;
+        margin: 10px 0;
     }
     // border: 1px solid black;
     .active{
@@ -31,7 +43,7 @@
         @include media('>smphone', '<=phone'){
             border: unset;
         }
-        @include media('>phone', '<=largemb'){
+        @include media('>mobile', '<=largemb'){
             border: unset;
         }
         @include media('>largemb', '<=tablet'){
@@ -51,11 +63,13 @@
         }
         @include media('>smphone', '<=phone'){
     
+            width: 40%;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            width: 40%;
         }
         @include media('>largemb', '<=tablet'){
+            width: 40%;
     
         }
     }
@@ -82,7 +96,7 @@
         display: none;
 
     }
-    @include media('>phone', '<=largemb'){
+    @include media('>mobile', '<=largemb'){
         display: none;
 
     }

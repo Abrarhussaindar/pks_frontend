@@ -18,6 +18,11 @@
     width: 12px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .rating .customerProductRating li img {
+    width: 12px;
+  }
+}
 .rating .customerProductRating li span {
   font-size: 16px;
   font-weight: 600;
@@ -29,6 +34,11 @@
     font-size: 12px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .rating .customerProductRating li span {
+    font-size: 14px;
+  }
+}
 .rating .ratingDate p {
   text-align: end;
   margin-top: 5px;
@@ -37,6 +47,11 @@
 @media (min-width: 371px) and (max-width: 460px) {
   .rating .ratingDate p {
     font-size: 8px;
+  }
+}
+@media (min-width: 371px) and (max-width: 560px) {
+  .rating .ratingDate p {
+    font-size: 12px;
   }
 }
 .rating .ratingDate .dateSpan {

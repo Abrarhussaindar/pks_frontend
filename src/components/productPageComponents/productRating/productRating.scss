@@ -12,13 +12,13 @@
                 width: 16px;
             }
             @include media('>smphone', '<=phone'){
-
+                width: 16px;
             }
-            @include media('>phone', '<=largemb'){
-
+            @include media('>mobile', '<=largemb'){
+                width: 16px;
             }
             @include media('>largemb', '<=tablet'){
-
+                width: 16px;
             }
         }
         img{
@@ -27,13 +27,13 @@
                 width: 14px;
             }
             @include media('>smphone', '<=phone'){
-
+                width: 14px;
             }
-            @include media('>phone', '<=largemb'){
-
+            @include media('>mobile', '<=largemb'){
+                width: 14px;
             }
             @include media('>largemb', '<=tablet'){
-
+                width: 14px;
             }
         }
 
@@ -45,13 +45,13 @@
                 font-size: 14px;
             }
             @include media('>smphone', '<=phone'){
-
+                font-size: 14px;
             }
-            @include media('>phone', '<=largemb'){
-
+            @include media('>mobile', '<=largemb'){
+                font-size: 14px;
             }
             @include media('>largemb', '<=tablet'){
-
+                font-size: 14px;
             }
         }
     }

@@ -31,6 +31,24 @@
     gap: 0;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .brandSection .container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .brandSection .container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .brandSection .container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 .brandSection .container .left {
   margin-top: 10px;
   padding-right: 50px;

@@ -27,13 +27,16 @@
                 margin: 20px 0;
             }
             @include media('>smphone', '<=phone'){
-        
+                                padding: 0;
+                margin: 20px 0;
             }
-            @include media('>phone', '<=largemb'){
-        
+            @include media('>mobile', '<=largemb'){
+                                padding: 0;
+                margin: 20px 0;
             }
             @include media('>largemb', '<=tablet'){
-        
+                                padding: 0;
+                margin: 20px 0;
             }
         }
                 
@@ -41,13 +44,13 @@
             gap: unset;
         }
         @include media('>smphone', '<=phone'){
-    
+            gap: unset;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            // gap: unset;
         }
         @include media('>largemb', '<=tablet'){
-    
+            // gap: unset;
         }
     }
 }

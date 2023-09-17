@@ -18,6 +18,21 @@
     flex-direction: column;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .productReviewsSection .bottom {
+    flex-direction: column;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .productReviewsSection .bottom {
+    flex-direction: column;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productReviewsSection .bottom {
+    flex-direction: column;
+  }
+}
 .productReviewsSection .bottom .left {
   flex: 3;
 }
@@ -65,6 +80,24 @@
     width: unset;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .productReviewsSection .bottom .right .rightCenter .container {
+    flex-wrap: wrap;
+    width: unset;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .productReviewsSection .bottom .right .rightCenter .container {
+    flex-wrap: wrap;
+    width: unset;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productReviewsSection .bottom .right .rightCenter .container {
+    flex-wrap: wrap;
+    width: unset;
+  }
+}
 .productReviewsSection .bottom .right .rightBottom {
   display: flex;
   flex-direction: column;
@@ -75,6 +108,21 @@
   gap: 10px;
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .productReviewsSection .bottom .right .rightBottom .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .productReviewsSection .bottom .right .rightBottom .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .productReviewsSection .bottom .right .rightBottom .container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
   .productReviewsSection .bottom .right .rightBottom .container {
     flex-direction: column;
   }

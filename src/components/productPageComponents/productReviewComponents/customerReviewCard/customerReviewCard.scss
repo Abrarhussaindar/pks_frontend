@@ -7,18 +7,17 @@
     border-radius: 10px;
     width: 48%;
 
+    @include media('>smphone', '<=phone'){
+        width: unset;
+    }
     @include media('>phone', '<=mobile'){
         width: unset;
-
     }
-    @include media('>smphone', '<=phone'){
-
-    }
-    @include media('>phone', '<=largemb'){
-
+    @include media('>mobile', '<=largemb'){
+        width: unset;
     }
     @include media('>largemb', '<=tablet'){
-
+        width: unset;
     }
     .ratHr{
         margin: 10px 0;
@@ -38,13 +37,14 @@
 
             @include media('>phone', '<=mobile'){
                 gap: 10px;
-                padding-right: 15px;
+                padding-right: 30px;
             }
             @include media('>smphone', '<=phone'){
-        
+                
             }
-            @include media('>phone', '<=largemb'){
-        
+            @include media('>mobile', '<=largemb'){
+                gap: 10px;
+                padding-right: 25px;
             }
             @include media('>largemb', '<=tablet'){
         

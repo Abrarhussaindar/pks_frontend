@@ -13,7 +13,7 @@
     @include media('>smphone', '<=phone'){
 
     }
-    @include media('>phone', '<=largemb'){
+    @include media('>mobile', '<=largemb'){
 
     }
     @include media('>largemb', '<=tablet'){
@@ -40,13 +40,16 @@
             font-size: 16px;
         }
         @include media('>smphone', '<=phone'){
-    
+                        width: unset;
+            font-size: 14px;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+                        width: unset;
+            font-size: 16px;
         }
         @include media('>largemb', '<=tablet'){
-    
+                        width: unset;
+            font-size: 16px;
         }
     }
     .buyNow{
@@ -72,13 +75,16 @@
             font-size: 16px;
         }
         @include media('>smphone', '<=phone'){
-    
+            width: unset;
+            font-size: 14px;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            width: unset;
+            font-size: 16px;
         }
         @include media('>largemb', '<=tablet'){
-    
+            width: unset;
+            font-size: 16px;
         }
     }
 }

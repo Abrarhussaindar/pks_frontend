@@ -23,8 +23,13 @@
     @include media('>smphone', '<=phone'){
 
     }
-    @include media('>phone', '<=largemb'){
-
+    @include media('>mobile', '<=largemb'){
+        width: unset;
+        overflow: scroll;
+        gap: 5px;
+        img{
+            width: 80px;
+        }
     }
     @include media('>largemb', '<=tablet'){
 

@@ -30,7 +30,30 @@
     margin: 20px 0;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .serviceContainer ul li {
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .serviceContainer ul li {
+    padding: 0;
+    margin: 20px 0;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .serviceContainer ul li {
+    padding: 0;
+    margin: 20px 0;
+  }
+}
 @media (min-width: 371px) and (max-width: 460px) {
+  .serviceContainer ul {
+    gap: unset;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
   .serviceContainer ul {
     gap: unset;
   }

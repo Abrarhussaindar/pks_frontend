@@ -23,4 +23,14 @@
   .imgContainer img {
     width: 80px;
   }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .imgContainer {
+    width: unset;
+    overflow: scroll;
+    gap: 5px;
+  }
+  .imgContainer img {
+    width: 80px;
+  }
 }/*# sourceMappingURL=ReviewImages.css.map */

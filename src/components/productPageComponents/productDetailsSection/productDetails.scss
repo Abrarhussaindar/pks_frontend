@@ -9,13 +9,13 @@
 
         }
         @include media('>smphone', '<=phone'){
-    
+            font-size: 22px;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            font-size: 22px;
         }
         @include media('>largemb', '<=tablet'){
-    
+            font-size: 22px;
         }
     }
     table{
@@ -27,13 +27,13 @@
     
             }
             @include media('>smphone', '<=phone'){
-        
+                display: inherit;
             }
-            @include media('>phone', '<=largemb'){
-        
+            @include media('>mobile', '<=largemb'){
+                display: inherit;
             }
             @include media('>largemb', '<=tablet'){
-        
+                display: inherit;
             }
             th{
                 font-size: 16px;
@@ -46,13 +46,13 @@
         
                 }
                 @include media('>smphone', '<=phone'){
-            
+                    font-size: 14px;
                 }
-                @include media('>phone', '<=largemb'){
-            
+                @include media('>mobile', '<=largemb'){
+                    font-size: 14px;
                 }
                 @include media('>largemb', '<=tablet'){
-            
+                    font-size: 14px;
                 }
                 .tspan{
                     margin-left: 10px;
@@ -70,13 +70,13 @@
         
                 }
                 @include media('>smphone', '<=phone'){
-            
+                    font-size: 12px;
                 }
-                @include media('>phone', '<=largemb'){
-            
+                @include media('>mobile', '<=largemb'){
+                    font-size: 12px;
                 }
                 @include media('>largemb', '<=tablet'){
-            
+                    font-size: 12px;
                 }
                 ul{
                     list-style: none;

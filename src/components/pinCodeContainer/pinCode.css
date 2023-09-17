@@ -17,6 +17,21 @@
     width: 20px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .pincodeContainer img {
+    width: 20px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .pincodeContainer img {
+    width: 20px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .pincodeContainer img {
+    width: 20px;
+  }
+}
 .pincodeContainer p {
   font-size: 16px;
   font-weight: 500;

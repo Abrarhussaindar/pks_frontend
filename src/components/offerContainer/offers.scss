@@ -19,13 +19,16 @@
             flex-wrap: wrap;
         }
         @include media('>smphone', '<=phone'){
-    
+            width: 100%;
+            flex-wrap: wrap;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            width: 100%;
+            flex-wrap: wrap;
         }
         @include media('>largemb', '<=tablet'){
-    
+            width: 100%;
+            flex-wrap: wrap;
         }
         .innerContainer{
             display: flex;
@@ -44,13 +47,13 @@
                 width: 45%;
             }
             @include media('>smphone', '<=phone'){
-        
+                width: 45%;
             }
-            @include media('>phone', '<=largemb'){
-        
+            @include media('>mobile', '<=largemb'){
+                width: 45%;
             }
             @include media('>largemb', '<=tablet'){
-        
+                width: 45%;
             }
         }
     }

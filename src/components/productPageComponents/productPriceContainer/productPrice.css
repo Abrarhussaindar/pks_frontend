@@ -13,6 +13,21 @@
     margin: 10px 0;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .priceContainer {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .priceContainer {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .priceContainer {
+    margin: 10px 0;
+  }
+}
 .priceContainer .prices {
   margin-left: 20px;
   font-size: 28px;

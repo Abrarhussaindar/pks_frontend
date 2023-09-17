@@ -15,8 +15,8 @@
                 @include media('>smphone', '<=phone'){
             
                 }
-                @include media('>phone', '<=largemb'){
-            
+                @include media('>mobile', '<=largemb'){
+                    width: 12px;
                 }
                 @include media('>largemb', '<=tablet'){
             
@@ -35,8 +35,8 @@
                 @include media('>smphone', '<=phone'){
             
                 }
-                @include media('>phone', '<=largemb'){
-            
+                @include media('>mobile', '<=largemb'){
+                    font-size: 14px;
                 }
                 @include media('>largemb', '<=tablet'){
             
@@ -59,7 +59,7 @@
         
             }
             @include media('>phone', '<=largemb'){
-        
+                font-size: 12px;
             }
             @include media('>largemb', '<=tablet'){
         

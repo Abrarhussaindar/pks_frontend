@@ -10,7 +10,22 @@
   border-radius: 10px;
   width: 48%;
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .cardInner {
+    width: unset;
+  }
+}
 @media (min-width: 371px) and (max-width: 460px) {
+  .cardInner {
+    width: unset;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .cardInner {
+    width: unset;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
   .cardInner {
     width: unset;
   }
@@ -34,6 +49,12 @@
 @media (min-width: 371px) and (max-width: 460px) {
   .cardInner .head .customer {
     gap: 10px;
-    padding-right: 15px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .cardInner .head .customer {
+    gap: 10px;
+    padding-right: 25px;
   }
 }/*# sourceMappingURL=customerReviewCard.css.map */

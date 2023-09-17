@@ -16,5 +16,27 @@
   .similarProductsSection .container {
     display: -webkit-box;
     overflow: scroll;
+    padding: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .similarProductsSection .container {
+    display: -webkit-box;
+    overflow: scroll;
+    padding: 10px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .similarProductsSection .container {
+    display: -webkit-box;
+    overflow: scroll;
+    padding: 10px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .similarProductsSection .container {
+    display: -webkit-box;
+    overflow: scroll;
+    padding: 10px;
   }
 }/*# sourceMappingURL=similarProducts.css.map */

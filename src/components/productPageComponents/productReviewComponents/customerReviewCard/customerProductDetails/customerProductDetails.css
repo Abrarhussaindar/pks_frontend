@@ -19,12 +19,23 @@
     font-size: 14px;
   }
 }
+@media (min-width: 461px) and (max-width: 560px) {
+  .productDetails .size, .productDetails .color {
+    padding-right: 30px;
+    font-size: 14px;
+  }
+}
 .productDetails .proSpan {
   margin-left: 5px;
   color: var(--hover-color);
   font-weight: 500;
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .productDetails .proSpan {
+    font-size: 14px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
   .productDetails .proSpan {
     font-size: 14px;
   }

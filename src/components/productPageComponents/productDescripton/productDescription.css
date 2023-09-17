@@ -12,11 +12,44 @@
     font-size: 18px;
   }
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .productDescriptionSection h4 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .productDescriptionSection h4 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
+  .productDescriptionSection h4 {
+    font-size: 18px;
+  }
+}
 .productDescriptionSection p {
   font-size: 13px;
   margin: 10px 20px;
 }
 @media (min-width: 371px) and (max-width: 460px) {
+  .productDescriptionSection p {
+    font-size: 12px;
+    margin: 10px;
+  }
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .productDescriptionSection p {
+    font-size: 12px;
+    margin: 10px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .productDescriptionSection p {
+    font-size: 12px;
+    margin: 10px;
+  }
+}
+@media (min-width: 561px) and (max-width: 768px) {
   .productDescriptionSection p {
     font-size: 12px;
     margin: 10px;

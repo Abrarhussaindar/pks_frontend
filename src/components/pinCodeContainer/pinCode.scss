@@ -11,13 +11,13 @@
             width: 20px;
         }
         @include media('>smphone', '<=phone'){
-    
+            width: 20px;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            width: 20px;
         }
         @include media('>largemb', '<=tablet'){
-    
+            width: 20px;
         }
     }
 

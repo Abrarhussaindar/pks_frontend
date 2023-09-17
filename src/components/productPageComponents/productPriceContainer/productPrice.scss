@@ -8,13 +8,13 @@
         margin: 10px 0;
     }
     @include media('>smphone', '<=phone'){
-
+        margin: 10px 0;
     }
-    @include media('>phone', '<=largemb'){
-
+    @include media('>mobile', '<=largemb'){
+        margin: 10px 0;
     }
     @include media('>largemb', '<=tablet'){
-
+        margin: 10px 0;
     }
     .prices{
         margin-left: 20px;

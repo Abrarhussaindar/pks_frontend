@@ -10,13 +10,13 @@
 
         }
         @include media('>smphone', '<=phone'){
-    
+            font-size: 16px;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+            font-size: 18px;
         }
         @include media('>largemb', '<=tablet'){
-    
+            font-size: 18px;
         }
     }
     p{
@@ -28,13 +28,16 @@
 
         }
         @include media('>smphone', '<=phone'){
-    
+                        font-size: 12px;
+            margin: 10px;
         }
-        @include media('>phone', '<=largemb'){
-    
+        @include media('>mobile', '<=largemb'){
+                        font-size: 12px;
+            margin: 10px;
         }
         @include media('>largemb', '<=tablet'){
-    
+                        font-size: 12px;
+            margin: 10px;
         }
     }
 }

@@ -1,0 +1,49 @@
+.dNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-right: 30px;
+}
+.dNavContainer .dNavLeft {
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+}
+.dNavContainer .dNavLeft .dNavSearchBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dNavContainer .dNavLeft .dNavSearchBar input {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+.dNavContainer .dNavLeft .dNavSearchBar img {
+  width: 25px;
+}
+.dNavContainer .dNavright .adminDetailsContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.dNavContainer .dNavright .adminDetailsContainer img {
+  width: 50px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dNavContainer .dNavright .adminDetailsContainer .adminDetails h4 {
+  font-weight: 500;
+}
+.dNavContainer .dNavright .adminDetailsContainer .adminDetails p {
+  font-size: 14px;
+}
+.dNavContainer .dNavright .adminDetailsContainer .downArrow {
+  width: 14px;
+  height: 14px;
+}/*# sourceMappingURL=dNavbar.css.map */

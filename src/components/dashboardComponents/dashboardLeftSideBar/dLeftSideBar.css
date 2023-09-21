@@ -1,0 +1,96 @@
+.dLeftSideBarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+.dLeftSideBarContainer .dLSTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+.dLeftSideBarContainer .dLSTop a {
+  text-decoration: none;
+}
+.dLeftSideBarContainer .dLSTop a h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.dLeftSideBarContainer .dLSTop .dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.dLeftSideBarContainer .dLSTop .dashboard img {
+  width: 20px;
+  height: 20px;
+}
+.dLeftSideBarContainer .dLSTop .dashboard:hover {
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var(--hover-color);
+}
+.dLeftSideBarContainer .dLSCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dLeftSideBarContainer .dLSBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer {
+  margin-top: 30px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer h3, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer h3, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a {
+  text-decoration: none;
+  display: flex;
+  gap: 25px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a img {
+  width: 16px;
+  height: 16px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a span, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a span, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a span {
+  font-size: 14px;
+}
+.dLeftSideBarContainer .dLSBottom .adminDetailsContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.dLeftSideBarContainer .dLSBottom .adminDetailsContainer img {
+  width: 50px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.dLeftSideBarContainer .dLSBottom .adminDetailsContainer .adminDetails h4 {
+  font-weight: 500;
+}
+.dLeftSideBarContainer .dLSBottom .adminDetailsContainer .adminDetails p {
+  font-size: 14px;
+}
+.dLeftSideBarContainer .dLSBottom .adminDetailsContainer .downArrow {
+  width: 14px;
+  height: 14px;
+}/*# sourceMappingURL=dLeftSideBar.css.map */

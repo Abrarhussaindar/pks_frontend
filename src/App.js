@@ -16,8 +16,9 @@ import Footer from "./components/footer/Footer";
 
 import {
   Outlet,
-  createBrowserRouter,
-  RouterProvider,
+  BrowserRouter,
+  Route,
+  Routes,
 
 } from "react-router-dom";
 
@@ -31,6 +32,7 @@ import Orders from "./pages/userPage/orders/Orders";
 import WishList from "./pages/userPage/wishlist/WishList";
 import Help from "./pages/help/Help";
 import CustomerServices from "./pages/customerServices/CustomerServices";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 const Layout = () => {
   return (
@@ -43,113 +45,41 @@ const Layout = () => {
   );
 }
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />
-      },
-      {
-        path: "*",
-        element: <NoPage />
-      },
-      {
-        path: "/cart",
-        element: <Cart />
-      },
-      {
-        path: "/buy/:id",
-        element: <BuyPage productId />
-      },
-      {
-        path: "/buy/checkout",
-        element: <BuyPage cart/>
-      },
-      {
-        path: "/orders/:id",
-        element: <Orders/>
-      },
-      {
-        path: "/wishlist/:id",
-        element: <WishList/>
-      },
-      {
-        path: "/products/:category",
-        element: <ProductsPage />
-      },
-      {
-        path: "/product/:category/:id",
-        element: <ProductPage />
-      },
-      {
-        path: "/help",
-        element: <Help />
-      },
-      {
-        path: "/customer-service",
-        element: <CustomerServices />
-      },
-
-      // footer links
-      {
-        path: "/aboutus",
-        element: <AboutUs />
-      },
-      {
-        path: "/contactus",
-        element: <ContactUs />
-      },
-      {
-        path: "/disclaimer",
-        element: <Disclaimer />
-      },
-      {
-        path: "/privacypolicy",
-        element: <PrivacyPolicy />
-      },
-      {
-        path: "/returnrefund",
-        element: <ReturnRefund />
-      },
-      {
-        path: "/services",
-        element: <Services />
-      },
-      {
-        path: "/sitemap",
-        element: <SiteMap />
-      },
-      {
-        path: "/termsconditions",
-        element: <TermsConditions />
-      },
-    ]
-  },
-  {
-    path: "/login",
-    element: <Login />
-  },
-  {
-    path: "/register",
-    element: <Register />
-  },
-  {
-    path: "/forgotpassword",
-    element: <ForGotPassword />
-  },
-  {
-    path: "/profile/:userId",
-    element: <Profile />
-  },
-]);
 
 function App() {
   return (
     <div className="App">
-      <RouterProvider router={router}/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Layout />}>
+            <Route exact path="/" element={<Home/>}/>
+            <Route exact path="*" element={<NoPage/>}/>
+            <Route exact path="/cart" element={<Cart/>}/>
+            <Route exact path="/buy/:id" element={<BuyPage productId/>}/>
+            <Route exact path="/buy/checkout" element={<BuyPage cart/>}/>
+            <Route exact path="/orders/:id" element={<Orders/>}/>
+            <Route exact path="/wishlist/:id" element={<WishList/>}/>
+            <Route exact path="/products/:category" element={<ProductsPage/>}/>
+            <Route exact path="/product/:category/:id" element={<ProductPage/>}/>
+            <Route exact path="/help" element={<Help/>}/>
+            <Route exact path="/customer-service" element={<CustomerServices/>}/>
+
+            <Route exact path="/aboutus" element={<AboutUs/>}/>
+            <Route exact path="/contactus" element={<ContactUs/>}/>
+            <Route exact path="/disclaimer" element={<Disclaimer/>}/>
+            <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
+            <Route exact path="/returnrefund" element={<ReturnRefund/>}/>
+            <Route exact path="/services" element={<Services/>}/>
+            <Route exact path="/sitemap" element={<SiteMap/>}/>
+            <Route exact path="/termsconditions" element={<TermsConditions/>}/>
+          </Route>
+          <Route path="/admin" element={<Dashboard/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/register" element={<Register/>}/>
+          <Route path="/forgotpassword" element={<ForGotPassword/>}/>
+          <Route path="/profile/:userId" element={<Profile/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,113 @@
+.dLeftSideBarContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    .dLSTop{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+        
+        a{
+            text-decoration: none;
+            h1{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        
+        .dashboard{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border-bottom: 1px solid black;
+            padding: 10px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+
+            &:hover{
+                transition: all .3s ease;
+                color: white;
+                background-color: var(--hover-color);
+            }
+        }
+    }
+
+    .dLSCenter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+    }
+
+    .dLSBottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        .topBottom{
+
+            .clientsContainer,.salesContainer,.managementContainer{
+                margin-top: 30px;
+                
+                h3{
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+    
+                ul{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-top: 10px;
+                    li{
+                        // display: flex;
+                        a{
+                            text-decoration: none;
+                            display: flex;
+                            gap: 25px;
+                            img{
+                                width: 16px;
+                                height: 16px;
+                            }
+                            span{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .adminDetailsContainer{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            img{
+                width: 50px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+            .adminDetails{
+                h4{
+                    font-weight: 500;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            .downArrow{
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}

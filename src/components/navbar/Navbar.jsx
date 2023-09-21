@@ -25,6 +25,10 @@ export default function Navbar() {
             </div>
             <div className="rightSide">
                 <div className="navUserImg">
+                    <Link to="/admin">
+                        <button className='dashboardBtn'>dashboard</button>
+
+                    </Link>
                     <div className="cart">
                         <Link to="/cart">
                             <img src="/assets/images/cart.png" alt="" />

@@ -151,6 +151,18 @@
   align-items: center;
   gap: 20px;
 }
+.nav_container .rightSide .navUserImg .dashboardBtn {
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.nav_container .rightSide .navUserImg .dashboardBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var(--hover-color);
+}
 .nav_container .rightSide .navUserImg .cart {
   position: relative;
 }

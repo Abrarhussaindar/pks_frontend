@@ -89,8 +89,8 @@
   gap: 25px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a img {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a .rightImg {
   display: none;
@@ -103,8 +103,32 @@
   color: white;
   font-weight: 600;
 }
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .homeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .homeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .homeImg {
-  content: url("http://localhost:3000/assets/images/home-white.png");
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .cartImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .cartImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .cartImg {
+  content: url("http://localhost:3000/assets/images/dashboard/cart-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .customerImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .customerImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .customerImg {
+  content: url("http://localhost:3000/assets/images/dashboard/customer-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .billImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .billImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .billImg {
+  content: url("http://localhost:3000/assets/images/dashboard/bill-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .saleshomeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .saleshomeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .saleshomeImg {
+  content: url("http://localhost:3000/assets/images/dashboard/sales-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .dailyImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .dailyImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .dailyImg {
+  content: url("http://localhost:3000/assets/images/dashboard/daily-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .calendarImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .calendarImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .calendarImg {
+  content: url("http://localhost:3000/assets/images/dashboard/calendar-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .chartImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .chartImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .chartImg {
+  content: url("http://localhost:3000/assets/images/dashboard/chart-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .admin-panelImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .admin-panelImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .admin-panelImg {
+  content: url("http://localhost:3000/assets/images/dashboard/admin-panel-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .performanceImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .performanceImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .performanceImg {
+  content: url("http://localhost:3000/assets/images/dashboard/performance-white.png");
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .rightImg {
   display: block;

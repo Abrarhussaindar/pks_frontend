@@ -14,7 +14,7 @@ export default function dashboardLeftSideBar() {
                         <div className="dashboardLeft activedl">
                             <img className="homeImg" src="/assets/images/home.png" alt="" />
                             <span>Dashboard</span>
-                            <img className="rightImg" src="/assets/images/next.png" alt="" />
+                            <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                         </div>
                     </Link>
                 </div>
@@ -25,23 +25,23 @@ export default function dashboardLeftSideBar() {
                             <ul>
                                 <li>
                                     <Link to="/cfproducts">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="cartImg" src="/assets/images/dashboard/cart-blue.png" alt="" />
                                         <span>Products</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/customers">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="customerImg" src="/assets/images/dashboard/customer-blue.png" alt="" />
                                         <span>Customers</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/transactions">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="billImg" src="/assets/images/dashboard/bill-blue.png" alt="" />
                                         <span>Transactions</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 {/* <li>
@@ -57,30 +57,30 @@ export default function dashboardLeftSideBar() {
                         <ul>
                                 <li>
                                     <Link to="/sales-overview">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="saleshomeImg" src="/assets/images/dashboard/sales-blue.png" alt="" />
                                         <span>Overview</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/daily-sales">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="dailyImg" src="/assets/images/dashboard/daily-blue.png" alt="" />
                                         <span>Daily</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/monthly-sales">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="calendarImg" src="/assets/images/dashboard/calendar-blue.png" alt="" />
                                         <span>Monthly</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/sales-breakdown">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="chartImg" src="/assets/images/dashboard/chart-blue.png" alt="" />
                                         <span>Breakdown</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                             </ul>
@@ -90,16 +90,16 @@ export default function dashboardLeftSideBar() {
                         <ul>
                                 <li>
                                     <Link to="/admin-page">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="admin-panelImg" src="/assets/images/dashboard/admin-panel-blue.png" alt="" />
                                         <span>Admin</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                                 <li>
                                     <Link to="/performance">
-                                        <img className="homeImg" src="/assets/images/home.png" alt="" />
+                                        <img className="performanceImg" src="/assets/images/dashboard/performance-blue.png" alt="" />
                                         <span>Performance</span>
-                                        <img className="rightImg" src="/assets/images/next.png" alt="" />
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
                             </ul>

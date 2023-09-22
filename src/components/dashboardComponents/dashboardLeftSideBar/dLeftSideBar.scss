@@ -113,8 +113,8 @@
                             align-items: center;
                             gap: 25px;
                             img{
-                                width: 16px;
-                                height: 16px;
+                                width: 20px;
+                                height: 20px;
                             }
                             .rightImg{
                                 display: none;
@@ -128,9 +128,35 @@
                             background-color: var(--hover-color);
                             color: white;
                             font-weight: 600;
-                            .homeImg{
-                                content: url("http://localhost:3000/assets/images/home-white.png");
+                            .cartImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/cart-white.png");
                             }
+                            
+                            .customerImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/customer-white.png");
+                            }
+                            .billImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/bill-white.png");
+                            }
+                            .saleshomeImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/sales-white.png");
+                            }
+                            .dailyImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/daily-white.png");
+                            }
+                            .calendarImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/calendar-white.png");
+                            }
+                            .chartImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/chart-white.png");
+                            }
+                            .admin-panelImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/admin-panel-white.png");
+                            }
+                            .performanceImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/performance-white.png");
+                            }
+
                             .rightImg{
                                 display: block;
                                 width: 18px;

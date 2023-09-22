@@ -7,7 +7,7 @@
 }
 .dNavContainer .dNavLeft {
   width: 40%;
-  border: 1px solid black;
+  border: 2px solid var(--box-color);
   border-radius: 50px;
   padding: 5px;
 }
@@ -21,7 +21,15 @@
   width: 90%;
   border: none;
   outline: none;
-  padding-left: 10px;
+  padding-left: 15px;
+  background: none;
+  color: white;
+}
+.dNavContainer .dNavLeft .dNavSearchBar ::-moz-placeholder {
+  color: white;
+}
+.dNavContainer .dNavLeft .dNavSearchBar ::placeholder {
+  color: white;
 }
 .dNavContainer .dNavLeft .dNavSearchBar img {
   width: 25px;

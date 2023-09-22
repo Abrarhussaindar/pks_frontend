@@ -9,9 +9,10 @@ export default function dashboardLeftSideBar() {
                     <h1>Panun<span>Keshur</span> Store</h1>
                 </Link>
 
-                <div className="dashboard">
-                    <img src="/assets/images/home.png" alt="" />
+                <div className="dashboardLeft">
+                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                     <span>Dashboard</span>
+                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                 </div>
             </div>
             <div className="dLSBottom">
@@ -98,7 +99,7 @@ export default function dashboardLeftSideBar() {
                         <h4>name</h4>
                         <p>designation</p>
                     </div>
-                    <img className="downArrow" src="/assets/images/down.png" alt="" />
+                    <img className="downArrow" src="/assets/images/down-white.png" alt="" />
                 </div>
             </div>
         </div>

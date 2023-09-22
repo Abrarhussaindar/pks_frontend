@@ -1,9 +1,17 @@
 .dashboard{
     display: flex;
+    background-color: var(--main-color);
+    color: white;
 
+    a{
+        color: white;
+    }
+    hr{
+        border-color: var(--box-color);
+    }
     .leftContainer{
         flex: 2;
-        border-right: 1px solid black;
+        border-right: 1px solid var(--box-color);
         height: 100vh;
     }
     .rightContainer{

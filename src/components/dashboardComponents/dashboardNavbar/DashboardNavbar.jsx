@@ -6,7 +6,7 @@ export default function dashboardNavbar() {
             <div className="dNavLeft">
                 <div className="dNavSearchBar">
                     <input type="text" placeholder="Search here..." />
-                    <img src="/assets/images/Topsearch.png" alt="" />
+                    <img src="/assets/images/search-white.png" alt="" />
                 </div>
             </div>
             <div className="dNavright">
@@ -16,7 +16,7 @@ export default function dashboardNavbar() {
                         <h4>name</h4>
                         <p>designation</p>
                     </div>
-                    <img className="downArrow" src="/assets/images/down.png" alt="" />
+                    <img className="downArrow" src="/assets/images/down-white.png" alt="" />
                 </div>
             </div>
         </div>

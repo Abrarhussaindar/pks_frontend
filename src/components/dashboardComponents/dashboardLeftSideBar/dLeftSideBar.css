@@ -1,9 +1,7 @@
 .dLeftSideBarContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  padding: 20px;
   gap: 20px;
 }
 .dLeftSideBarContainer .dLSTop {
@@ -11,30 +9,46 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 50px;
+  margin-top: 20px;
 }
 .dLeftSideBarContainer .dLSTop a {
   text-decoration: none;
 }
 .dLeftSideBarContainer .dLSTop a h1 {
+  text-align: center;
   font-size: 20px;
   font-weight: 600;
 }
-.dLeftSideBarContainer .dLSTop .dashboard {
+.dLeftSideBarContainer .dLSTop a h1 span {
+  color: var(--box-color);
+}
+.dLeftSideBarContainer .dLSTop .dashboardLeft {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--box-color);
   padding: 10px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
 }
-.dLeftSideBarContainer .dLSTop .dashboard img {
+.dLeftSideBarContainer .dLSTop .dashboardLeft img {
   width: 20px;
   height: 20px;
 }
-.dLeftSideBarContainer .dLSTop .dashboard:hover {
-  transition: all 0.3s ease;
+.dLeftSideBarContainer .dLSTop .dashboardLeft .rightImg {
+  display: none;
+}
+.dLeftSideBarContainer .dLSTop .dashboardLeft:hover {
   color: white;
   background-color: var(--hover-color);
+}
+.dLeftSideBarContainer .dLSTop .dashboardLeft:hover .homeImg {
+  transition: all 0.3s ease;
+  content: url("http://localhost:3000/assets/images/home-white.png");
+}
+.dLeftSideBarContainer .dLSTop .dashboardLeft:hover .rightImg {
+  display: block;
 }
 .dLeftSideBarContainer .dLSCenter {
   display: flex;

@@ -22,20 +22,23 @@ export default function dashboardLeftSideBar() {
                         <ul>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Products</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Customers</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Transactions</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             {/* <li>
@@ -51,26 +54,30 @@ export default function dashboardLeftSideBar() {
                     <ul>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Overview</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Daily</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Monthly</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Breakdown</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                         </ul>
@@ -80,14 +87,16 @@ export default function dashboardLeftSideBar() {
                     <ul>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Admin</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                             <li>
                                 <Link>
-                                    <img src="/assets/images/home.png" alt="" />
+                                    <img className="homeImg" src="/assets/images/home.png" alt="" />
                                     <span>Performance</span>
+                                    <img className="rightImg" src="/assets/images/next.png" alt="" />
                                 </Link>
                             </li>
                         </ul>

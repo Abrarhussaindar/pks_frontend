@@ -29,10 +29,11 @@
         .dashboardLeft{
             display: flex;
             align-items: center;
-            justify-content: center;
+            // justify-content: center;
             gap: 20px;
             border-bottom: 1px solid var(--box-color);
             padding: 10px;
+            padding-left: 30px;
             cursor: pointer;
             letter-spacing: 1.5px;
             img{
@@ -46,7 +47,7 @@
 
             &:hover{
                 color: white;
-                // font-weight: 600;
+                font-weight: 600;
                 background-color: var(--hover-color);
                 
                 .homeImg{
@@ -72,36 +73,58 @@
     .dLSBottom{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 60px;
+        // align-items: center;
+        gap: 30px;
         .topBottom{
+            margin-top: 10px;
 
             .clientsContainer,.salesContainer,.managementContainer{
-                margin-top: 30px;
-                
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
                 h3{
                     font-weight: 500;
                     font-size: 16px;
+                    padding-left: 30px;
                 }
-    
+                
                 ul{
                     list-style: none;
                     display: flex;
                     flex-direction: column;
-                    gap: 10px;
-                    margin-top: 10px;
+                    // gap: 10px;
+                    // margin-top: 10px;
                     li{
-                        // display: flex;
+                        padding: 10px 30px;
+                        
                         a{
                             text-decoration: none;
                             display: flex;
+                            align-items: center;
                             gap: 25px;
                             img{
                                 width: 16px;
                                 height: 16px;
                             }
+                            .rightImg{
+                                display: none;
+                            }
                             span{
                                 font-size: 14px;
+                            }
+                        }
+
+                        &:hover{
+                            background-color: var(--hover-color);
+                            color: white;
+                            font-weight: 600;
+                            .homeImg{
+                                content: url("http://localhost:3000/assets/images/home-white.png");
+                            }
+                            .rightImg{
+                                display: block;
+                                width: 18px;
+                                height: 18px;
                             }
                         }
                     }
@@ -111,6 +134,7 @@
         .adminDetailsContainer{
             display: flex;
             gap: 10px;
+            padding-left: 30px;
             align-items: center;
             img{
                 width: 50px;

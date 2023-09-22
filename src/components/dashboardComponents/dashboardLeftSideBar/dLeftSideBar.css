@@ -25,10 +25,10 @@
 .dLeftSideBarContainer .dLSTop .dashboardLeft {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   border-bottom: 1px solid var(--box-color);
   padding: 10px;
+  padding-left: 30px;
   cursor: pointer;
   letter-spacing: 1.5px;
 }
@@ -41,6 +41,7 @@
 }
 .dLeftSideBarContainer .dLSTop .dashboardLeft:hover {
   color: white;
+  font-weight: 600;
   background-color: var(--hover-color);
 }
 .dLeftSideBarContainer .dLSTop .dashboardLeft:hover .homeImg {
@@ -58,38 +59,62 @@
 .dLeftSideBarContainer .dLSBottom {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 60px;
+  gap: 30px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom {
+  margin-top: 10px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer h3, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer h3, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer h3 {
   font-weight: 500;
   font-size: 16px;
+  padding-left: 30px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: 10px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li {
+  padding: 10px 30px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a {
   text-decoration: none;
   display: flex;
+  align-items: center;
   gap: 25px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a img {
   width: 16px;
   height: 16px;
 }
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a .rightImg {
+  display: none;
+}
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a span, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a span, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a span {
   font-size: 14px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover {
+  background-color: var(--hover-color);
+  color: white;
+  font-weight: 600;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .homeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .homeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .homeImg {
+  content: url("http://localhost:3000/assets/images/home-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .rightImg {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 .dLeftSideBarContainer .dLSBottom .adminDetailsContainer {
   display: flex;
   gap: 10px;
+  padding-left: 30px;
   align-items: center;
 }
 .dLeftSideBarContainer .dLSBottom .adminDetailsContainer img {

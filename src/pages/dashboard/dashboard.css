@@ -10,9 +10,11 @@
   border-color: var(--box-color);
 }
 .dashboard .leftContainer {
+  background-color: var(--un-color);
+  color: black;
   flex: 2;
-  border-right: 1px solid var(--box-color);
   height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .dashboard .rightContainer {
   flex: 10;
@@ -21,4 +23,110 @@
 }
 .dashboard .rightContainer .dashboardMainContent {
   padding: 20px;
+}
+.dashboard .rightContainer .dashboardMainContent .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .rightContainer .dashboardMainContent .heading .title h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.dashboard .rightContainer .dashboardMainContent .heading .title span {
+  font-size: 14px;
+  color: rgb(173, 172, 172);
+}
+.dashboard .rightContainer .dashboardMainContent .heading .downloadBtn {
+  padding: 5px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  height: 100%;
+}
+.dashboard .rightContainer .dashboardMainContent .heading .downloadBtn:hover {
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var(--hover-color);
+}
+.dashboard .rightContainer .dashboardMainContent .dContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 15px;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent {
+  display: flex;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop {
+  flex: 4.2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--hover-color);
+  border-radius: 5px;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxHeading {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxHeading h5 {
+  font-weight: 500;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxNumber h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxTimeStamp {
+  display: flex;
+  gap: 50px;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxTimeStamp h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxTimeStamp p {
+  font-size: 12px;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .rightTop {
+  flex: 7.8;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .topdContent .rightTop .boxChart {
+  background-color: var(--hover-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent {
+  display: flex;
+  gap: 20px;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent .leftBottom {
+  flex: 7.7;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent .leftBottom .transactionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hover-color);
+  border-radius: 5px;
+  height: 38vh;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent .rightBottom {
+  flex: 4.3;
+}
+.dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent .rightBottom .chartBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hover-color);
+  border-radius: 5px;
+  height: 38vh;
 }/*# sourceMappingURL=dashboard.css.map */

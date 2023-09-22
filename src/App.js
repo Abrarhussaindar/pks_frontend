@@ -37,6 +37,7 @@ import Help from "./pages/help/Help";
 import CustomerServices from "./pages/customerServices/CustomerServices";
 import Dashboard from "./pages/dashboard/Dashboard";
 
+import CFOrders from "./pages/clientFacing/orders/CFOrders";
 import CFProducts from "./pages/clientFacing/products/CFProducts";
 import Customers from "./pages/clientFacing/customers/Customers";
 import Transactions from "./pages/clientFacing/transactions/Transactions";
@@ -88,6 +89,7 @@ function App() {
             
             <Route exact path="/dashboard" element={<Dashboard />} />
             
+            <Route exact path="/cforders" element={<CFOrders />} />
             <Route exact path="/cfproducts" element={<CFProducts />} />
             <Route exact path="/customers" element={<Customers />} />
             <Route exact path="/transactions" element={<Transactions />} />

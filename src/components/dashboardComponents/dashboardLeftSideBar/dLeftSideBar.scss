@@ -12,12 +12,12 @@
     justify-content: space-between;
     // padding: 20px;
     gap: 20px;
-
+    
     .dLSTop{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 50px;
+        gap: 20px;
         margin-top: 20px;
         a{
             text-decoration: none;
@@ -26,9 +26,9 @@
                 font-size: 20px;
                 font-weight: 600;
                 // letter-spacing: 2px;
-
+                color: black;
                 span{
-                    color: var(--box-color);
+                    color: var(--hover-color);
                 }
             }
         }
@@ -42,30 +42,27 @@
             padding: 10px;
             padding-left: 30px;
             cursor: pointer;
-            letter-spacing: 1.5px;
             img{
                 width: 20px;
                 height: 20px;
             }
-
+            
             .rightImg{
                 display: none;
             }
-
-            &:hover{
-                
-            }
+            
         }
         .activedl{
             color: white;
             font-weight: 600;
             background-color: var(--hover-color);
+            letter-spacing: 1.5px;
             
             .homeImg{
                 transition: all .3s ease;
                 content: url("http://localhost:3000/assets/images/home-white.png");
             }
-
+            
             .rightImg{
                 display: block;
             }
@@ -93,9 +90,10 @@
                 flex-direction: column;
                 margin-top: 10px;
                 h3{
-                    font-weight: 500;
+                    font-weight: 600;
                     font-size: 16px;
                     padding-left: 30px;
+                    color: var(--main-color);
                 }
                 
                 ul{
@@ -104,6 +102,20 @@
                     flex-direction: column;
                     // gap: 10px;
                     // margin-top: 10px;
+
+                    .activeLi{
+                        background-color: var(--hover-color);
+                        a{
+
+                            color: white;
+                        }
+                        font-weight: 600;
+                        .rightImg{
+                            display: block;
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
                     li{
                         padding: 10px 30px;
                         
@@ -112,6 +124,9 @@
                             display: flex;
                             align-items: center;
                             gap: 25px;
+                            color: black;
+
+
                             img{
                                 width: 20px;
                                 height: 20px;
@@ -126,10 +141,19 @@
 
                         &:hover{
                             background-color: var(--hover-color);
-                            color: white;
+                            a{
+
+                                color: white;
+                            }
                             font-weight: 600;
+                            // letter-spacing: 1.5px;
+                            
+                            .orderImg{
+                                content: url("http://localhost:3000/assets/images/dashboard/orders-white.png");
+                            }
+
                             .cartImg{
-                                content: url("http://localhost:3000/assets/images/dashboard/cart-white.png");
+                                content: url("http://localhost:3000/assets/images/dashboard/product-white.png");
                             }
                             
                             .customerImg{

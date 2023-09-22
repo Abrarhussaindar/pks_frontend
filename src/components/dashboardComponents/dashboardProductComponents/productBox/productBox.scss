@@ -1,0 +1,92 @@
+.productBox{
+    background-color: var(--hover-color);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .dProductDetails{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .categorySpan{
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--main-color);
+            background-color: var(--box-color);
+            padding: 5px 15px;
+            border-radius: 50px;
+            width: max-content;
+            text-transform: uppercase;
+        }
+        .details{
+            display: flex;
+            // gap: 50px;
+            align-items: center;
+            justify-content: space-between;
+            // justify-content: space-between;
+
+            .leftside{
+                h5{
+
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                h6{
+                    display: flex;
+                    gap: 5px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: var(--main-color);
+
+                }
+                .dProductRating{
+                    font-size: 14px;
+                }
+            }
+            .rightside{
+                img{
+                    margin-right: 20px;
+                    width: 80px;
+                    border-radius: 10px;
+                    object-fit: contain;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            color: var(--un-color);
+        }
+    }
+
+    .showMoreBtn{
+        padding: 6px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        font-weight: 600;
+        color: var(--main-color);
+        
+        &:hover{
+            transition: all .2s ease-in;
+            color: var(--main-color);
+            background-color: var(--un-color);
+        }
+    }
+    .visible{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .dProductStats{
+        .productStatsWrapper{
+            margin-top: 10px;
+
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

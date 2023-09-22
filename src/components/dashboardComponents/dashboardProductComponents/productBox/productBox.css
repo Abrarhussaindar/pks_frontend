@@ -1,0 +1,80 @@
+.productBox {
+  background-color: var(--hover-color);
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.productBox .dProductDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.productBox .dProductDetails .categorySpan {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: var(--box-color);
+  padding: 5px 15px;
+  border-radius: 50px;
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: uppercase;
+}
+.productBox .dProductDetails .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productBox .dProductDetails .details .leftside h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.productBox .dProductDetails .details .leftside h6 {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.productBox .dProductDetails .details .leftside .dProductRating {
+  font-size: 14px;
+}
+.productBox .dProductDetails .details .rightside img {
+  margin-right: 20px;
+  width: 80px;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.productBox .dProductDetails p {
+  font-size: 14px;
+  color: var(--un-color);
+}
+.productBox .showMoreBtn {
+  padding: 6px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.productBox .showMoreBtn:hover {
+  transition: all 0.2s ease-in;
+  color: var(--main-color);
+  background-color: var(--un-color);
+}
+.productBox .visible {
+  display: block;
+}
+.productBox .hidden {
+  display: none;
+}
+.productBox .dProductStats .productStatsWrapper {
+  margin-top: 10px;
+}
+.productBox .dProductStats .productStatsWrapper p {
+  font-size: 14px;
+}/*# sourceMappingURL=productBox.css.map */

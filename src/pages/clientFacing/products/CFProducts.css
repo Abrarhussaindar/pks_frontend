@@ -1,1 +1,38 @@
-/*# sourceMappingURL=CFProducts.css.map */
+.dashboardProductsContainer {
+  padding: 20px;
+}
+.dashboardProductsContainer .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboardProductsContainer .heading .title h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.dashboardProductsContainer .heading .title span {
+  font-size: 14px;
+  color: rgb(173, 172, 172);
+}
+.dashboardProductsContainer .heading .addBtn {
+  padding: 6px 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 100%;
+  text-transform: uppercase;
+}
+.dashboardProductsContainer .heading .addBtn:hover {
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var(--hover-color);
+}
+.dashboardProductsContainer .dashboardProductsContent {
+  margin-top: 15px;
+}
+.dashboardProductsContainer .dashboardProductsContent .dashboardProductsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}/*# sourceMappingURL=CFProducts.css.map */

@@ -1,0 +1,46 @@
+
+.dashboardProductsContainer{
+    padding: 20px;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+    
+        .title{
+            h3{
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            span{
+                font-size: 14px;
+                color: rgb(173, 172, 172);
+            }
+        }
+    
+        .addBtn{
+            padding: 6px 25px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 14px;
+            height: 100%;
+            text-transform: uppercase;
+            &:hover{
+                transition: all .3s ease;
+                color: white;
+                background-color: var(--hover-color);
+            }
+        }
+    }
+
+    .dashboardProductsContent{
+        margin-top: 15px;
+
+        .dashboardProductsWrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}
+

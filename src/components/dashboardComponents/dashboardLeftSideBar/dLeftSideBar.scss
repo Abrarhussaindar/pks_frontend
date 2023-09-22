@@ -1,3 +1,9 @@
+// .leftContainer{
+//     flex: 2;
+//     border-right: 1px solid var(--box-color);
+//     height: 100vh;
+// }
+
 .dLeftSideBarContainer{
 
     display: flex;
@@ -6,6 +12,7 @@
     justify-content: space-between;
     // padding: 20px;
     gap: 20px;
+
     .dLSTop{
         display: flex;
         flex-direction: column;
@@ -46,18 +53,21 @@
             }
 
             &:hover{
-                color: white;
-                font-weight: 600;
-                background-color: var(--hover-color);
                 
-                .homeImg{
-                    transition: all .3s ease;
-                    content: url("http://localhost:3000/assets/images/home-white.png");
-                }
+            }
+        }
+        .activedl{
+            color: white;
+            font-weight: 600;
+            background-color: var(--hover-color);
+            
+            .homeImg{
+                transition: all .3s ease;
+                content: url("http://localhost:3000/assets/images/home-white.png");
+            }
 
-                .rightImg{
-                    display: block;
-                }
+            .rightImg{
+                display: block;
             }
         }
     }

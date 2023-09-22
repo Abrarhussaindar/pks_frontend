@@ -39,16 +39,16 @@
 .dLeftSideBarContainer .dLSTop .dashboardLeft .rightImg {
   display: none;
 }
-.dLeftSideBarContainer .dLSTop .dashboardLeft:hover {
+.dLeftSideBarContainer .dLSTop .activedl {
   color: white;
   font-weight: 600;
   background-color: var(--hover-color);
 }
-.dLeftSideBarContainer .dLSTop .dashboardLeft:hover .homeImg {
+.dLeftSideBarContainer .dLSTop .activedl .homeImg {
   transition: all 0.3s ease;
   content: url("http://localhost:3000/assets/images/home-white.png");
 }
-.dLeftSideBarContainer .dLSTop .dashboardLeft:hover .rightImg {
+.dLeftSideBarContainer .dLSTop .activedl .rightImg {
   display: block;
 }
 .dLeftSideBarContainer .dLSCenter {

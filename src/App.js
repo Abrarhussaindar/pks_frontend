@@ -14,6 +14,9 @@ import SiteMap from "./pages/siteMap/SiteMap";
 import TermsConditions from "./pages/termsConditions/TermsConditions";
 import Footer from "./components/footer/Footer";
 
+import DashboardNavbar from "./components/dashboardComponents/dashboardNavbar/DashboardNavbar";
+import DashboardLeftSideBar from "./components/dashboardComponents/dashboardLeftSideBar/DashboardLeftSideBar";
+
 import {
   Outlet,
   BrowserRouter,
@@ -34,7 +37,20 @@ import Help from "./pages/help/Help";
 import CustomerServices from "./pages/customerServices/CustomerServices";
 import Dashboard from "./pages/dashboard/Dashboard";
 
-const Layout = () => {
+import CFProducts from "./pages/clientFacing/products/CFProducts";
+import Customers from "./pages/clientFacing/customers/Customers";
+import Transactions from "./pages/clientFacing/transactions/Transactions";
+
+
+import Overview from "./pages/sales/overview/Overview";
+import Daily from "./pages/sales/daily/Daily";
+import Monthly from "./pages/sales/monthly/Monthly";
+import Breakdown from "./pages/sales/breakdown/Breakdown";
+
+import Admin from "./pages/manager/admin/Admin";
+import Performance from "./pages/manager/performance/Performance";
+
+const MainLayout = () => {
   return (
     <div className="app">
       <Navbar />
@@ -45,39 +61,73 @@ const Layout = () => {
   );
 }
 
+const DashboardLayout = () => {
+  return (
+    <div className="dashboard">
+      <div className="leftContainer">
+        <DashboardLeftSideBar />
+
+      </div>
+      <div className="rightContainer">
+        <DashboardNavbar />
+        <hr />
+        <Outlet />
+      </div>
+    </div>
+  );
+}
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route element={<Layout />}>
-            <Route exact path="/" element={<Home/>}/>
-            <Route exact path="*" element={<NoPage/>}/>
-            <Route exact path="/cart" element={<Cart/>}/>
-            <Route exact path="/buy/:id" element={<BuyPage productId/>}/>
-            <Route exact path="/buy/checkout" element={<BuyPage cart/>}/>
-            <Route exact path="/orders/:id" element={<Orders/>}/>
-            <Route exact path="/wishlist/:id" element={<WishList/>}/>
-            <Route exact path="/products/:category" element={<ProductsPage/>}/>
-            <Route exact path="/product/:category/:id" element={<ProductPage/>}/>
-            <Route exact path="/help" element={<Help/>}/>
-            <Route exact path="/customer-service" element={<CustomerServices/>}/>
+          <Route element={<DashboardLayout />}>
+            <Route exact path="/admin" element={<Dashboard />} />
+            
+            <Route exact path="/dashboard" element={<Dashboard />} />
+            
+            <Route exact path="/cfproducts" element={<CFProducts />} />
+            <Route exact path="/customers" element={<Customers />} />
+            <Route exact path="/transactions" element={<Transactions />} />
 
-            <Route exact path="/aboutus" element={<AboutUs/>}/>
-            <Route exact path="/contactus" element={<ContactUs/>}/>
-            <Route exact path="/disclaimer" element={<Disclaimer/>}/>
-            <Route exact path="/privacypolicy" element={<PrivacyPolicy/>}/>
-            <Route exact path="/returnrefund" element={<ReturnRefund/>}/>
-            <Route exact path="/services" element={<Services/>}/>
-            <Route exact path="/sitemap" element={<SiteMap/>}/>
-            <Route exact path="/termsconditions" element={<TermsConditions/>}/>
+            <Route exact path="/sales-overview" element={<Overview />} />
+            <Route exact path="/daily-sales" element={<Daily />} />
+            <Route exact path="/monthly-sales" element={<Monthly />} />
+            <Route exact path="/sales-breakdown" element={<Breakdown />} />
+
+            <Route exact path="/admin-page" element={<Admin />} />
+            <Route exact path="/performance" element={<Performance />} />
+
           </Route>
-          <Route path="/admin" element={<Dashboard/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="/forgotpassword" element={<ForGotPassword/>}/>
-          <Route path="/profile/:userId" element={<Profile/>}/>
+          <Route element={<MainLayout />}>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="*" element={<NoPage />} />
+            <Route exact path="/cart" element={<Cart />} />
+            <Route exact path="/buy/:id" element={<BuyPage productId />} />
+            <Route exact path="/buy/checkout" element={<BuyPage cart />} />
+            <Route exact path="/orders/:id" element={<Orders />} />
+            <Route exact path="/wishlist/:id" element={<WishList />} />
+            <Route exact path="/products/:category" element={<ProductsPage />} />
+            <Route exact path="/product/:category/:id" element={<ProductPage />} />
+            <Route exact path="/help" element={<Help />} />
+            <Route exact path="/customer-service" element={<CustomerServices />} />
+
+            <Route exact path="/aboutus" element={<AboutUs />} />
+            <Route exact path="/contactus" element={<ContactUs />} />
+            <Route exact path="/disclaimer" element={<Disclaimer />} />
+            <Route exact path="/privacypolicy" element={<PrivacyPolicy />} />
+            <Route exact path="/returnrefund" element={<ReturnRefund />} />
+            <Route exact path="/services" element={<Services />} />
+            <Route exact path="/sitemap" element={<SiteMap />} />
+            <Route exact path="/termsconditions" element={<TermsConditions />} />
+          </Route>
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgotpassword" element={<ForGotPassword />} />
+          <Route path="/profile/:userId" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </div>

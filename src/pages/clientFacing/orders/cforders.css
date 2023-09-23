@@ -1,5 +1,25 @@
+/**
+*
+* Testing
+*
+**/
 .dashboardOrdersContainer {
   padding: 20px;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboardOrdersContainer {
+    height: 100vh;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboardOrdersContainer {
+    height: 100vh;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboardOrdersContainer {
+    height: 100vh;
+  }
 }
 .dashboardOrdersContainer .heading {
   display: flex;
@@ -35,6 +55,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper {
+    overflow-x: scroll;
+  }
 }
 .dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table {
   border-radius: 5px;

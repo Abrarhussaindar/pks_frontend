@@ -1,4 +1,4 @@
-
+@import "../../../breakpoints.scss";
 .dashboardProductsContainer{
     padding: 20px;
     .heading{
@@ -40,6 +40,16 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            @include media('>smphone', '<=phone'){
+
+                justify-content: center;
+            }
+            @include media('>phone', '<=mobile'){
+                justify-content: center;
+            }
+            @include media('>mobile', '<=largemb'){
+                gap: 5px;
+            }
         }
     }
 }

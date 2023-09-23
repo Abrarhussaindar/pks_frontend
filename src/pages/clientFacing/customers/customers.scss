@@ -1,6 +1,15 @@
+@import "../../../breakpoints.scss";
 .customerContent{
     padding: 20px;
-
+    @include media('>smphone', '<=phone'){
+        height: 100vh;
+    }
+    @include media('>phone', '<=mobile'){
+        height: 100vh;
+    }
+    @include media('>mobile', '<=largemb'){
+        height: 100vh;
+    }
     .heading{
         display: flex;
         justify-content: space-between;
@@ -36,6 +45,15 @@
     .cusContent{
         margin-top: 15px;
         .cusWrapper{
+            @include media('>smphone', '<=phone'){
+                overflow-x: scroll;
+            }
+            @include media('>phone', '<=mobile'){
+                overflow-x: scroll;
+            }
+            @include media('>mobile', '<=largemb'){
+                overflow-x: scroll;
+            }
             table{
                 border-radius: 5px;
                 overflow: hidden;

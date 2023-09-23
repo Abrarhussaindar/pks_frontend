@@ -1,8 +1,12 @@
 import "./dNavbar.css"
 
 export default function dashboardNavbar() {
+    const openLeftSideBar = () =>{
+        document.querySelector(".leftContainer").classList.add("open")
+    }
     return (
         <div className="dNavContainer">
+            <img className="menuImg" onClick={openLeftSideBar} src="/assets/images/dashboard/menu.png" alt="" />
             <div className="dNavLeft">
                 <div className="dNavSearchBar">
                     <input type="text" placeholder="Search here..." />

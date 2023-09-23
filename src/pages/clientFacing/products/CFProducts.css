@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .dashboardProductsContainer {
   padding: 20px;
 }
@@ -35,4 +40,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboardProductsContainer .dashboardProductsContent .dashboardProductsWrapper {
+    justify-content: center;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboardProductsContainer .dashboardProductsContent .dashboardProductsWrapper {
+    justify-content: center;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboardProductsContainer .dashboardProductsContent .dashboardProductsWrapper {
+    gap: 5px;
+  }
 }/*# sourceMappingURL=CFProducts.css.map */

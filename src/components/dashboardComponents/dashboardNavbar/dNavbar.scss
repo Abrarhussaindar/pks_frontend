@@ -1,10 +1,29 @@
+@import "../../../breakpoints.scss";
+
 .dNavContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     padding-right: 30px;
+    .menuImg{
+        display: none;
+        // width: 30px;
 
+        @include media('>smphone', '<=phone'){
+            display: block;
+            width: 30px;
+        }
+        @include media('>phone', '<=mobile'){
+            display: block;
+            width: 30px;
+        }
+        @include media('>mobile', '<=largemb'){
+            display: block;
+            width: 30px;
+        }
+        
+    }
     .dNavLeft{
         width: 40%;
         border: 2px solid var(--box-color);

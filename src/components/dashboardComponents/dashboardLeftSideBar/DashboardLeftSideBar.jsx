@@ -9,13 +9,19 @@ export default function dashboardLeftSideBar() {
     //     e.target.parentNode.parentNode.classList.add("activeLi")
     //     console.log("you clicked this")
     // }
+    const closeRightSideBar = () => {
+        document.querySelector(".leftContainer").classList.remove("open")
+    }
     return (
-        <div className="leftContainer">
+
             <div className="dLeftSideBarContainer">
                 <div className="dLSTop">
-                    <Link to="/" className="logoLink">
-                        <h1>Panun<span>Keshur</span> Store</h1>
-                    </Link>
+                    <div className="dashboardRight">
+                        <Link to="/" className="logoLink">
+                            <h1>Panun<span>Keshur</span> Store</h1>
+                        </Link>
+                        <img src="/assets/images/close.png" className="close" onClick={closeRightSideBar} alt="" />
+                    </div>
 
                     <Link to="/dashboard" className="activedl">
                         <div className="dashboardLeft ">
@@ -130,6 +136,5 @@ export default function dashboardLeftSideBar() {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }

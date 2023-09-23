@@ -1,9 +1,35 @@
+/**
+*
+* Testing
+*
+**/
 .dNavContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   padding-right: 30px;
+}
+.dNavContainer .menuImg {
+  display: none;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dNavContainer .menuImg {
+    display: block;
+    width: 30px;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dNavContainer .menuImg {
+    display: block;
+    width: 30px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dNavContainer .menuImg {
+    display: block;
+    width: 30px;
+  }
 }
 .dNavContainer .dNavLeft {
   width: 40%;

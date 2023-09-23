@@ -1,3 +1,5 @@
+@import "../../breakpoints.scss";
+
 .dashboard{
     display: flex;
     background-color: var(--main-color);
@@ -9,6 +11,16 @@
     hr{
         border-color: var(--box-color);
     }
+
+    @include media('>smphone', '<=phone'){
+        display: block;
+    }
+    @include media('>phone', '<=mobile'){
+        display: block;
+    }
+    @include media('>mobile', '<=largemb'){
+        display: block;
+    }
     .leftContainer{
         background-color: var(--un-color);
         color: black;
@@ -16,6 +28,64 @@
         // border-right: 1px solid var(--box-color);
         height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        @include media('>smphone', '<=phone'){
+            transform: translateX(-420px);
+            display: none;
+            &.open{
+                transition: all 0.5s ease-in;
+                width: 80%;
+                flex: unset;
+                z-index: 9999;
+                display: block;
+                position: fixed;
+                transform: translateX(0);
+            }
+            
+            &.close{
+                transition: all 0.5s ease-in-out;
+                // transform: translateX(460px);
+            }
+            // z-index: 9999;
+        }
+        @include media('>phone', '<=mobile'){
+            transform: translateX(-420px);
+            display: none;
+            &.open{
+                transition: all 0.5s ease-in;
+                width: 60%;
+                flex: unset;
+                z-index: 9999;
+                display: block;
+                position: fixed;
+                transform: translateX(0);
+            }
+        
+            &.close{
+                transition: all 0.5s ease-in-out;
+                // transform: translateX(460px);
+            }
+            
+        }
+        @include media('>mobile', '<=largemb'){
+            transform: translateX(-420px);
+            display: none;
+            &.open{
+                transition: all 0.5s ease-in;
+                width: 60%;
+                flex: unset;
+                z-index: 9999;
+                display: block;
+                position: fixed;
+                transform: translateX(0);
+            }
+        
+            &.close{
+                transition: all 0.5s ease-in-out;
+                // transform: translateX(460px);
+            }
+    
+        }
     }
     .rightContainer{
         flex: 10;
@@ -62,12 +132,35 @@
                 .topdContent{
                     display: flex;
                     // justify-content: space-between;
-
+                    @include media('>smphone', '<=phone'){
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    @include media('>phone', '<=mobile'){
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    @include media('>mobile', '<=largemb'){
+                        flex-direction: column;
+                        gap: 10px;
+                    }
                     .leftTop{
                         flex: 4.2;
                         display: flex;
                         flex-wrap: wrap;
                         gap: 15px;
+                        @include media('>smphone', '<=phone'){
+                            gap: 4px;
+                            justify-content: center;
+                        }
+                        @include media('>phone', '<=mobile'){
+                            // gap: 4px;
+                            justify-content: center;
+                        }
+                        @include media('>mobile', '<=largemb'){
+                            justify-content: space-between;
+                            // gap: 4px;
+                        }
                         .box{
                             display: flex;
                             flex-direction: column;
@@ -92,12 +185,30 @@
                                 display: flex;
                                 gap: 50px;
                                 // justify-content: space-between;
+                                @include media('>smphone', '<=phone'){
+                                    gap: 10px;
+                                    // justify-content: center;
+                                }
+                                @include media('>phone', '<=mobile'){
+                                    gap: 10px;
+                                }
+                                @include media('>mobile', '<=largemb'){
+                                }
                                 h6{
                                     font-size: 14px;
                                     font-weight: 500;
                                 }
                                 p{
                                     font-size: 12px;
+                                    @include media('>smphone', '<=phone'){
+                                        // font-size: 12px;
+                                    }
+                                    @include media('>phone', '<=mobile'){
+                                        // font-size: 12px;
+                                    }
+                                    @include media('>mobile', '<=largemb'){
+
+                                    }
                                 }
                             }
                         }
@@ -118,6 +229,18 @@
                 .bottomdContent{
                     display: flex;
                     gap: 20px;
+                    @include media('>smphone', '<=phone'){
+                        flex-direction: column-reverse;
+                        gap: 10px;
+                    }
+                    @include media('>phone', '<=mobile'){
+                        flex-direction: column-reverse;
+                        gap: 10px;
+                    }
+                    @include media('>mobile', '<=largemb'){
+                        flex-direction: column-reverse;
+                        gap: 10px;
+                    }
                     .leftBottom{
                         flex: 7.7;
 

@@ -1,3 +1,8 @@
+/**
+*
+* Testing
+*
+**/
 .dashboard {
   display: flex;
   background-color: var(--main-color);
@@ -9,12 +14,81 @@
 .dashboard hr {
   border-color: var(--box-color);
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboard {
+    display: block;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboard {
+    display: block;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboard {
+    display: block;
+  }
+}
 .dashboard .leftContainer {
   background-color: var(--un-color);
   color: black;
   flex: 2;
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboard .leftContainer {
+    transform: translateX(-420px);
+    display: none;
+  }
+  .dashboard .leftContainer.open {
+    transition: all 0.5s ease-in;
+    width: 80%;
+    flex: unset;
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    transform: translateX(0);
+  }
+  .dashboard .leftContainer.close {
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboard .leftContainer {
+    transform: translateX(-420px);
+    display: none;
+  }
+  .dashboard .leftContainer.open {
+    transition: all 0.5s ease-in;
+    width: 60%;
+    flex: unset;
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    transform: translateX(0);
+  }
+  .dashboard .leftContainer.close {
+    transition: all 0.5s ease-in-out;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboard .leftContainer {
+    transform: translateX(-420px);
+    display: none;
+  }
+  .dashboard .leftContainer.open {
+    transition: all 0.5s ease-in;
+    width: 60%;
+    flex: unset;
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    transform: translateX(0);
+  }
+  .dashboard .leftContainer.close {
+    transition: all 0.5s ease-in-out;
+  }
 }
 .dashboard .rightContainer {
   flex: 10;
@@ -57,11 +131,45 @@
 .dashboard .rightContainer .dashboardMainContent .dContent .topdContent {
   display: flex;
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop {
   flex: 4.2;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop {
+    gap: 4px;
+    justify-content: center;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop {
+    justify-content: center;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop {
+    justify-content: space-between;
+  }
 }
 .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box {
   display: flex;
@@ -86,6 +194,16 @@
   display: flex;
   gap: 50px;
 }
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxTimeStamp {
+    gap: 10px;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxTimeStamp {
+    gap: 10px;
+  }
+}
 .dashboard .rightContainer .dashboardMainContent .dContent .topdContent .leftTop .box .boxTimeStamp h6 {
   font-size: 14px;
   font-weight: 500;
@@ -107,6 +225,24 @@
 .dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent {
   display: flex;
   gap: 20px;
+}
+@media (min-width: 301px) and (max-width: 370px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+@media (min-width: 371px) and (max-width: 460px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+@media (min-width: 461px) and (max-width: 560px) {
+  .dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
 }
 .dashboard .rightContainer .dashboardMainContent .dContent .bottomdContent .leftBottom {
   flex: 7.7;

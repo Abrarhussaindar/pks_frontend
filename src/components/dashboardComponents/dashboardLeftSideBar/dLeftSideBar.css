@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
 }
 .dLeftSideBarContainer .dLSTop {
   display: flex;
@@ -55,12 +54,11 @@
 .dLeftSideBarContainer .dLSCenter {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .dLeftSideBarContainer .dLSBottom {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom {
   margin-top: 10px;
@@ -131,6 +129,9 @@
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .billImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .billImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .billImg {
   content: url("http://localhost:3000/assets/images/dashboard/bill-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .globeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .globeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .globeImg {
+  content: url("http://localhost:3000/assets/images/dashboard/globe-white.png");
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .saleshomeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .saleshomeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .saleshomeImg {
   content: url("http://localhost:3000/assets/images/dashboard/sales-white.png");

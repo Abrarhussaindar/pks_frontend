@@ -50,6 +50,7 @@ import Breakdown from "./pages/sales/breakdown/Breakdown";
 
 import Admin from "./pages/manager/admin/Admin";
 import Performance from "./pages/manager/performance/Performance";
+import Geography from "./pages/clientFacing/geography/Geography";
 
 const MainLayout = () => {
   return (
@@ -93,6 +94,7 @@ function App() {
             <Route exact path="/cfproducts" element={<CFProducts />} />
             <Route exact path="/customers" element={<Customers />} />
             <Route exact path="/transactions" element={<Transactions />} />
+            <Route exact path="/geography" element={<Geography />} />
 
             <Route exact path="/sales-overview" element={<Overview />} />
             <Route exact path="/daily-sales" element={<Daily />} />

@@ -58,12 +58,13 @@ export default function dashboardLeftSideBar() {
                                         <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
                                 </li>
-                                {/* <li>
-                                    <Link>
-                                        <img src="/assets/images/home.png" alt="" />
-                                        <span></span>
+                                <li>
+                                    <Link to="/geography">
+                                        <img className="globeImg" src="/assets/images/dashboard/globe-blue.png" alt="" />
+                                        <span >Geography</span>
+                                        <img className="rightImg" src="/assets/images/dashboard/next.png" alt="" />
                                     </Link>
-                                </li> */}
+                                </li>
                             </ul>
                         </div>
                         <div className="salesContainer">

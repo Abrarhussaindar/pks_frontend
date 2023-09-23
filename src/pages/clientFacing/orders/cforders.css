@@ -1,1 +1,60 @@
-/*# sourceMappingURL=cforders.css.map */
+.dashboardOrdersContainer {
+  padding: 20px;
+}
+.dashboardOrdersContainer .heading {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboardOrdersContainer .heading .title h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.dashboardOrdersContainer .heading .title span {
+  font-size: 14px;
+  color: rgb(173, 172, 172);
+}
+.dashboardOrdersContainer .heading .addBtn {
+  padding: 6px 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 100%;
+  text-transform: uppercase;
+}
+.dashboardOrdersContainer .heading .addBtn:hover {
+  transition: all 0.3s ease;
+  color: white;
+  background-color: var(--hover-color);
+}
+.dashboardOrdersContainer .dashboardOrdersContent {
+  margin-top: 15px;
+}
+.dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table thead {
+  background-color: var(--hover-color);
+}
+.dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table thead tr th {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  border-right: 1px solid var(--box-color);
+  border-left: 1px solid var(--box-color);
+}
+.dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table tbody {
+  background-color: var(--box-color);
+}
+.dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table tbody tr td {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: var(--main-color);
+  border-right: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}/*# sourceMappingURL=cforders.css.map */

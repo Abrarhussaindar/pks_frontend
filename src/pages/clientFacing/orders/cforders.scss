@@ -1,0 +1,77 @@
+
+
+.dashboardOrdersContainer{
+    padding: 20px;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+    
+        .title{
+            h3{
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            span{
+                font-size: 14px;
+                color: rgb(173, 172, 172);
+            }
+        }
+    
+        .addBtn{
+            padding: 6px 25px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 14px;
+            height: 100%;
+            text-transform: uppercase;
+            &:hover{
+                transition: all .3s ease;
+                color: white;
+                background-color: var(--hover-color);
+            }
+        }
+    }
+
+    .dashboardOrdersContent{
+        margin-top: 15px;
+
+        .dashboardOrdersWrapper{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            table{
+                
+                thead{
+                    background-color: var(--hover-color);
+                    tr{
+                        th{
+                            padding: 10px 20px;
+                            font-size: 16px;
+                            text-align: center;
+                            font-weight: 600;
+                            border-right: 1px solid var(--box-color);
+                            border-left: 1px solid var(--box-color);
+                        }
+                    }
+                }
+                tbody{
+                    background-color: var(--box-color);
+                    tr{
+                        td{
+                            text-align: center;
+                            font-size: 14px;
+                            padding: 10px 20px;
+                            color: var(--main-color);
+                            border-right: 1px solid var(--main-color);
+                            border-bottom: 1px solid var(--main-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

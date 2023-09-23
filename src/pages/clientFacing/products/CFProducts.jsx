@@ -2,22 +2,33 @@ import { useState } from "react"
 import ProductBox from "../../../components/dashboardComponents/dashboardProductComponents/productBox/ProductBox"
 import "./CFProducts.css"
 import { useEffect } from "react"
-import axios from "axios"
+import axios from "../../../api/axios"
+
 
 export default function CFProducts() {
   const [products, setProducts] = useState([])
 
   useEffect(()=>{
+    let isMounted = true
+    const controller = new AbortController();
+    
     const getProducts = async ()=>{
       try{
-        const res = await axios.get("http://localhost:8800/api/products");
-        setProducts(res.data)
+        const res = await axios.get("/products",{
+          signal: controller.signal
+      });
+        isMounted && setProducts(res.data)
       }catch(err){
         console.log(err)
       }
     };
     getProducts();
-  },[products])
+    return ()=>{
+      isMounted = false;
+      controller.abort();
+  }
+  },[])
+  
   return (
     <div className="dashboardProductsContainer">
       <div className="heading">

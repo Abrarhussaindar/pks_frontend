@@ -1,7 +1,7 @@
 import "./productBox.css"
 
 export default function ProductBox({products}) {
-    console.log("in pb: ", products)
+    // console.log("in pb: ", products)
     const showStats = (e) => {
         e.preventDefault();
         console.log("u cliked")

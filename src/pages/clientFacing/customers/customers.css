@@ -27,4 +27,29 @@
   transition: all 0.3s ease;
   color: white;
   background-color: var(--hover-color);
+}
+.customerContent .cusContent {
+  margin-top: 15px;
+}
+.customerContent .cusContent .cusWrapper table thead {
+  background-color: var(--hover-color);
+}
+.customerContent .cusContent .cusWrapper table thead tr th {
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  border-right: 1px solid var(--box-color);
+  border-left: 1px solid var(--box-color);
+}
+.customerContent .cusContent .cusWrapper table tbody {
+  background-color: var(--box-color);
+}
+.customerContent .cusContent .cusWrapper table tbody tr td {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: var(--main-color);
+  border-right: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
 }/*# sourceMappingURL=customers.css.map */

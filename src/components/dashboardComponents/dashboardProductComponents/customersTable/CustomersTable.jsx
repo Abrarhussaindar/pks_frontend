@@ -1,69 +1,50 @@
-import axios from 'axios';
+
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import axios from '../../../../api/axios';
 
-export default function CustomersTable() {
-
-    const [customers, setCustomers] = useState([]);
+export default function CustomersTable({ customer }) {
     const [userAddress, setUserAddress] = useState([])
-
     useEffect(() => {
-        const getCustomers = async () => {
+        let isMounted = true
+        const controller = new AbortController();
+
+        const getAddress = async () => {
             try {
-                const res = await axios.get("http://localhost:8800/api/user/")
-                setCustomers(res.data)
+                const res = await axios.get(`/address/${customer._id}`,{
+                    signal: controller.signal
+                });
+                isMounted && setUserAddress(res.data)
             } catch (err) {
                 console.log(err)
             }
         };
-        getCustomers();
-    }, [customers])
-
-    useEffect(()=>{
-        const getAddress = async () =>{
-            try{
-                const res = await axios.get(`http://localhost:8800/api/address/find/${customers.map((cus)=>(
-                    cus._id
-                ))}`);
-                setUserAddress(res.data);
-            }catch(err){
-                console.log(err)
-            }
-        };
         getAddress();
-    },[customers])
-
+        return () => {
+            isMounted = false;
+            controller.abort();
+        }
+    }, [customer])
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Role</th>
-                    <th>Pin Code</th>
-                    <th>Address</th>
-                </tr>
-            </thead>
-            <tbody>
+
+        <tr >
+            <td>{customer._id}</td>
+            <td>{customer.name}</td>
+            <td>{customer.email}</td>
+            <td>{customer.phone}</td>
+            <td>{customer.role}</td>
                 {
-                    customers.map((cus) => (
-                        userAddress.map((address) =>(
-                    <tr>
-                        <td>{cus._id}</td>
-                        <td>{cus.name}</td>
-                        <td>{cus.email}</td>
-                        <td>{cus.phone}</td>
-                        <td>{cus.role}</td>
-                        <td>{address.pincode}</td>
-                        <td>{address.address}</td>
-                    </tr>
-                        ))
+                    userAddress.map((address)=>(
+                        <td key={address._id}>{address.pincode}</td>
                     ))
                 }
-            </tbody>
-        </table>
+                {
+                    userAddress.map((address)=>(
+                        <td key={address._id}>{address.address}</td>
+                    ))
+                }
+        </tr>
+
     )
 }

@@ -39,6 +39,7 @@
             table{
                 border-radius: 5px;
                 overflow: hidden;
+            
                 thead{
                     background-color: var(--hover-color);
                     tr{
@@ -61,8 +62,8 @@
                             font-size: 14px;
                             padding: 10px 20px;
                             color: var(--main-color);
-                            border-right: 1px solid var(--main-color);
-                            border-bottom: 1px solid var(--main-color);
+                            // border-right: 1px solid var(--main-color);
+                            border-bottom: 1px solid var(--un-color);
                         }
                     }
                 }

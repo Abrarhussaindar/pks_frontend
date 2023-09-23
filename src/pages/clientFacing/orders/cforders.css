@@ -36,6 +36,10 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+.dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table {
+  border-radius: 5px;
+  overflow: hidden;
+}
 .dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table thead {
   background-color: var(--hover-color);
 }
@@ -45,7 +49,6 @@
   text-align: center;
   font-weight: 600;
   border-right: 1px solid var(--box-color);
-  border-left: 1px solid var(--box-color);
 }
 .dashboardOrdersContainer .dashboardOrdersContent .dashboardOrdersWrapper table tbody {
   background-color: var(--box-color);

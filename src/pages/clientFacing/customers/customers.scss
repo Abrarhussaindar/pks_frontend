@@ -37,17 +37,19 @@
         margin-top: 15px;
         .cusWrapper{
             table{
-                
+                border-radius: 5px;
+                overflow: hidden;
                 thead{
                     background-color: var(--hover-color);
                     tr{
                         th{
+                            // border-radius: 10px;
                             padding: 10px 20px;
                             font-size: 16px;
                             text-align: center;
                             font-weight: 600;
                             border-right: 1px solid var(--box-color);
-                            border-left: 1px solid var(--box-color);
+                            // border-left: 1px solid var(--box-color);
                         }
                     }
                 }

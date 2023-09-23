@@ -43,7 +43,8 @@
             gap: 20px;
 
             table{
-                
+                border-radius: 5px;
+                overflow: hidden;
                 thead{
                     background-color: var(--hover-color);
                     tr{
@@ -53,7 +54,7 @@
                             text-align: center;
                             font-weight: 600;
                             border-right: 1px solid var(--box-color);
-                            border-left: 1px solid var(--box-color);
+                            // border-left: 1px solid var(--box-color);
                         }
                     }
                 }

@@ -31,6 +31,10 @@
 .customerContent .cusContent {
   margin-top: 15px;
 }
+.customerContent .cusContent .cusWrapper table {
+  border-radius: 5px;
+  overflow: hidden;
+}
 .customerContent .cusContent .cusWrapper table thead {
   background-color: var(--hover-color);
 }
@@ -40,7 +44,6 @@
   text-align: center;
   font-weight: 600;
   border-right: 1px solid var(--box-color);
-  border-left: 1px solid var(--box-color);
 }
 .customerContent .cusContent .cusWrapper table tbody {
   background-color: var(--box-color);

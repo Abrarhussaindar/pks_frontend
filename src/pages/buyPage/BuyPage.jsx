@@ -1,15 +1,10 @@
+import { useLocation } from "react-router-dom"
 import "./buyPage.css"
 
-export default function BuyPage(props) {
+export default function BuyPage() {
     // console.log("porps", props)
-
-    const productDetails = () => {
-        return <h4>product details</h4>
-    }
-    const cartItemDetails = () => {
-        return <h4>cart item details</h4>
-    }
-
+    const productId = useLocation().pathname.split("/")[2]
+    console.log(productId)
     
     return (
         <div className="buyContainer">
@@ -20,7 +15,7 @@ export default function BuyPage(props) {
                             <h3>Order Summary</h3>
                         </div>
                         <div className="orderSummary">
-                            {props.productId ? productDetails() : cartItemDetails()}
+                            details
                         </div>
                     </div>
                     <div className="topRight">

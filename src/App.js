@@ -109,12 +109,12 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="*" element={<NoPage />} />
             <Route exact path="/cart" element={<Cart />} />
-            <Route exact path="/buy/:id" element={<BuyPage productId />} />
+            <Route exact path="/buy/:id" element={<BuyPage />} />
             <Route exact path="/buy/checkout" element={<BuyPage cart />} />
             <Route exact path="/orders/:id" element={<Orders />} />
             <Route exact path="/wishlist/:id" element={<WishList />} />
             <Route exact path="/products/:category" element={<ProductsPage />} />
-            <Route exact path="/product/:category/:id" element={<ProductPage />} />
+            <Route exact path="/products/:category/:subcategory/:id" element={<ProductPage />} />
             <Route exact path="/help" element={<Help />} />
             <Route exact path="/customer-service" element={<CustomerServices />} />
 

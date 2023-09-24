@@ -3,6 +3,7 @@ import "./secondaryNavbar.css";
 
 export default function SecondaryNavabar() {
 
+    
     return (
         <div className="secondaryNavbarContainer">
             <div className="container">

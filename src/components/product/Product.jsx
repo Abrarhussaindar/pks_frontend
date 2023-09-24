@@ -21,22 +21,22 @@ import Services from "../serviceContainer/Services"
 
 import "./product.css"
 
-export default function Product() {
-    
+export default function Product({product}) {
+    console.log("prodct at pro; ", product)
     return (
         <div className="productContainer">
             <div className="mainSection">
                 <div className="left">
-                    <ProductImage />
+                    <ProductImage image={product.image}/>
                 </div>
                 <div className="right">
-                    <ProductNameDescription />
-                    <ProductRating />
+                    <ProductNameDescription des={product.description} name={product.title}/>
+                    <ProductRating rating={product.rating}/>
                     <hr />
-                    <ProductPrice />
-                    <ProductStock />
+                    <ProductPrice price={product.price}/>
+                    <ProductStock/>
                     <PinCode />
-                    <Buttons />
+                    <Buttons product={product} />
                     <hr />
                     <Offers />
                     <hr />

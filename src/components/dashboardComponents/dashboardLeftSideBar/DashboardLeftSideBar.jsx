@@ -2,13 +2,6 @@ import { Link, NavLink } from "react-router-dom"
 import "./dLeftSideBar.css"
 
 export default function dashboardLeftSideBar() {
-    // const handelActive = (e) => {
-    //     e.preventDefault();
-
-    //     console.log(e.target.parentNode.parentNode)
-    //     e.target.parentNode.parentNode.classList.add("activeLi")
-    //     console.log("you clicked this")
-    // }
     const closeRightSideBar = () => {
         document.querySelector(".leftContainer").classList.remove("open")
     }
@@ -86,11 +79,6 @@ export default function dashboardLeftSideBar() {
             blueImg: "/assets/images/dashboard/performance-blue.png"
         }
     ]
-    navLinks.map((ele) => (
-        console.log(ele.span),
-        console.log(ele.whiteImg),
-        console.log(ele.blueImg)
-    ))
 
     return (
 
@@ -105,6 +93,7 @@ export default function dashboardLeftSideBar() {
                 
 
             </div>
+            
             <div className="dLSBottom">
                 <div className="topBottom">
                 {

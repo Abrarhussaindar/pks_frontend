@@ -168,7 +168,13 @@
 }
 .nav_container .rightSide .navUserImg .cart .cartCount {
   position: absolute;
-  top: -20%;
+  top: -30%;
+  right: -60%;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 100px;
 }
 .nav_container .rightSide .navUserImg img {
   width: 32px;

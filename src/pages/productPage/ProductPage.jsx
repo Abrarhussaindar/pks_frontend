@@ -1,23 +1,43 @@
+import { useLocation } from "react-router-dom"
 import BreadCrums from "../../components/breadCrums/BreadCrums"
-// import CategoryTopBar from "../../components/categoryTopBar/CategoryTopBar"
 import Product from "../../components/product/Product"
 import "./productPage.css"
+import { useEffect, useState } from "react"
+import axios from "../../api/axios"
 
-// import Footer from "../../components/footer/Footer";
-// import Navbar from "../../components/navbar/Navbar";
-// import SecondaryNavabar from "../../components/secondaryNavbar/SecondaryNavabar";
+
 
 export default function ProductPage() {
+    const location = useLocation().pathname
+    const productId = location.split("/")[4]
+    console.log("pro id; ", productId)
+    const [product, setProduct] = useState([])
+
+    useEffect(()=>{
+        let isMounted = true
+        const controller = new AbortController();
+        const getProduct = async () =>{
+            try{
+                const res = await axios.get(`/products/${productId}`)
+                isMounted && setProduct(res.data)
+                console.log("res.data: ", res.data)
+            }catch(err){
+                console.log(err)
+            }
+        }
+        getProduct();
+        return () => {
+            isMounted = false;
+            controller.abort();
+        }
+    },[productId])
+    console.log("prodcut at product page: ", product)
     return (
         <>
-            {/* <Navbar /> */}
-            {/* <SecondaryNavabar /> */}
             <div className="productPage">
-                {/* <CategoryTopBar /> */}
                 <BreadCrums />
-                <Product />
+                <Product product={product}/>
             </div>
-            {/* <Footer /> */}
         </>
     )
 }

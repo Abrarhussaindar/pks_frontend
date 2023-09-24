@@ -139,68 +139,39 @@
         display: flex;
         flex-direction: column;
         // align-items: center;
-        gap: 15px;
+        // justify-content: space-between;
+        gap: 50px;
         .topBottom{
-            margin-top: 10px;
+            margin-top: 20px;
 
-            .clientsContainer,.salesContainer,.managementContainer{
+            ul{
+                list-style: none;
                 display: flex;
                 flex-direction: column;
-                margin-top: 10px;
-                h3{
-                    font-weight: 600;
-                    font-size: 16px;
-                    padding-left: 30px;
+
+                a{
+                    text-decoration: none;
                     color: var(--main-color);
-                }
-                
-                ul{
-                    list-style: none;
-                    display: flex;
-                    flex-direction: column;
-                    // gap: 10px;
-                    // margin-top: 10px;
-
-                    .activeLi{
-                        background-color: var(--hover-color);
-                        a{
-
-                            color: white;
-                        }
-                        font-weight: 600;
-                        .rightImg{
-                            display: block;
-                            width: 18px;
-                            height: 18px;
-                        }
-                    }
+                    // font-weight: 500;
                     li{
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
                         padding: 10px 30px;
-                        
-                        a{
-                            text-decoration: none;
-                            display: flex;
-                            align-items: center;
-                            gap: 25px;
-                            color: black;
-
-
-                            img{
-                                width: 20px;
-                                height: 20px;
-                            }
-                            .rightImg{
-                                display: none;
-                            }
-                            span{
-                                font-size: 14px;
-                            }
+                        img{
+                            width: 20px;
+                            height: 20px;
                         }
-
+                        span{
+                            font-size: 14px;
+                        }
+                        .rightImg{
+                            display: none;
+                        }
                         &:hover{
                             background-color: var(--hover-color);
-                            a{
-
+                            span{
+    
                                 color: white;
                             }
                             font-weight: 600;
@@ -209,7 +180,7 @@
                             .orderImg{
                                 content: url("http://localhost:3000/assets/images/dashboard/orders-white.png");
                             }
-
+    
                             .cartImg{
                                 content: url("http://localhost:3000/assets/images/dashboard/product-white.png");
                             }
@@ -241,7 +212,7 @@
                             .performanceImg{
                                 content: url("http://localhost:3000/assets/images/dashboard/performance-white.png");
                             }
-
+    
                             .rightImg{
                                 display: block;
                                 width: 18px;
@@ -249,7 +220,21 @@
                             }
                         }
                     }
+
                 }
+            }
+            .clientsContainer,.salesContainer,.managementContainer{
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+                h3{
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding-left: 30px;
+                    color: var(--main-color);
+                }
+                
+
             }
         }
         .adminDetailsContainer{

@@ -135,10 +135,80 @@
 .dLeftSideBarContainer .dLSBottom {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 50px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 10px 30px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li img {
+  width: 20px;
+  height: 20px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li span {
+  font-size: 14px;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li .rightImg {
+  display: none;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover {
+  background-color: var(--hover-color);
+  font-weight: 600;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover span {
+  color: white;
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .orderImg {
+  content: url("http://localhost:3000/assets/images/dashboard/orders-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .cartImg {
+  content: url("http://localhost:3000/assets/images/dashboard/product-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .customerImg {
+  content: url("http://localhost:3000/assets/images/dashboard/customer-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .billImg {
+  content: url("http://localhost:3000/assets/images/dashboard/bill-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .globeImg {
+  content: url("http://localhost:3000/assets/images/dashboard/globe-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .saleshomeImg {
+  content: url("http://localhost:3000/assets/images/dashboard/sales-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .dailyImg {
+  content: url("http://localhost:3000/assets/images/dashboard/daily-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .calendarImg {
+  content: url("http://localhost:3000/assets/images/dashboard/calendar-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .chartImg {
+  content: url("http://localhost:3000/assets/images/dashboard/chart-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .admin-panelImg {
+  content: url("http://localhost:3000/assets/images/dashboard/admin-panel-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .performanceImg {
+  content: url("http://localhost:3000/assets/images/dashboard/performance-white.png");
+}
+.dLeftSideBarContainer .dLSBottom .topBottom ul a li:hover .rightImg {
+  display: block;
+  width: 18px;
+  height: 18px;
 }
 .dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer {
   display: flex;
@@ -150,88 +220,6 @@
   font-size: 16px;
   padding-left: 30px;
   color: var(--main-color);
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul .activeLi, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul .activeLi, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul .activeLi {
-  background-color: var(--hover-color);
-  font-weight: 600;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul .activeLi a, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul .activeLi a, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul .activeLi a {
-  color: white;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul .activeLi .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul .activeLi .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul .activeLi .rightImg {
-  display: block;
-  width: 18px;
-  height: 18px;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li {
-  padding: 10px 30px;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  color: black;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a img, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a img {
-  width: 20px;
-  height: 20px;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a .rightImg {
-  display: none;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li a span, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li a span, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li a span {
-  font-size: 14px;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover {
-  background-color: var(--hover-color);
-  font-weight: 600;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover a, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover a, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover a {
-  color: white;
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .orderImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .orderImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .orderImg {
-  content: url("http://localhost:3000/assets/images/dashboard/orders-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .cartImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .cartImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .cartImg {
-  content: url("http://localhost:3000/assets/images/dashboard/product-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .customerImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .customerImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .customerImg {
-  content: url("http://localhost:3000/assets/images/dashboard/customer-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .billImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .billImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .billImg {
-  content: url("http://localhost:3000/assets/images/dashboard/bill-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .globeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .globeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .globeImg {
-  content: url("http://localhost:3000/assets/images/dashboard/globe-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .saleshomeImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .saleshomeImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .saleshomeImg {
-  content: url("http://localhost:3000/assets/images/dashboard/sales-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .dailyImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .dailyImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .dailyImg {
-  content: url("http://localhost:3000/assets/images/dashboard/daily-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .calendarImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .calendarImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .calendarImg {
-  content: url("http://localhost:3000/assets/images/dashboard/calendar-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .chartImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .chartImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .chartImg {
-  content: url("http://localhost:3000/assets/images/dashboard/chart-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .admin-panelImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .admin-panelImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .admin-panelImg {
-  content: url("http://localhost:3000/assets/images/dashboard/admin-panel-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .performanceImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .performanceImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .performanceImg {
-  content: url("http://localhost:3000/assets/images/dashboard/performance-white.png");
-}
-.dLeftSideBarContainer .dLSBottom .topBottom .clientsContainer ul li:hover .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .salesContainer ul li:hover .rightImg, .dLeftSideBarContainer .dLSBottom .topBottom .managementContainer ul li:hover .rightImg {
-  display: block;
-  width: 18px;
-  height: 18px;
 }
 .dLeftSideBarContainer .dLSBottom .adminDetailsContainer {
   display: flex;

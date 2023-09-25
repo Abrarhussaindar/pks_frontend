@@ -42,6 +42,8 @@ import CFProducts from "./pages/clientFacing/products/CFProducts";
 import Customers from "./pages/clientFacing/customers/Customers";
 import Transactions from "./pages/clientFacing/transactions/Transactions";
 
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
 import Overview from "./pages/sales/overview/Overview";
 import Daily from "./pages/sales/daily/Daily";
@@ -79,7 +81,27 @@ const DashboardLayout = () => {
   );
 }
 
+  // Import the functions you need from the SDKs you need
 
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyANX301oVZFiBgJpNnuHzRcQPeXiiAOGno",
+    authDomain: "pkstore-e13f1.firebaseapp.com",
+    projectId: "pkstore-e13f1",
+    storageBucket: "pkstore-e13f1.appspot.com",
+    messagingSenderId: "162272021422",
+    appId: "1:162272021422:web:24aec4ed493f24edc6963f",
+    measurementId: "G-RKTSJHBY0K"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  
 function App() {
   return (
     <div className="App">

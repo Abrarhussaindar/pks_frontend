@@ -3,25 +3,32 @@
 .recentProductsContainer{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
     gap: 20px;
     width: 100%;
+    background-color: var(--box-color);
+    min-height: 400px;
+    align-items: center;
 
     @include media('>phone', '<=mobile'){
         overflow-x: scroll;
-        padding: 20px;
+        padding: 10px;
+        min-height: 200px;
     }
     @include media('>smphone', '<=phone'){
         overflow-x: scroll;
         padding: 10px;
+        min-height: 200px;
     }
     @include media('>largemb', '<=tablet'){ 
         overflow-x: scroll;
-        padding: 15px;
+        padding: 10px;
+        min-height: 200px;
     }
     @include media('>phone', '<=largemb'){
         overflow-x: scroll;
-        padding: 15px;
+        padding: 10px;
+        min-height: 200px;
     }
 
     .innerContainer{

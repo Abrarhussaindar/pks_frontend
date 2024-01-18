@@ -6,32 +6,39 @@
 .recentProductsContainer {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
   gap: 20px;
   width: 100%;
+  background-color: var(--box-color);
+  min-height: 400px;
+  align-items: center;
 }
 @media (min-width: 371px) and (max-width: 460px) {
   .recentProductsContainer {
     overflow-x: scroll;
-    padding: 20px;
+    padding: 10px;
+    min-height: 200px;
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
   .recentProductsContainer {
     overflow-x: scroll;
     padding: 10px;
+    min-height: 200px;
   }
 }
 @media (min-width: 561px) and (max-width: 768px) {
   .recentProductsContainer {
     overflow-x: scroll;
-    padding: 15px;
+    padding: 10px;
+    min-height: 200px;
   }
 }
 @media (min-width: 371px) and (max-width: 560px) {
   .recentProductsContainer {
     overflow-x: scroll;
-    padding: 15px;
+    padding: 10px;
+    min-height: 200px;
   }
 }
 .recentProductsContainer .innerContainer {

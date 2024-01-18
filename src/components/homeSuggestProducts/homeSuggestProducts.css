@@ -7,37 +7,37 @@
   display: flex;
   flex-direction: column;
   background-color: var(--un-color);
-  margin: 0 30px;
   border-radius: 10px;
-  padding: 10px 0;
-  margin-bottom: 20px;
+  padding: 20px;
+  min-height: 400px;
+  justify-content: center;
 }
 @media (min-width: 371px) and (max-width: 460px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
-    margin: 15px 0;
     border-radius: 0;
+    padding: 10px;
   }
 }
 @media (min-width: 301px) and (max-width: 370px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
-    margin: 15px 0;
     border-radius: 0;
+    padding: 10px;
   }
 }
 @media (min-width: 561px) and (max-width: 768px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
-    margin: 15px 0;
     border-radius: 0;
+    padding: 10px;
   }
 }
 @media (min-width: 371px) and (max-width: 560px) {
   .SuggetProductsContainer {
     overflow-x: scroll;
-    margin: 15px 0;
     border-radius: 0;
+    padding: 10px;
   }
 }
 .SuggetProductsContainer .suggetHeading {

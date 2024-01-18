@@ -16,8 +16,7 @@ export default function Home() {
                 <HomeBanner />
                 <RecentProductsContainer />
                 <HomeSuggetsProducts />
-                <HomeSuggetsProducts />
-                <HomeSuggetsProducts />
+                
             </div> 
 
         </div>
